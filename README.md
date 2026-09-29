@@ -171,9 +171,3 @@ The [paper library](PAPERS.md) contains **all 109 bibliography entries** from th
 **Download links will be supplied by the repository maintainer after the papers are uploaded.** A `Pending` label means that no download address has been provided yet. Publisher pages and DOI records are not substituted for those download links.
 
 ## Publication and Citation
-
-**Title:** Automatic Geometric Structure Reconstruction of Buildings from Remote Sensing Data: A Comprehensive Survey<br>
-**Authors:** Wufan Zhao, Tengxi Wang, Shuai Zhang, Tongyan Hua, Zhuoxiao Li, Claudio Persello, Rongjun Qin<br>
-**Journal:** Photogrammetric Engineering & Remote Sensing (PE&RS)
-
-The journal attribution is provided by the authors. The publication year, volume, issue, page range, and official article link will be added when available. This preview summarizes the supplied manuscript; it does not reproduce its full text.
