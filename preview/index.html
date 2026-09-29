@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Automatic Geometric Structure Reconstruction of Buildings from Remote Sensing Data | Building Reconstruction Survey</title><link rel="stylesheet" href="preview.css"></head>
+<body><header class="site-header"><div class="site-title">Building Reconstruction Survey <span class="private-label">Private preview</span></div>
+<nav aria-label="Repository pages"><a href="index.html" aria-current="page">Overview</a><a href="docs/section-summaries.html">Section summaries</a><a href="PAPERS.html">Paper library</a><a href="docs/datasets-and-evaluation.html">Datasets & evaluation</a></nav></header>
+<main><div class="file-label">README.md</div><article class="markdown-body"><div align="center"><h1 id="automatic-geometric-structure-reconstruction-of-buildings-from-remote-sensing-data">Automatic Geometric Structure Reconstruction of Buildings from Remote Sensing Data</h1>
+<h3 id="a-comprehensive-survey">A Comprehensive Survey</h3>
+<p><strong>Wufan Zhao · Tengxi Wang · Shuai Zhang · Tongyan Hua · Zhuoxiao Li · Claudio Persello · Rongjun Qin</strong></p>
+<p><em>Photogrammetric Engineering &amp; Remote Sensing (PE&amp;RS)</em></p>
+<p><strong>2D footprints   /   2.5D roofs   /   3D buildings</strong></p>
+<p><a href="#overview">Overview</a>   ·   <a href="docs/section-summaries.html">Section Summaries</a>   ·   <a href="PAPERS.html">Paper Library</a>   ·   <a href="docs/datasets-and-evaluation.html">Datasets &amp; Evaluation</a></p>
+</div><p align="center">
+<img alt="Survey framework connecting remote sensing data, reconstruction methods, 2D footprints, 2.5D roofs, 3D models, and future research directions" src="../assets/survey-framework.png" width="100%"/>
+</p><p align="center"><sub>Figure 1 from the survey. From remote sensing observations to structured building geometry.</sub></p><blockquote><p><strong>Central question:</strong> How can remote sensing observations be converted into building models that are geometrically accurate, topologically consistent, and compact enough to use?</p>
+</blockquote>
+<h2 id="overview">Overview</h2>
+<p>Buildings are more than foreground pixels. Urban mapping, simulation, and digital twins require explicit boundaries, connected roof structures, and usable 3D geometry. This survey examines the transition from raster segmentation and handcrafted fitting to direct vector prediction, graph reasoning, and generative reconstruction.</p>
+<p>The literature is organized along two complementary axes: <strong>the geometry to be reconstructed</strong> and <strong>the evidence provided by the sensor</strong>. Across these axes, the recurring challenge is to balance measured detail, architectural regularity, and structural completeness.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr>
+<th style="text-align:left">Geometry</th>
+<th style="text-align:left">What is reconstructed?</th>
+<th style="text-align:left">What makes it difficult?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>2D</strong></td>
+<td style="text-align:left">Closed footprint polygons with ordered corners and clean boundaries</td>
+<td style="text-align:left">Boundary localization, instance separation, and valid polygon topology</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>2.5D</strong></td>
+<td style="text-align:left">Roof facets, ridges, junctions, and elevation</td>
+<td style="text-align:left">Recovering both height and the relationships between roof planes</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>3D</strong></td>
+<td style="text-align:left">Building wireframes, polyhedral surfaces, and meshes</td>
+<td style="text-align:left">Facade completion, surface closure, connectivity, and compactness</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Reading map</strong></p>
+<p><a href="#1-introduction">1. Introduction</a> · <a href="#2-2d-building-outline-reconstruction">2. 2D Outlines</a> · <a href="#3-25d-building-roof-reconstruction">3. 2.5D Roofs</a> · <a href="#4-3d-building-model-and-wireframe-reconstruction">4. 3D Models</a> · <a href="#5-datasets-and-evaluation">5. Datasets &amp; Evaluation</a> · <a href="#6-discussion-and-future-outlook">6. Future Outlook</a> · <a href="#7-conclusion">7. Conclusion</a></p>
+<h2 id="1-introduction">1. Introduction</h2>
+<p>The opening section motivates a shift from recognizing buildings to reconstructing their geometric structure. It defines the progression from planar outlines to roofs and full 3D models, and explains why an output-centered taxonomy is useful for urban applications.</p>
+<p>Optical imagery contributes appearance and boundary cues; stereo imagery adds geometry through correspondence; LiDAR supplies direct spatial measurements. These differences determine where a method must rely on observation, regularization, or learned priors. The survey also positions model-driven, data-driven, and hybrid approaches within this common framework.</p>
+<p><strong>Takeaway:</strong> Select a reconstruction strategy by the required output and available geometric evidence, not by architecture alone.</p>
+<p><a href="docs/section-summaries.html#s1">Detailed summary</a> · <a href="PAPERS.html#background">Background literature</a></p>
+<h2 id="2-2d-building-outline-reconstruction">2. 2D Building Outline Reconstruction</h2>
+<p>The objective is a clean, valid polygon for each building. Optical methods increasingly predict vertices and connectivity directly, while LiDAR methods recover continuous outlines from irregular point distributions.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr>
+<th style="text-align:left">Route</th>
+<th style="text-align:left">Core idea</th>
+<th style="text-align:left">Representative studies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Segmentation and polygonization</td>
+<td style="text-align:left">Add directional or boundary supervision before vectorization</td>
+<td style="text-align:left"><a href="PAPERS.html#r021">Frame Field Learning</a>, <a href="PAPERS.html#r085">HiSup</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Sequential prediction</td>
+<td style="text-align:left">Generate an ordered sequence of corners</td>
+<td style="text-align:left"><a href="PAPERS.html#r048">PolyMapper</a>, <a href="PAPERS.html#r101">Zhao et al., 2021</a>, <a href="PAPERS.html#r098">VectorLLM</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Graphs and matching</td>
+<td style="text-align:left">Detect corners and infer their connections</td>
+<td style="text-align:left"><a href="PAPERS.html#r108">PolyWorld</a>, <a href="PAPERS.html#r109">Re:PolyWorld</a>, <a href="PAPERS.html#r016">ABCNet</a></td>
+</tr>
+<tr>
+<td style="text-align:left">RoI and query architectures</td>
+<td style="text-align:left">Predict and refine instance polygons in parallel</td>
+<td style="text-align:left"><a href="PAPERS.html#r036">PolyR-CNN</a>, <a href="PAPERS.html#r034">RoIPoly</a>, <a href="PAPERS.html#r026">PolyBuilding</a></td>
+</tr>
+<tr>
+<td style="text-align:left">LiDAR tracing and regularization</td>
+<td style="text-align:left">Trace projected points and enforce geometric consistency</td>
+<td style="text-align:left"><a href="PAPERS.html#r039">RMBR</a>, <a href="PAPERS.html#r037">GMDL</a>, <a href="PAPERS.html#r051">ATAS</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Takeaway:</strong> Good segmentation scores do not, by themselves, establish polygon quality. Sharp corners, sensible vertex counts, and correct connectivity must also be assessed.</p>
+<details><summary><strong>What each subsection covers</strong></summary><ul>
+<li><strong>2.1 Optical imagery:</strong> segmentation-based methods; sequential, graph-based, query-based, and hybrid vector generation; their different failure modes.</li>
+<li><strong>2.2 LiDAR point clouds:</strong> local tracing, global regularization, adaptive boundaries, and point/grid feature fusion.</li>
+<li><strong>2.3 Synthesis:</strong> the trade-off between preserving observed boundary detail and enforcing architectural regularity.</li>
+</ul>
+</details><p><a href="docs/section-summaries.html#s2">Detailed summary</a> · <a href="PAPERS.html#footprints">2D paper collection</a></p>
+<h2 id="3-25d-building-roof-reconstruction">3. 2.5D Building Roof Reconstruction</h2>
+<p>Roof reconstruction adds elevation and internal structure to the building outline. A useful representation must recover roof facets and their adjacency, including ridges, valleys, and height discontinuities.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr>
+<th style="text-align:left">Route</th>
+<th style="text-align:left">Core idea</th>
+<th style="text-align:left">Representative studies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Image-based primitive parsing</td>
+<td style="text-align:left">Detect junctions and edges, then reason about roof graphs</td>
+<td style="text-align:left"><a href="PAPERS.html#r011">HEAT</a>, <a href="PAPERS.html#r096">Conv-MPN</a>, <a href="PAPERS.html#r102">RSGNN</a>, <a href="PAPERS.html#r100">Roof-Former</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Plane and height inference</td>
+<td style="text-align:left">Infer plane parameters, roof sections, or height from imagery</td>
+<td style="text-align:left"><a href="PAPERS.html#r050">PlaneRCNN</a>, <a href="PAPERS.html#r060">Boundary-aware reconstruction</a>, <a href="PAPERS.html#r056">KIBS</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Model-driven LiDAR reconstruction</td>
+<td style="text-align:left">Fit templates or discover shared geometric regularities</td>
+<td style="text-align:left"><a href="PAPERS.html#r039">RMBR</a>, <a href="PAPERS.html#r105">Global regularities</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Data-driven LiDAR reconstruction</td>
+<td style="text-align:left">Assemble planes or learn roof vertices and edges</td>
+<td style="text-align:left"><a href="PAPERS.html#r066">Cycle graph analysis</a>, <a href="PAPERS.html#r042">Point2Roof</a>, <a href="PAPERS.html#r086">RR-Net</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Takeaway:</strong> A correct roof graph and an accurate roof surface are related but distinct achievements. Topology must be paired with reliable elevation.</p>
+<details><summary><strong>What each subsection covers</strong></summary><ul>
+<li><strong>3.1 Optical imagery:</strong> primitive graphs, segmentation-guided vectorization, direct plane estimation, and learned height cues.</li>
+<li><strong>3.2 LiDAR point clouds:</strong> top-down templates and global priors versus bottom-up plane extraction, graph assembly, and learned edge prediction.</li>
+<li><strong>3.3 Synthesis:</strong> roof models need metric accuracy and structural consistency, particularly for complex roof configurations.</li>
+</ul>
+</details><p><a href="docs/section-summaries.html#s3">Detailed summary</a> · <a href="PAPERS.html#roofs">Roof paper collection</a></p>
+<h2 id="4-3d-building-model-and-wireframe-reconstruction">4. 3D Building Model and Wireframe Reconstruction</h2>
+<p>Full 3D reconstruction must organize vertices, edges, and faces into a coherent building representation. The section compares image-derived geometry, directly measured point clouds, and their fusion, while distinguishing structural reconstruction from plausible scene generation.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr>
+<th style="text-align:left">Evidence / representation</th>
+<th style="text-align:left">Reconstruction strategy</th>
+<th style="text-align:left">Representative studies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Stereo imagery and DSMs</td>
+<td style="text-align:left">Recover depth, then fit or assemble structured surfaces</td>
+<td style="text-align:left"><a href="PAPERS.html#r022">SAT2LOD2</a>, <a href="PAPERS.html#r070">PLANES4LOD2</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Single-image inference</td>
+<td style="text-align:left">Use structural and learned priors to resolve missing depth</td>
+<td style="text-align:left"><a href="PAPERS.html#r106">3D Manhattan wireframes</a>, <a href="PAPERS.html#r027">DG-BRF</a>, <a href="PAPERS.html#r029">Sat2City</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Primitive assembly</td>
+<td style="text-align:left">Select and regularize candidate planes and faces</td>
+<td style="text-align:left"><a href="PAPERS.html#r063">PolyFit</a>, <a href="PAPERS.html#r030">City3D</a>, <a href="PAPERS.html#r006">SimpliCity</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Learned wireframes and meshes</td>
+<td style="text-align:left">Predict edges, autoregressive meshes, or implicit fields</td>
+<td style="text-align:left"><a href="PAPERS.html#r032">PBWR</a>, <a href="PAPERS.html#r052">Point2Building</a>, <a href="PAPERS.html#r014">Deep implicit fields</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Generative completion</td>
+<td style="text-align:left">Recover missing structure using learned shape priors</td>
+<td style="text-align:left"><a href="PAPERS.html#r053">EdgeDiff</a>, <a href="PAPERS.html#r028">BuildAnyPoint</a>, <a href="PAPERS.html#r031">ArcPro</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Image-LiDAR fusion</td>
+<td style="text-align:left">Combine sharp visual boundaries with metric surface measurements</td>
+<td style="text-align:left"><a href="PAPERS.html#r015">Cheng et al., 2011</a>, <a href="PAPERS.html#r017">Cheng et al., 2013</a>, <a href="PAPERS.html#r004">Awrangjeb et al.</a></td>
+</tr>
+</tbody>
+</table></div>
+<details><p><summary><strong>Example: from heterogeneous point clouds to a structured mesh</strong></summary></p>
+<p align="center"><img alt="BuildAnyPoint pipeline: diffusion-based point recovery followed by Transformer-based mesh generation" src="../assets/buildanypoint.png" width="90%"/></p><p><em>Figure 7 from the survey, presenting BuildAnyPoint (Hua et al., 2026). The method recovers an intermediate point representation before conditional mesh generation.</em></p>
+</details><p><strong>Takeaway:</strong> Geometric fidelity, structural completeness, and model compactness must be considered together. A visually plausible completion still needs validation against the observations.</p>
+<p><a href="docs/section-summaries.html#s4">Detailed summary</a> · <a href="PAPERS.html#models">3D paper collection</a> · <a href="PAPERS.html#fusion">Fusion studies</a></p>
+<h2 id="5-datasets-and-evaluation">5. Datasets and Evaluation</h2>
+<p>Training and evaluation must reflect the intended geometric output. Footprint masks, roof graphs, and building meshes supply different supervision and support different claims about reconstruction quality.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr>
+<th style="text-align:left">Task</th>
+<th style="text-align:left">Representative resources</th>
+<th style="text-align:left">Evaluation emphasis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Building footprints</td>
+<td style="text-align:left">CrowdAI, WHU, Inria, SpaceNet, Deventer-512</td>
+<td style="text-align:left">Instance coverage, polygon boundaries, corners, and complexity</td>
+</tr>
+<tr>
+<td style="text-align:left">Roof structure</td>
+<td style="text-align:left">VWB, Enschede, BuildingWF, Roof3D, Boston / BONAI</td>
+<td style="text-align:left">Junctions, edge connectivity, roof facets, and height</td>
+</tr>
+<tr>
+<td style="text-align:left">3D reconstruction and supporting tasks</td>
+<td style="text-align:left">BuildingWorld, Building3D, Map2ImLas, City-BIS, Structured3D</td>
+<td style="text-align:left">Surface fit, wireframes, topology, and structural completeness</td>
+</tr>
+</tbody>
+</table></div>
+<p>The survey discusses region and instance metrics, boundary measures such as PoLiS, angle and complexity measures, edge precision/recall, and 3D geometric errors. Segmentation or semantic datasets can support a reconstruction pipeline without providing a complete reconstruction benchmark.</p>
+<p><strong>Takeaway:</strong> Report geometric quality and topology alongside coverage. Results from different datasets, input conditions, and evaluation protocols should not be treated as a single leaderboard.</p>
+<p><a href="docs/datasets-and-evaluation.html">Dataset and metric guide</a> · <a href="docs/section-summaries.html#s5">Detailed summary</a></p>
+<h2 id="6-discussion-and-future-outlook">6. Discussion and Future Outlook</h2>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr>
+<th style="text-align:left">Research direction</th>
+<th style="text-align:left">Opportunity</th>
+<th style="text-align:left">Open question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Topology and geometric regularity</td>
+<td style="text-align:left">Recover usable polygons, wireframes, and surfaces</td>
+<td style="text-align:left">How can valid structure be enforced without erasing real architectural detail?</td>
+</tr>
+<tr>
+<td style="text-align:left">Sparse and occluded observations</td>
+<td style="text-align:left">Combine measurements with structural completion</td>
+<td style="text-align:left">Which parts are measured, and which are inferred?</td>
+</tr>
+<tr>
+<td style="text-align:left">Annotation-efficient learning</td>
+<td style="text-align:left">Use self-supervision and aligned geographic data</td>
+<td style="text-align:left">How can noisy pseudo-labels and geographic domain shifts be controlled?</td>
+</tr>
+<tr>
+<td style="text-align:left">Foundation and generative models</td>
+<td style="text-align:left">Transfer semantic knowledge and learned shape priors</td>
+<td style="text-align:left">How can coordinate accuracy, topology, and uncertainty be validated?</td>
+</tr>
+<tr>
+<td style="text-align:left">Multimodal and semantic modeling</td>
+<td style="text-align:left">Connect appearance, geometry, and urban meaning</td>
+<td style="text-align:left">How can alignment and temporal inconsistencies be managed?</td>
+</tr>
+<tr>
+<td style="text-align:left">Scalable, dynamic digital twins</td>
+<td style="text-align:left">Update city models through time</td>
+<td style="text-align:left">How can efficiency, provenance, and reliable change tracking be maintained?</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Takeaway:</strong> The next step is dependable reconstruction at urban scale. New model families are promising, but reliable deployment also requires geometric checks, uncertainty awareness, and reproducible workflows.</p>
+<p><a href="docs/section-summaries.html#s6">Detailed summary</a> · <a href="PAPERS.html#outlook">Outlook literature</a></p>
+<h2 id="7-conclusion">7. Conclusion</h2>
+<p>Building reconstruction is progressing from masks and isolated primitives toward explicit, connected geometric representations. Optical imagery, LiDAR, and multimodal fusion provide complementary evidence, while learned methods expand the range of structures that can be recovered.</p>
+<p>The survey's central conclusion is that automation must be judged by the usability of the resulting geometry. Accurate observations, appropriate structural priors, topology-aware modeling, and scalable processing remain essential for building dependable urban digital twins.</p>
+<p><a href="docs/section-summaries.html#s7">Detailed summary</a></p>
+<hr/>
+<h2 id="paper-library-and-downloads">Paper Library and Downloads</h2>
+<p>The <a href="PAPERS.html">paper library</a> contains <strong>all 109 bibliography entries</strong> from the supplied manuscript, organized into reading collections with stable reference IDs.</p>
+<p><strong>Download links will be supplied by the repository maintainer after the papers are uploaded.</strong> A <code>Pending</code> label means that no download address has been provided yet. Publisher pages and DOI records are not substituted for those download links.</p>
+<h2 id="publication-and-citation">Publication and Citation</h2>
+<p><strong>Title:</strong> Automatic Geometric Structure Reconstruction of Buildings from Remote Sensing Data: A Comprehensive Survey<br/>
+<strong>Authors:</strong> Wufan Zhao, Tengxi Wang, Shuai Zhang, Tongyan Hua, Zhuoxiao Li, Claudio Persello, Rongjun Qin<br/>
+<strong>Journal:</strong> Photogrammetric Engineering &amp; Remote Sensing (PE&amp;RS)</p>
+<p>The journal attribution is provided by the authors. The publication year, volume, issue, page range, and official article link will be added when available. This preview summarizes the supplied manuscript; it does not reproduce its full text.</p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>The framework and method illustration are taken from the supplied survey. The BuildAnyPoint illustration is attributed to Hua et al. (2026) as cited there. Credit for all reviewed methods, datasets, and original figures belongs to their respective authors. See <a href="assets/README.html">figure credits</a>.</p>
+</article></main>
+<footer>Research companion · PE&amp;RS · Download links supplied by the maintainer</footer></body></html>

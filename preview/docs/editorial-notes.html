@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Preview Editorial Notes | Building Reconstruction Survey</title><link rel="stylesheet" href="../preview.css"></head>
+<body><header class="site-header"><div class="site-title">Building Reconstruction Survey <span class="private-label">Private preview</span></div>
+<nav aria-label="Repository pages"><a href="../index.html">Overview</a><a href="section-summaries.html">Section summaries</a><a href="../PAPERS.html">Paper library</a><a href="datasets-and-evaluation.html">Datasets & evaluation</a></nav></header>
+<main><div class="file-label">docs/editorial-notes.md</div><article class="markdown-body"><h1 id="preview-editorial-notes">Preview Editorial Notes</h1>
+<p><a href="../index.html">Home</a></p>
+<p>These notes record decisions for this private preview. They are separate from the scientific section summaries.</p>
+<h2 id="publication-metadata">Publication Metadata</h2>
+<p>The PE&amp;RS journal attribution was supplied by the maintainer. The PDF does not provide a final publication year, volume, issue, page range, or DOI. Those fields remain unset. No final bibliographic record for the survey has been invented.</p>
+<h2 id="download-links">Download Links</h2>
+<p>The maintainer has already downloaded the reviewed papers and will upload them separately. Every entry in the download-link manifest therefore starts empty. No DOI, publisher URL, inferred file path, or search result is used as a substitute download link.</p>
+<h2 id="bibliography-coverage">Bibliography Coverage</h2>
+<p>All 109 entries in the supplied PDF's bibliography are retained, in stable source order through IDs R001-R109. The reading collections are editorial groupings, not claims that a reference occurs exclusively in one section. The original citation text remains available in <code>data/references.json</code>.</p>
+<p>Titles use matched bibliographic metadata where a title/author/year match was available; other titles are transcribed and lightly normalized. Year suffixes such as 2024a follow the source and are not separate publication years.</p>
+<h2 id="source-details-to-recheck">Source Details to Recheck</h2>
+<ul>
+<li><strong>KIPPI (R005):</strong> the cited 2018 title concerns image partitioning, while parts of the manuscript discuss it as a 3D surface-reconstruction method. The summary avoids that unsupported attribution.</li>
+<li><strong>Marching Cubes (R054 and R082):</strong> the bibliography lists both the 1998 reprint and a malformed 1987 record headed "WE, L.". Both source entries are retained. The latter should be corrected against the original publication before a final bibliography release.</li>
+<li><strong>Figure 4:</strong> "Chen et al. (2024)" appears in the taxonomy, while the corresponding discussion and bibliography identify the multiscale grid study as Chen et al. (2014), R012.</li>
+<li><strong>Table 10:</strong> the displayed TP / (TP + FP) and TP / (TP + FN) expressions describe precision and recall, not full AP / AR protocols. The guide describes metric purposes instead of reproducing these expressions.</li>
+<li><strong>Datasets:</strong> roof-graph derivatives are distinguished from original dataset releases, and semantic or instance-segmentation datasets are distinguished from mesh-reconstruction benchmarks.</li>
+</ul>
+<p>The summaries also avoid turning heterogeneous reported performance values into a leaderboard or treating generated geometry as automatically faithful to the observed building.</p>
+</article></main>
+<footer>Research companion · PE&amp;RS · Download links supplied by the maintainer</footer></body></html>

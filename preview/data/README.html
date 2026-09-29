@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reference Catalog | Building Reconstruction Survey</title><link rel="stylesheet" href="../preview.css"></head>
+<body><header class="site-header"><div class="site-title">Building Reconstruction Survey <span class="private-label">Private preview</span></div>
+<nav aria-label="Repository pages"><a href="../index.html">Overview</a><a href="../docs/section-summaries.html">Section summaries</a><a href="../PAPERS.html">Paper library</a><a href="../docs/datasets-and-evaluation.html">Datasets & evaluation</a></nav></header>
+<main><div class="file-label">data/README.md</div><article class="markdown-body"><h1 id="reference-catalog">Reference Catalog</h1>
+<p><code>references.json</code> contains all 109 bibliography entries. IDs <code>R001</code> through <code>R109</code> preserve the order of the source PDF. Each entry includes a reading collection, the original citation, and the PDF page on which the reference starts.</p>
+<p><code>download-links.json</code> is the only source of download addresses. Every value is initially empty. When the maintainer supplies an uploaded-paper link, assign it to the matching reference ID, for example:</p>
+<pre><code class="lang-json">{
+  "R001": "",
+  "R002": ""
+}
+</code></pre>
+<p>Keep all IDs in the actual manifest. Regenerate the library from the repository root with:</p>
+<pre><code class="lang-powershell">python tools/build_library.py
+</code></pre>
+<p>The generator never infers a download URL from a paper title, DOI, or publisher record. Empty values render as <code>Pending</code>. The manifest is the single source of download links.</p>
+</article></main>
+<footer>Research companion · PE&amp;RS · Download links supplied by the maintainer</footer></body></html>
