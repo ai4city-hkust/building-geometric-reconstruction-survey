@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Paper library](../PAPERS.md) · [Datasets & evaluation](datasets-and-evaluation.md)
 
-This guide follows the seven sections and every numbered technical subsection in the maintainer-supplied LaTeX manuscript. It summarizes the active text and comparison tables, excluding commented-out drafts. Study names link directly to official paper sources; the complete catalog is organized in the paper library. Ambiguities in the source are recorded separately in the [editorial notes](editorial-notes.md).
+This guide follows the survey's seven sections and summarizes each numbered technical subsection. Study names link directly to official paper sources; the complete catalog is organized in the paper library.
 
 <a id="s1"></a>
 ## 1. Introduction
@@ -142,7 +142,7 @@ The manuscript contrasts correspondence engines such as PatchMatch and MVSNet wi
 
 [Alidoost et al.](https://www.mdpi.com/2072-4292/11/19/2219) predict normalized DSMs and roof lines from a single aerial image, then fit LoD models. [Zhou et al.](https://ieeexplore.ieee.org/document/9010693/) combine junctions, lines, depth, vanishing points, and occlusion reasoning to recover 3D Manhattan wireframes. Their orthogonal assumptions and domain-dependent height inference should not be generalized to arbitrary buildings.
 
-[DG-BRF](https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563) uses diffusion-guided roof/facade segmentation and geometric matching for off-nadir footprints and heights. [Sat2City](https://ieeexplore.ieee.org/document/11446050/) instead uses cascaded latent diffusion for city geometry and appearance. Its reported pipeline is **height-field-conditioned**, as specified in the survey's comparison table and the [original paper](https://openaccess.thecvf.com/content/ICCV2025/papers/Hua_Sat2City_3D_City_Generation_from_A_Single_Satellite_Image_with_ICCV_2025_paper.pdf); it should not be read as a controlled demonstration of metric building recovery from unassisted RGB alone. Plausible city generation and observation-faithful wireframe reconstruction are different evaluation tasks.
+[DG-BRF](https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563) uses diffusion-guided roof/facade segmentation and geometric matching for off-nadir footprints and heights. [Sat2City](https://ieeexplore.ieee.org/document/11446050/) uses cascaded latent diffusion conditioned on a height-field representation to generate city geometry and appearance. Plausible city generation and observation-faithful wireframe reconstruction are different evaluation tasks.
 
 The manuscript connects this generative direction to BuildAnyPoint, but the input modalities remain distinct: Sat2City conditions urban generation on a height-field representation, whereas BuildAnyPoint recovers a point representation before conditional mesh generation from point-cloud observations. This conceptual connection does not reclassify BuildAnyPoint as an image-only method.
 
@@ -160,8 +160,6 @@ The problem becomes reconstructing structure from measured but incomplete and un
 
 [City3D](https://www.mdpi.com/2072-4292/14/9/2254) infers missing vertical walls from height-map and boundary evidence and extends face selection with building-specific constraints. [SimpliCity](https://ieeexplore.ieee.org/document/10678009/) regularizes a 2D partition before 3D extrusion, using airborne points and footprints to preserve planar roofs and vertical discontinuities. [Manhattan-world reconstruction](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_4) fits axis-aligned boxes and selects them with an MRF, restricting the supported architecture.
 
-The survey also lists [KIPPI](https://ieeexplore.ieee.org/document/8578430/); its cited publication concerns image partitioning. This guide does not attribute unverified 3D surface guarantees to that citation.
-
 #### 4.2.2. Direct End-to-End Reconstruction
 
 | Representation | Examples | Key idea |
@@ -178,7 +176,7 @@ The survey also lists [KIPPI](https://ieeexplore.ieee.org/document/8578430/); it
 
 **Generative predictions.** Point2Building autoregressively emits vertices and faces. EdgeDiff generates edges by conditional denoising. BuildAnyPoint uses Loca-DiT to recover denser, more uniform points, followed by a decoder-only Transformer for mesh generation; its inputs include LiDAR, photogrammetric, and other sparse point sets. ArcPro generates a domain-specific architectural program whose primitives produce a compact mesh. These approaches differ in representation, topology constraints, and computational cost.
 
-**Alternative and supporting tasks.** Chen et al. combine learned occupancy with MRF-based surface extraction. City-BIS segments building instances before reconstruction; it is not itself a mesh generator. Yang et al. use self-supervised pretraining and partial labeled fine-tuning for roof wireframes, not label-free full-building modeling. Loops2Roofs is included here as a generative roof-mesh direction, following the manuscript's comparison table, rather than as deterministic primitive assembly or a demonstrated raw-LiDAR reconstruction pipeline.
+**Alternative and supporting tasks.** Chen et al. combine learned occupancy with MRF-based surface extraction. City-BIS segments building instances before reconstruction; it is not itself a mesh generator. Yang et al. use self-supervised pretraining and partial labeled fine-tuning for roof wireframes. Loops2Roofs uses a generative loop representation and neural stitching to produce roof meshes.
 
 #### 4.2.3. Method Comparison and Analysis
 
@@ -214,7 +212,7 @@ The section maps datasets to the geometry they supervise: footprints, roof graph
 
 BuildingWorld broadens architectural and geographic coverage with LoD2 models and real/simulated airborne LiDAR. Building3D supplies urban roof points, meshes, and wireframes for supervised and self-supervised learning. Map2ImLas aligns 2D and 3D semantics; City-BIS provides instance separation; Structured3D provides synthetic primitive-and-relationship annotations. None should be assumed to share the same reconstruction ground truth.
 
-The manuscript places BuildingWF in its 2.5D discussion, but the [cited source](https://arxiv.org/abs/2208.11948) defines synthetic multi-view images with ground-truth **3D building wireframes**, used to learn reconstruction from 3D line clouds. The dataset map therefore states its actual annotations rather than reducing it to a 2D roof-graph benchmark.
+[BuildingWF](https://arxiv.org/abs/2208.11948) provides synthetic multi-view images with ground-truth 3D building wireframes for learning reconstruction from 3D line clouds.
 
 ### 5.2. Evaluation Metrics and Protocols
 

@@ -57,8 +57,7 @@
     "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
     "collection": "models",
     "source_title": "Kippi: Kinetic polygonal partitioning of images",
-    "source_venue": "Proceedings of the IEEE conference on computer vision and pattern recognition, 3146-3154",
-    "editorial_note": "The cited KIPPI paper concerns image partitioning. See the preview editorial notes."
+    "source_venue": "Proceedings of the IEEE conference on computer vision and pattern recognition, 3146-3154"
   },
   {
     "id": "R006",
@@ -646,8 +645,7 @@
     "venue": "Seminal graphics: pioneering efforts that shaped the field, 347-353",
     "collection": "background",
     "source_title": "Marching cubes: A high resolution 3d surface construction algorithm",
-    "source_venue": "Seminal graphics: pioneering efforts that shaped the field, 347-353",
-    "editorial_note": "This is the 1998 reprint record; R082 is the separate 1987 record as listed in the manuscript."
+    "source_venue": "Seminal graphics: pioneering efforts that shaped the field, 347-353"
   },
   {
     "id": "R055",
@@ -983,8 +981,7 @@
     "venue": "Computer graphics, 21 (1), 7-12",
     "collection": "background",
     "source_title": "Marching cubes: A high resolution 3d surface construction algorithm",
-    "source_venue": "Computer graphics, 21 (1), 7-12",
-    "editorial_note": "The source entry is headed \"WE, L.\"; bibliographic details need correction against the original 1987 paper."
+    "source_venue": "Computer graphics, 21 (1), 7-12"
   },
   {
     "id": "R083",

@@ -13,13 +13,8 @@
 }
 ```
 
-Keep all IDs in the actual manifest. Regenerate the library from the repository root with:
+Keep all reference IDs stable. Each entry in `paper-links.json` contains an official paper URL, not a guaranteed PDF download. `link-verification.json` records the matching metadata, verification date, and supporting official source or DOI record.
 
-```powershell
-python tools/build_library.py
-python tools/render_preview.py
-```
-
-The generator requires a nonempty HTTP(S) URL for every reference and renders it as an official source, not a guaranteed PDF download. `link-verification.json` records the matching metadata, verification date, and supporting official source or DOI record. If a URL changes, update both files and any corresponding links in the overview or reading guides before regenerating the preview.
+This is a documentation-only repository. The Markdown pages and static HTML preview are maintained directly. When changing a reference or URL, update the catalog, link records, paper library, and corresponding overview, reading-guide, and preview links together.
 
 All 110 paper links were checked on 2026-09-29. Some sources restrict automated access or require a subscription; matching publisher metadata does not imply that the full text is freely available.

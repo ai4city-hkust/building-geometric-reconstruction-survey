@@ -112,7 +112,7 @@
 <h2 id="annotation-scope">Annotation Scope</h2>
 <ul>
 <li><strong>Masks versus polygons:</strong> WHU and Inria segmentation labels may require vectorization or instance preparation. A paper's derived polygon benchmark is not automatically the original dataset format.</li>
-<li><strong>Roof graphs versus roof surfaces:</strong> VWB and Enschede emphasize image-plane structural relationships. Metric roof reconstruction additionally needs elevation. BuildingWF is discussed alongside these resources in the manuscript, but its cited source provides 3D building wireframes and multi-view observations.</li>
+<li><strong>Roof graphs versus roof surfaces:</strong> VWB and Enschede emphasize image-plane structural relationships. Metric roof reconstruction additionally needs elevation. BuildingWF provides 3D building wireframes and multi-view observations.</li>
 <li><strong>Single-building versus all-class maps:</strong> Deventer-512 includes multiple land-cover classes. Its total polygon count must not be described as a count of building instances alone.</li>
 <li><strong>Off-nadir geometry:</strong> Boston and the refined BONAI annotations support roof/footprint correspondence and height-related learning. They are distinct resources; a combined row does not establish identical image counts, splits, or annotations.</li>
 <li><strong>Supporting tasks versus final reconstruction:</strong> Map2ImLas supports aligned 2D/3D semantics, City-BIS supports building instances, and Structured3D supplies synthetic scene structure. The required outputs and acquisition domains must be checked before treating them as interchangeable building-mesh benchmarks.</li>
