@@ -44,8 +44,6 @@ The opening section motivates a shift from recognizing buildings to reconstructi
 
 Optical imagery contributes appearance and boundary cues; stereo imagery adds geometry through correspondence; LiDAR supplies direct spatial measurements. These differences determine where a method must rely on observation, regularization, or learned priors. The survey also positions model-driven, data-driven, and hybrid approaches within this common framework.
 
-Cited in the opening paragraph: [Xu et al. (2025)](PAPERS.md#r110), on pose-graph optimization for tie-point matching and 3D scene reconstruction from oblique UAV images.
-
 **Takeaway:** Select a reconstruction strategy by the required output and available geometric evidence, not by architecture alone.
 
 [Detailed summary](docs/section-summaries.md#s1) · [Background literature](PAPERS.md#background)

@@ -1318,7 +1318,7 @@
     "source_citation": "Xu, Z., Y. Niu, J. Jiang, R. Qin, and X. Cui. 2025. Pose-graph optimization for efficient tie-point matching and 3D scene reconstruction from oblique UAV images. ISPRS Journal of Photogrammetry and Remote Sensing, 225, 461-491. Elsevier.",
     "title": "Pose-graph optimization for efficient tie-point matching and 3D scene reconstruction from oblique UAV images",
     "venue": "ISPRS Journal of Photogrammetry and Remote Sensing, 225, 461-491",
-    "collection": "models",
+    "collection": "background",
     "source_title": "Pose-graph optimization for efficient tie-point matching and 3D scene reconstruction from oblique UAV images",
     "source_venue": "ISPRS Journal of Photogrammetry and Remote Sensing, 225, 461-491",
     "citation_key": "xu2025pose",
@@ -1327,6 +1327,6 @@
     "publisher": "Elsevier",
     "source_section": "1. Introduction",
     "source_location": "Opening paragraph, second sentence; citation group: li2024review, 11417956, xu2025pose.",
-    "source_note": "Added from the maintainer-supplied BibTeX and Introduction excerpt; no updated PDF page number was supplied."
+    "source_note": "Added from the maintainer-supplied BibTeX and Introduction excerpt. The maintainer confirms this paper is cited only in the Introduction, not in the 3D building reconstruction section. No updated PDF page number was supplied."
   }
 ]

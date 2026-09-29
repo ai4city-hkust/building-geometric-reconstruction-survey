@@ -10,10 +10,10 @@ The full bibliography of the supplied survey and maintainer-supplied additions a
 
 | Collection | Entries |
 | :--- | ---: |
-| [Background and Related Surveys](#background) | 22 |
+| [Background and Related Surveys](#background) | 23 |
 | [2D Building Footprints](#footprints) | 24 |
 | [2.5D Roof Structure and Wireframes](#roofs) | 24 |
-| [3D Building Models](#models) | 23 |
+| [3D Building Models](#models) | 22 |
 | [Image-LiDAR Fusion](#fusion) | 4 |
 | [Datasets and Supporting Benchmarks](#datasets) | 6 |
 | [Foundation Models and Dynamic Urban Analysis](#outlook) | 7 |
@@ -31,6 +31,7 @@ Foundational geometry, related reviews, and urban-modeling context.
 | <a id="r057"></a>**R057**<br>2025 | **gdverse                     : An R Package for Spatial Stratified Heterogeneity Family**<br>Lv, W., Y. Lei, F. Liu, J. Yan, Y. Song, and W. Zhao<br><sub>Transactions in GIS</sub> | Pending |
 | <a id="r088"></a>**R088**<br>2025 | **Advances and Future Prospects in Building Extraction From High-Resolution Remote Sensing Images**<br>Yang, D., X. Gao, Y. Yang, K. Guo, K. Han, and L. Xu<br><sub>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</sub> | Pending |
 | <a id="r094"></a>**R094**<br>2025 | **Building extraction from remote sensing images with deep learning: A survey on vision techniques**<br>Yuan, Y., X. Shi, and J. Gao<br><sub>Computer Vision and Image Understanding</sub> | Pending |
+| <a id="r110"></a>**R110**<br>2025 | **Pose-graph optimization for efficient tie-point matching and 3D scene reconstruction from oblique UAV images**<br>Zhihua Xu, Yongze Niu, Jincheng Jiang, Rongjun Qin, and Ximin Cui<br><sub>ISPRS Journal of Photogrammetry and Remote Sensing, 225, 461-491</sub> | Pending |
 | <a id="r044"></a>**R044**<br>2024a | **A Review of Building Extraction From Remote Sensing Imagery: Geometrical Structures and Semantic Attributes**<br>Li, Q., L. Mou, Y. Sun, Y. Hua, Y. Shi, and X. X. Zhu<br><sub>IEEE Transactions on Geoscience and Remote Sensing</sub> | Pending |
 | <a id="r091"></a>**R091**<br>2024c | **A Review of Convolutional Neural Networks Related Methods for Building Extraction from Remote Sensing Images**<br>Yang, M., L. Zhao, L. Ye, and Coauthors<br><sub>Journal of Geo-information Science, 26 (6), 1500-1516</sub> | Pending |
 | <a id="r092"></a>**R092**<br>2023 | **New Techniques and Methods for Modelling, Visualization, and Analysis of a 3D City**<br>Ying, S., P. Van Oosterom, and H. Fan<br><sub>Journal of Geovisualization and Spatial Analysis</sub> | Pending |
@@ -125,7 +126,6 @@ Photogrammetry, primitive assembly, mesh generation, and structured abstraction.
 | <a id="r029"></a>**R029**<br>2025 | **Sat2City: 3D City Generation from a Single Satellite Image with Cascaded Latent Diffusion**<br>Hua, T., L. Jiang, Y.-C. Chen, and W. Zhao<br><sub>2025 IEEE/CVF International Conference on Computer Vision (ICCV)</sub> | Pending |
 | <a id="r031"></a>**R031**<br>2025 | **ArcPro: Architectural Programs for Structured 3D Abstraction of Sparse Points**<br>Huang, Q., R. Zhang, K. Liu, M. Gong, H. Zhang, and H. Huang<br><sub>2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</sub> | Pending |
 | <a id="r053"></a>**R053**<br>2025 | **EdgeDiff: Edge-aware Diffusion Network for Building Reconstruction from Point Clouds**<br>Liu, Y., R. Wang, S. Huang, and G. Cai<br><sub>2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</sub> | Pending |
-| <a id="r110"></a>**R110**<br>2025 | **Pose-graph optimization for efficient tie-point matching and 3D scene reconstruction from oblique UAV images**<br>Zhihua Xu, Yongze Niu, Jincheng Jiang, Rongjun Qin, and Ximin Cui<br><sub>ISPRS Journal of Photogrammetry and Remote Sensing, 225, 461-491</sub> | Pending |
 | <a id="r006"></a>**R006**<br>2024 | **SimpliCity: Reconstructing Buildings with Simple Regularized 3D Models**<br>Bauchet, J.-P., R. Sulzer, F. Lafarge, and Y. Tarabalka<br><sub>2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</sub> | Pending |
 | <a id="r032"></a>**R032**<br>2024 | **PBWR: Parametric-Building-Wireframe Reconstruction from Aerial LiDAR Point Clouds**<br>Huang, S., R. Wang, B. Guo, and H. Yang<br><sub>2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</sub> | Pending |
 | <a id="r052"></a>**R052**<br>2024b | **Point2Building: Reconstructing buildings from airborne LiDAR point clouds**<br>Liu, Y., A. Obukhov, J. D. Wegner, and K. Schindler<br><sub>ISPRS Journal of Photogrammetry and Remote Sensing</sub> | Pending |
