@@ -177,7 +177,3 @@ The [paper library](PAPERS.md) contains **all 109 bibliography entries** from th
 **Journal:** Photogrammetric Engineering & Remote Sensing (PE&RS)
 
 The journal attribution is provided by the authors. The publication year, volume, issue, page range, and official article link will be added when available. This preview summarizes the supplied manuscript; it does not reproduce its full text.
-
-## Acknowledgments
-
-The framework and method illustration are taken from the supplied survey. The BuildAnyPoint illustration is attributed to Hua et al. (2026) as cited there. Credit for all reviewed methods, datasets, and original figures belongs to their respective authors. See [figure credits](assets/README.md).
