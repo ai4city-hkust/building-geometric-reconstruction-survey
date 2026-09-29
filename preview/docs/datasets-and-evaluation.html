@@ -60,8 +60,8 @@
 </tr>
 <tr>
 <td style="text-align:left"><strong>BuildingWF</strong></td>
-<td style="text-align:left">Synthetic wireframe learning</td>
-<td style="text-align:left">Building models, rendered observations, and structural graphs</td>
+<td style="text-align:left">Synthetic 3D building wireframe learning</td>
+<td style="text-align:left">Rendered multi-view images and ground-truth 3D wireframes for reconstruction from 3D line clouds</td>
 <td style="text-align:left"><a href="https://arxiv.org/abs/2208.11948">Luo et al.</a></td>
 </tr>
 <tr>
@@ -109,6 +109,14 @@
 </tbody>
 </table></div>
 <p>Dataset sizes and annotation formats vary by release and preprocessing. In particular, annotations in roof-graph derivatives should not be assumed to exist in every original SpaceNet release; semantic labels in Map2ImLas or City-BIS should not be treated as watertight mesh ground truth.</p>
+<h2 id="annotation-scope">Annotation Scope</h2>
+<ul>
+<li><strong>Masks versus polygons:</strong> WHU and Inria segmentation labels may require vectorization or instance preparation. A paper's derived polygon benchmark is not automatically the original dataset format.</li>
+<li><strong>Roof graphs versus roof surfaces:</strong> VWB and Enschede emphasize image-plane structural relationships. Metric roof reconstruction additionally needs elevation. BuildingWF is discussed alongside these resources in the manuscript, but its cited source provides 3D building wireframes and multi-view observations.</li>
+<li><strong>Single-building versus all-class maps:</strong> Deventer-512 includes multiple land-cover classes. Its total polygon count must not be described as a count of building instances alone.</li>
+<li><strong>Off-nadir geometry:</strong> Boston and the refined BONAI annotations support roof/footprint correspondence and height-related learning. They are distinct resources; a combined row does not establish identical image counts, splits, or annotations.</li>
+<li><strong>Supporting tasks versus final reconstruction:</strong> Map2ImLas supports aligned 2D/3D semantics, City-BIS supports building instances, and Structured3D supplies synthetic scene structure. The required outputs and acquisition domains must be checked before treating them as interchangeable building-mesh benchmarks.</li>
+</ul>
 <h2 id="metric-map">Metric Map</h2>
 <div class="table-scroll" tabindex="0"><table>
 <thead><tr>
@@ -163,6 +171,12 @@
 </tr>
 </tbody>
 </table></div>
+<h2 id="metric-definitions-and-protocols">Metric Definitions and Protocols</h2>
+<p><strong>Region and instance agreement.</strong> IoU measures overlap relative to union. FCSP and AFI describe coverage or area agreement under the source's segmentation convention; area agreement alone can conceal misplaced boundaries. Precision <code>TP / (TP + FP)</code> and recall <code>TP / (TP + FN)</code> at one operating point are <strong>not AP and AR</strong>. COCO-style AP aggregates interpolated precision over recall levels and IoU thresholds; AR aggregates achieved recall under specified IoU thresholds and detection limits. Report AP50 separately from AP averaged over thresholds. See the <a href="https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py">official COCO evaluator</a>.</p>
+<p><strong>Polygon boundaries and complexity.</strong> PoLiS measures symmetric vertex-to-boundary discrepancy. Boundary AP changes the matching criterion to boundary agreement. Maximum tangent-angle error assesses orientation mismatch; vertex-count ratios and complexity-aware IoU quantify aspects of representation economy. These depend on the reference geometry, tolerance, and sampling convention. A low vertex count is not beneficial if it erases real corners or roof features.</p>
+<p><strong>Lines and wireframes.</strong> NFA evaluates statistical evidence for a line under an a-contrario null model; it is not an overall reconstruction-accuracy score. Corner/edge precision, recall, and F1 require an explicit matching rule and spatial tolerance. Structural IoU (<code>sIoU</code>) is representation- and protocol-specific. Approximate geometric matches, rather than literal equality of floating-point edge coordinates, determine true positives.</p>
+<p><strong>Heights and surfaces.</strong> Height RMSE summarizes squared differences over matched height samples; surface-distance RMSE answers a different question and must be identified as such. The manuscript's <code>e_0.5</code> measures building-area coverage with absolute height error below 0.5 m. Chamfer and Hausdorff distances also occur in the method comparisons, but depend on sampling, normalization, directionality, and units. They do not by themselves certify watertightness or connectivity.</p>
+<p><strong>Structural relationships.</strong> Extended Attribute Adjacency Graphs (EAAG) encode relationships among geometric components for abstraction and simplification. Writing <code>G = (F, E, A)</code> defines a graph representation, not a complete numerical metric. A reproducible evaluation must state how retained or violated relationships are scored.</p>
 <h2 id="reading-reported-results">Reading Reported Results</h2>
 <p>The comparison tables in the survey combine results reported by different studies. They are a map of method characteristics, not a controlled benchmark.</p>
 <p>When interpreting a result, keep the following conditions together:</p>
@@ -174,5 +188,32 @@
 <li><strong>Practical cost:</strong> runtime, memory, manual intervention, and post-processing.</li>
 </ol>
 <p>AP summarizes a precision-recall evaluation protocol; it is not simply the ratio TP / (TP + FP). Likewise, edge accuracy and region overlap cannot replace explicit checks of polygon or mesh validity.</p>
+<h2 id="output-specific-checks">Output-Specific Checks</h2>
+<p>The following checklist translates the survey's geometric and topological concerns into practical evaluation questions; it is not a new benchmark claimed by the manuscript.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr>
+<th style="text-align:left">Output</th>
+<th style="text-align:left">Checks beyond aggregate accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Footprint polygon</td>
+<td style="text-align:left">Closed boundary, self-intersections, duplicate vertices, holes where annotated, and correct instance separation</td>
+</tr>
+<tr>
+<td style="text-align:left">Roof graph or surface</td>
+<td style="text-align:left">Junction-edge incidence, missing or spurious connections, roof-plane adjacency, and reliable elevations</td>
+</tr>
+<tr>
+<td style="text-align:left">Building mesh</td>
+<td style="text-align:left">Surface closure where required, manifoldness, self-intersections, facade coverage, and consistency with observed points</td>
+</tr>
+<tr>
+<td style="text-align:left">Generated or updated model</td>
+<td style="text-align:left">Separation of observed and inferred geometry, uncertainty, temporal alignment, and repeatability</td>
+</tr>
+</tbody>
+</table></div>
 </article></main>
 <footer>Research companion · PE&amp;RS · Official paper sources</footer></body></html>

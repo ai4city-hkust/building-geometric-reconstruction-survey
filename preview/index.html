@@ -46,6 +46,7 @@
 <h2 id="1-introduction">1. Introduction</h2>
 <p>The opening section motivates a shift from recognizing buildings to reconstructing their geometric structure. It defines the progression from planar outlines to roofs and full 3D models, and explains why an output-centered taxonomy is useful for urban applications.</p>
 <p>Optical imagery contributes appearance and boundary cues; stereo imagery adds geometry through correspondence; LiDAR supplies direct spatial measurements. These differences determine where a method must rely on observation, regularization, or learned priors. The survey also positions model-driven, data-driven, and hybrid approaches within this common framework.</p>
+<p>The review describes a literature search across Web of Science, Scopus, IEEE Xplore, and Google Scholar, primarily covering 2000-2026. Its core scope is explicit building geometry, supplemented by relevant background and supporting methods; semantic classification or raster segmentation alone is not the target output.</p>
 <p><strong>Takeaway:</strong> Select a reconstruction strategy by the required output and available geometric evidence, not by architecture alone.</p>
 <p><a href="docs/section-summaries.html#s1">Detailed summary</a> · <a href="PAPERS.html#background">Background literature</a></p>
 <h2 id="2-2d-building-outline-reconstruction">2. 2D Building Outline Reconstruction</h2>
@@ -61,7 +62,7 @@
 <tr>
 <td style="text-align:left">Segmentation and polygonization</td>
 <td style="text-align:left">Add directional or boundary supervision before vectorization</td>
-<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/9577910/">Frame Field Learning</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271623000667">HiSup</a></td>
+<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/9577910/">Frame Field Learning</a>, <a href="https://ieeexplore.ieee.org/document/10282644/">Tareke et al.</a></td>
 </tr>
 <tr>
 <td style="text-align:left">Sequential prediction</td>
@@ -76,12 +77,22 @@
 <tr>
 <td style="text-align:left">RoI and query architectures</td>
 <td style="text-align:left">Predict and refine instance polygons in parallel</td>
-<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271624003824">PolyR-CNN</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625001364">RoIPoly</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271623000813">PolyBuilding</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271624003824">PolyR-CNN</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625001364">RoIPoly</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271623000813">PolyBuilding</a>, <a href="https://ieeexplore.ieee.org/document/10988661/">PolyBuild</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Hybrid and hierarchical methods</td>
+<td style="text-align:left">Couple geometric supervision, tracing, or contour optimization</td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271623000667">HiSup</a>, <a href="https://ieeexplore.ieee.org/document/10285447/">BD-Tracing</a>, <a href="https://ieeexplore.ieee.org/document/11172367/">GCP</a></td>
 </tr>
 <tr>
 <td style="text-align:left">LiDAR tracing and regularization</td>
 <td style="text-align:left">Trace projected points and enforce geometric consistency</td>
 <td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271613002256">RMBR</a>, <a href="https://www.isprs.org/proceedings/XXXVII/congress/3_pdf/11.pdf">GMDL</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0926580524000578">ATAS</a></td>
+</tr>
+<tr>
+<td style="text-align:left">LiDAR feature fusion</td>
+<td style="text-align:left">Separate building points using point geometry and grid texture before outlining</td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271616306438">Du et al., 2017</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -147,9 +158,14 @@
 <td style="text-align:left"><a href="https://isprs-archives.copernicus.org/articles/XLIII-B2-2022/379/2022/">SAT2LOD2</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271624001758">PLANES4LOD2</a></td>
 </tr>
 <tr>
-<td style="text-align:left">Single-image inference</td>
-<td style="text-align:left">Use structural and learned priors to resolve missing depth</td>
-<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/9010693/">3D Manhattan wireframes</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563">DG-BRF</a>, <a href="https://ieeexplore.ieee.org/document/11446050/">Sat2City</a></td>
+<td style="text-align:left">Single-image structural inference</td>
+<td style="text-align:left">Infer wireframes or roof-footprint geometry and height under structural priors</td>
+<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/9010693/">3D Manhattan wireframes</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563">DG-BRF</a></td>
+</tr>
+<tr>
+<td style="text-align:left">City-scale generative modeling</td>
+<td style="text-align:left">Generate urban geometry conditioned on a height-field representation</td>
+<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/11446050/">Sat2City</a></td>
 </tr>
 <tr>
 <td style="text-align:left">Primitive assembly</td>
@@ -162,9 +178,14 @@
 <td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/10656530/">PBWR</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S092427162400279X">Point2Building</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271622002611">Deep implicit fields</a></td>
 </tr>
 <tr>
-<td style="text-align:left">Generative completion</td>
-<td style="text-align:left">Recover missing structure using learned shape priors</td>
-<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/11094351/">EdgeDiff</a>, <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Hua_BuildAnyPoint_3D_Building_Structured_Abstraction_from_Diverse_Point_Clouds_CVPR_2026_paper.html">BuildAnyPoint</a>, <a href="https://ieeexplore.ieee.org/document/11092796/">ArcPro</a></td>
+<td style="text-align:left">Diffusion-assisted structure</td>
+<td style="text-align:left">Generate edges or recover points before mesh generation</td>
+<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/11094351/">EdgeDiff</a>, <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Hua_BuildAnyPoint_3D_Building_Structured_Abstraction_from_Diverse_Point_Clouds_CVPR_2026_paper.html">BuildAnyPoint</a></td>
+</tr>
+<tr>
+<td style="text-align:left">Architectural programs</td>
+<td style="text-align:left">Generate editable procedural structure and derive a compact mesh</td>
+<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/11092796/">ArcPro</a></td>
 </tr>
 <tr>
 <td style="text-align:left">Image-LiDAR fusion</td>
@@ -194,12 +215,12 @@
 </tr>
 <tr>
 <td style="text-align:left">Roof structure</td>
-<td style="text-align:left">VWB, Enschede, BuildingWF, Roof3D, Boston / BONAI</td>
+<td style="text-align:left">VWB, Enschede, Roof3D, Boston / BONAI</td>
 <td style="text-align:left">Junctions, edge connectivity, roof facets, and height</td>
 </tr>
 <tr>
 <td style="text-align:left">3D reconstruction and supporting tasks</td>
-<td style="text-align:left">BuildingWorld, Building3D, Map2ImLas, City-BIS, Structured3D</td>
+<td style="text-align:left">BuildingWF, BuildingWorld, Building3D, Map2ImLas, City-BIS, Structured3D</td>
 <td style="text-align:left">Surface fit, wireframes, topology, and structural completeness</td>
 </tr>
 </tbody>
@@ -237,9 +258,19 @@
 <td style="text-align:left">How can coordinate accuracy, topology, and uncertainty be validated?</td>
 </tr>
 <tr>
+<td style="text-align:left">Neural scene representations</td>
+<td style="text-align:left">Use NeRF and 3D Gaussian Splatting for appearance and surface recovery</td>
+<td style="text-align:left">How can continuous fields or Gaussians yield explicit, connected building geometry?</td>
+</tr>
+<tr>
 <td style="text-align:left">Multimodal and semantic modeling</td>
 <td style="text-align:left">Connect appearance, geometry, and urban meaning</td>
 <td style="text-align:left">How can alignment and temporal inconsistencies be managed?</td>
+</tr>
+<tr>
+<td style="text-align:left">Agent-assisted workflows</td>
+<td style="text-align:left">Coordinate preprocessing, reconstruction tools, and quality control</td>
+<td style="text-align:left">How can tool constraints, intermediate validation, and human oversight prevent cascading errors?</td>
 </tr>
 <tr>
 <td style="text-align:left">Scalable, dynamic digital twins</td>
@@ -252,7 +283,7 @@
 <p><a href="docs/section-summaries.html#s6">Detailed summary</a> · <a href="PAPERS.html#outlook">Outlook literature</a></p>
 <h2 id="7-conclusion">7. Conclusion</h2>
 <p>Building reconstruction is progressing from masks and isolated primitives toward explicit, connected geometric representations. Optical imagery, LiDAR, and multimodal fusion provide complementary evidence, while learned methods expand the range of structures that can be recovered.</p>
-<p>The survey's central conclusion is that automation must be judged by the usability of the resulting geometry. Accurate observations, appropriate structural priors, topology-aware modeling, and scalable processing remain essential for building dependable urban digital twins.</p>
+<p>The survey's central conclusion is that automation must be judged by the usability of the resulting geometry. Accurate observations, appropriate structural priors, topology-aware modeling, and scalable processing remain essential for building dependable urban digital twins. Generative models, semantic enrichment through standards such as CityGML, and temporal updating are promising directions, not established guarantees of metric accuracy or generalization.</p>
 <p><a href="docs/section-summaries.html#s7">Detailed summary</a></p>
 <hr/>
 <h2 id="paper-library-and-links">Paper Library and Links</h2>
