@@ -5,7 +5,7 @@
 <nav aria-label="Repository pages"><a href="../index.html">Overview</a><a href="section-summaries.html" aria-current="page">Section summaries</a><a href="../PAPERS.html">Paper library</a><a href="datasets-and-evaluation.html">Datasets & evaluation</a></nav></header>
 <main><div class="file-label">docs/section-summaries.md</div><article class="markdown-body"><h1 id="section-by-section-reading-guide">Section-by-Section Reading Guide</h1>
 <p><a href="../index.html">Home</a> · <a href="../PAPERS.html">Paper library</a> · <a href="datasets-and-evaluation.html">Datasets &amp; evaluation</a></p>
-<p>This guide follows the manuscript's seven sections and summarizes every numbered technical subsection. Page references refer to the supplied 70-page PDF. Study names link to the paper library; downloads will be added after the maintainer supplies the uploaded-paper links.</p>
+<p>This guide follows the manuscript's seven sections and summarizes every numbered technical subsection. Page references refer to the supplied 70-page PDF. Study names link directly to official paper sources; the complete bibliography is organized in the paper library.</p>
 <p><a id="s1"></a></p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p><em>PDF pages 3-7.</em></p>
@@ -19,7 +19,7 @@
 <h3 id="21-from-optical-imagery">2.1. From Optical Imagery</h3>
 <p>Optical reconstruction has evolved from segmenting building regions and vectorizing them afterward toward learning explicit polygon structure. The important distinction is where geometry enters the pipeline: in post-processing, in auxiliary supervision, or directly in the output representation.</p>
 <h4 id="211-segmentation-based-methods">2.1.1. Segmentation-based Methods</h4>
-<p>Segmentation networks provide dense regional evidence, but their masks can round corners and introduce irregular edges. <a href="../PAPERS.html#r021">Frame Field Learning</a> predicts contour directions to guide polygonization and preserve sharper structures. Related cadastral-boundary work applies these ideas to visible boundaries. The main limitation is error propagation from the mask into the final polygon.</p>
+<p>Segmentation networks provide dense regional evidence, but their masks can round corners and introduce irregular edges. <a href="https://ieeexplore.ieee.org/document/9577910/">Frame Field Learning</a> predicts contour directions to guide polygonization and preserve sharper structures. Related cadastral-boundary work applies these ideas to visible boundaries. The main limitation is error propagation from the mask into the final polygon.</p>
 <h4 id="212-end-to-end-vector-polygon-generation">2.1.2. End-to-End Vector Polygon Generation</h4>
 <div class="table-scroll" tabindex="0"><table>
 <thead><tr>
@@ -31,22 +31,22 @@
 <tbody>
 <tr>
 <td style="text-align:left">Sequential</td>
-<td style="text-align:left"><a href="../PAPERS.html#r048">PolyMapper</a>, <a href="../PAPERS.html#r101">ConvGRU-based delineation</a>, and <a href="../PAPERS.html#r098">VectorLLM</a> generate ordered corners</td>
+<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/9008272/">PolyMapper</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271621000551">ConvGRU-based delineation</a>, and <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271626000250">VectorLLM</a> generate ordered corners</td>
 <td style="text-align:left">Local errors can accumulate along long sequences</td>
 </tr>
 <tr>
 <td style="text-align:left">Graph and matching</td>
-<td style="text-align:left"><a href="../PAPERS.html#r108">PolyWorld</a>, <a href="../PAPERS.html#r109">Re:PolyWorld</a>, and <a href="../PAPERS.html#r016">ABCNet</a> infer connections between detected vertices</td>
+<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/9880425/">PolyWorld</a>, <a href="https://ieeexplore.ieee.org/document/10377491/">Re:PolyWorld</a>, and <a href="https://linkinghub.elsevier.com/retrieve/pii/S1569843225007186">ABCNet</a> infer connections between detected vertices</td>
 <td style="text-align:left">Missing or ambiguous corners undermine connectivity</td>
 </tr>
 <tr>
 <td style="text-align:left">RoI and query</td>
-<td style="text-align:left"><a href="../PAPERS.html#r036">PolyR-CNN</a>, <a href="../PAPERS.html#r034">RoIPoly</a>, <a href="../PAPERS.html#r026">PolyBuilding</a>, and <a href="../PAPERS.html#r099">PolyBuild</a> couple instance features with polygon prediction</td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271624003824">PolyR-CNN</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625001364">RoIPoly</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271623000813">PolyBuilding</a>, and <a href="https://ieeexplore.ieee.org/document/10988661/">PolyBuild</a> couple instance features with polygon prediction</td>
 <td style="text-align:left">Feature resolution and vertex capacity can limit fine detail</td>
 </tr>
 <tr>
 <td style="text-align:left">Hybrid and hierarchical</td>
-<td style="text-align:left"><a href="../PAPERS.html#r085">HiSup</a>, <a href="../PAPERS.html#r072">BD-Tracing</a>, and <a href="../PAPERS.html#r097">GCP</a> combine geometric supervision, tracing, or explicit simplification</td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271623000667">HiSup</a>, <a href="https://ieeexplore.ieee.org/document/10285447/">BD-Tracing</a>, and <a href="https://ieeexplore.ieee.org/document/11172367/">GCP</a> combine geometric supervision, tracing, or explicit simplification</td>
 <td style="text-align:left">Regularization can suppress valid small structures</td>
 </tr>
 </tbody>
@@ -56,9 +56,9 @@
 <h3 id="22-from-lidar-point-clouds">2.2. From LiDAR Point Clouds</h3>
 <p>For footprint extraction, 3D building points are often projected onto a horizontal plane. Direct spatial measurements reduce dependence on illumination, but uneven density, noise, and missing boundary points create a different regularization problem.</p>
 <h4 id="221-boundary-tracing-and-regularization">2.2.1. Boundary Tracing and Regularization</h4>
-<p>Early methods impose local architectural constraints, as in <a href="../PAPERS.html#r039">RMBR</a>, or balance fit and simplicity, as in <a href="../PAPERS.html#r037">GMDL</a>. Later methods coordinate the boundary globally: <a href="../PAPERS.html#r019">Du et al.</a> combine contour decomposition with global regularization; <a href="../PAPERS.html#r051">ATAS</a> adapts tracing and optimizes neighboring segments; <a href="../PAPERS.html#r083">Wu et al.</a> use density-based corner selection to tolerate data gaps.</p>
+<p>Early methods impose local architectural constraints, as in <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271613002256">RMBR</a>, or balance fit and simplicity, as in <a href="https://www.isprs.org/proceedings/XXXVII/congress/3_pdf/11.pdf">GMDL</a>. Later methods coordinate the boundary globally: <a href="https://ieeexplore.ieee.org/document/8681075/">Du et al.</a> combine contour decomposition with global regularization; <a href="https://linkinghub.elsevier.com/retrieve/pii/S0926580524000578">ATAS</a> adapts tracing and optimizes neighboring segments; <a href="https://linkinghub.elsevier.com/retrieve/pii/S026322412503369X">Wu et al.</a> use density-based corner selection to tolerate data gaps.</p>
 <h4 id="222-feature-fusion-and-classification">2.2.2. Feature Fusion and Classification</h4>
-<p><a href="../PAPERS.html#r020">Du et al.</a> combine point-level geometric features and grid-level information to improve building classification before regularization. Better separation of buildings from vegetation produces cleaner inputs, but classification alone does not produce a finished polygon.</p>
+<p><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271616306438">Du et al.</a> combine point-level geometric features and grid-level information to improve building classification before regularization. Better separation of buildings from vegetation produces cleaner inputs, but classification alone does not produce a finished polygon.</p>
 <h4 id="223-method-comparison-and-analysis">2.2.3. Method Comparison and Analysis</h4>
 <p>Strong geometric priors stabilize incomplete boundaries when the building satisfies those assumptions. Flexible tracing preserves irregular details but is more sensitive to the point distribution. Shape complexity, point density, and the pattern of missing observations must be considered together.</p>
 <h3 id="23-summary">2.3. Summary</h3>
@@ -70,18 +70,18 @@
 <h3 id="31-from-optical-imagery">3.1. From Optical Imagery</h3>
 <p>Two complementary routes dominate: parsing a roof's structural graph, and directly estimating roof geometry or height. A planar graph is valuable structural information, but it is not automatically a metric 3D roof.</p>
 <h4 id="311-geometric-primitive-parsing">3.1.1. Geometric Primitive Parsing</h4>
-<p><a href="../PAPERS.html#r064">Nauata and Furukawa</a> combine primitive detection with relationship constraints. <a href="../PAPERS.html#r025">PPGNet-based roof vectorization</a>, <a href="../PAPERS.html#r011">HEAT</a>, <a href="../PAPERS.html#r096">Conv-MPN</a>, <a href="../PAPERS.html#r102">RSGNN</a>, and <a href="../PAPERS.html#r100">Roof-Former</a> learn junctions, edges, and their relationships using graph or attention mechanisms. <a href="../PAPERS.html#r087">HAWP</a> contributes a general line representation; <a href="../PAPERS.html#r093">directional primitive reconstruction</a> combines complementary structural elements. <a href="../PAPERS.html#r038">Kenzhebay</a> studies a segmentation-and-vectorization route using imagery and surface-height information.</p>
+<p><a href="https://link.springer.com/chapter/10.1007/978-3-030-58598-3_42">Nauata and Furukawa</a> combine primitive detection with relationship constraints. <a href="https://isprs-archives.copernicus.org/articles/XLVI-4-W4-2021/85/2021/">PPGNet-based roof vectorization</a>, <a href="https://ieeexplore.ieee.org/document/9878511/">HEAT</a>, <a href="https://ieeexplore.ieee.org/document/9156819/">Conv-MPN</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S092427162200065X">RSGNN</a>, and <a href="https://ieeexplore.ieee.org/document/10282198/">Roof-Former</a> learn junctions, edges, and their relationships using graph or attention mechanisms. <a href="https://ieeexplore.ieee.org/document/10243120/">HAWP</a> contributes a general line representation; <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271626001735">directional primitive reconstruction</a> combines complementary structural elements. <a href="https://essay.utwente.nl/essays/91396">Kenzhebay</a> studies a segmentation-and-vectorization route using imagery and surface-height information.</p>
 <p>The shared challenge is recovering complete connectivity when local primitives are weak, occluded, or missing.</p>
 <h4 id="312-direct-3d-plane-and-height-inference">3.1.2. Direct 3D Plane and Height Inference</h4>
-<p><a href="../PAPERS.html#r050">PlaneRCNN</a> provides a general example of estimating planar geometry from an image, while <a href="../PAPERS.html#r060">boundary-aware overhead reconstruction</a> combines outlines with predicted height. <a href="../PAPERS.html#r069">Roof3D</a> supports roof-plane and building-section learning. <a href="../PAPERS.html#r056">KIBS</a> infers 3D roof information through keypoints and height estimates. These routes move beyond graph connectivity but inherit ambiguity from monocular observations or dependence on auxiliary DSM quality.</p>
+<p><a href="https://ieeexplore.ieee.org/document/8953257/">PlaneRCNN</a> provides a general example of estimating planar geometry from an image, while <a href="https://ieeexplore.ieee.org/document/9156304/">boundary-aware overhead reconstruction</a> combines outlines with predicted height. <a href="https://isprs-annals.copernicus.org/articles/X-1-W1-2023/971/2023/">Roof3D</a> supports roof-plane and building-section learning. <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271624004210">KIBS</a> infers 3D roof information through keypoints and height estimates. These routes move beyond graph connectivity but inherit ambiguity from monocular observations or dependence on auxiliary DSM quality.</p>
 <h4 id="313-method-comparison-and-analysis">3.1.3. Method Comparison and Analysis</h4>
 <p>Primitive parsing offers explicit topology but depends on reliable detections. Direct inference supplies plane or height estimates but must resolve depth uncertainty. These approaches solve complementary parts of roof reconstruction and should be evaluated according to the geometry they actually produce.</p>
 <h3 id="32-from-lidar-point-clouds">3.2. From LiDAR Point Clouds</h3>
 <p>LiDAR makes roof elevations observable. The remaining challenge is converting unstructured samples into regular, connected roof surfaces.</p>
 <h4 id="321-model-driven-approaches">3.2.1. Model-Driven Approaches</h4>
-<p>Top-down methods fit parametric roof models or enforce architectural regularities. <a href="../PAPERS.html#r039">RMBR</a> illustrates rectangular decomposition; <a href="../PAPERS.html#r105">Zhou and Neumann</a> discover relationships among locally fitted planes. Strong priors work well when they match the roof, but a restricted shape library cannot represent all architecture.</p>
+<p>Top-down methods fit parametric roof models or enforce architectural regularities. <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271613002256">RMBR</a> illustrates rectangular decomposition; <a href="https://ieeexplore.ieee.org/document/6247692/">Zhou and Neumann</a> discover relationships among locally fitted planes. Strong priors work well when they match the roof, but a restricted shape library cannot represent all architecture.</p>
 <h4 id="322-data-driven-approaches">3.2.2. Data-Driven Approaches</h4>
-<p>Bottom-up reconstruction extracts structure from the observations. Examples include <a href="../PAPERS.html#r018">hierarchical plane clustering</a>, <a href="../PAPERS.html#r012">multiscale grids</a>, <a href="../PAPERS.html#r010">spatial-database workflows</a>, <a href="../PAPERS.html#r066">roof topology cycles</a>, and <a href="../PAPERS.html#r007">half-space modeling</a>. <a href="../PAPERS.html#r042">Point2Roof</a> learns vertices and edges, while <a href="../PAPERS.html#r086">RR-Net</a> emphasizes edge segmentation and wireframe recovery.</p>
+<p>Bottom-up reconstruction extracts structure from the observations. Examples include <a href="https://www.mdpi.com/1424-8220/8/11/7323">hierarchical plane clustering</a>, <a href="https://ieeexplore.ieee.org/document/6779638/">multiscale grids</a>, <a href="https://www.tandfonline.com/doi/full/10.1080/13658816.2017.1301456">spatial-database workflows</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271614001129">roof topology cycles</a>, and <a href="https://www.mdpi.com/2072-4292/13/21/4430">half-space modeling</a>. <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271622002362">Point2Roof</a> learns vertices and edges, while <a href="https://ieeexplore.ieee.org/document/11218167/">RR-Net</a> emphasizes edge segmentation and wireframe recovery.</p>
 <p>Here, "data-driven" includes bottom-up geometric algorithms as well as neural methods. It is not a synonym for deep learning.</p>
 <h4 id="323-method-comparison-and-analysis">3.2.3. Method Comparison and Analysis</h4>
 <p>The distinction between top-down and bottom-up methods is largely about the form and strength of their priors. Flexible extraction can accommodate complex roofs, while constrained fitting is stable for regular ones. Learned edges may still require fitting and reconnection to obtain complete surfaces.</p>
@@ -94,16 +94,16 @@
 <h3 id="41-from-optical-imagery-and-photogrammetric-point-clouds">4.1. From Optical Imagery and Photogrammetric Point Clouds</h3>
 <p>Image-based methods either first recover dense geometry from multiple views or infer structural abstractions using stronger priors. Photogrammetric point clouds retain the uncertainty of the image-matching process that produced them.</p>
 <h4 id="411-multi-view-stereo-based-reconstruction">4.1.1. Multi-View Stereo-based Reconstruction</h4>
-<p>Multi-view correspondence produces depths, points, or meshes that require further abstraction. <a href="../PAPERS.html#r074">Verdie et al.</a> regularize scene geometry; <a href="../PAPERS.html#r065">Partovi et al.</a> fit roof hypotheses from satellite-derived evidence; <a href="../PAPERS.html#r047">Li and Wu</a> encode relations between building parts. <a href="../PAPERS.html#r022">SAT2LOD2</a> and <a href="../PAPERS.html#r070">PLANES4LOD2</a> combine orthophotos and DSMs with plane or roof modeling. Occlusion, weak texture, and DSM errors remain important limitations.</p>
+<p>Multi-view correspondence produces depths, points, or meshes that require further abstraction. <a href="https://dl.acm.org/doi/10.1145/2732527">Verdie et al.</a> regularize scene geometry; <a href="https://www.mdpi.com/2072-4292/11/14/1660">Partovi et al.</a> fit roof hypotheses from satellite-derived evidence; <a href="https://www.mdpi.com/2072-4292/13/1/129">Li and Wu</a> encode relations between building parts. <a href="https://isprs-archives.copernicus.org/articles/XLIII-B2-2022/379/2022/">SAT2LOD2</a> and <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271624001758">PLANES4LOD2</a> combine orthophotos and DSMs with plane or roof modeling. Occlusion, weak texture, and DSM errors remain important limitations.</p>
 <h4 id="412-single-image-structural-inference-and-generative-directions">4.1.2. Single-Image Structural Inference and Generative Directions</h4>
-<p><a href="../PAPERS.html#r002">Alidoost et al.</a> infer height and roof structure from a single aerial image, while <a href="../PAPERS.html#r106">Zhou et al.</a> use structural assumptions to recover 3D Manhattan wireframes. <a href="../PAPERS.html#r027">DG-BRF</a> introduces diffusion-guided geometric reasoning, and <a href="../PAPERS.html#r029">Sat2City</a> studies city-scale generation. The survey distinguishes plausible urban generation from observation-faithful reconstruction of an individual building.</p>
+<p><a href="https://www.mdpi.com/2072-4292/11/19/2219">Alidoost et al.</a> infer height and roof structure from a single aerial image, while <a href="https://ieeexplore.ieee.org/document/9010693/">Zhou et al.</a> use structural assumptions to recover 3D Manhattan wireframes. <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563">DG-BRF</a> introduces diffusion-guided geometric reasoning, and <a href="https://ieeexplore.ieee.org/document/11446050/">Sat2City</a> studies city-scale generation. The survey distinguishes plausible urban generation from observation-faithful reconstruction of an individual building.</p>
 <h4 id="413-method-comparison-and-analysis">4.1.3. Method Comparison and Analysis</h4>
 <p>Multiple views provide stronger direct geometric evidence, but their errors propagate into abstraction. Single-image methods reduce acquisition requirements while increasing dependence on priors. Generative outputs require checks of their correspondence with the actual scene.</p>
 <h3 id="42-from-lidar-point-clouds">4.2. From LiDAR Point Clouds</h3>
 <p>The problem becomes reconstructing structure from measured but incomplete and unevenly sampled geometry. The main families are explicit primitive assembly and learned structural prediction.</p>
 <h4 id="421-primitive-assembly-and-optimization">4.2.1. Primitive Assembly and Optimization</h4>
-<p><a href="../PAPERS.html#r063">PolyFit</a> assembles candidate faces under geometric constraints. <a href="../PAPERS.html#r030">City3D</a> addresses city-scale reconstruction and missing facade observations; <a href="../PAPERS.html#r006">SimpliCity</a> emphasizes compact regularized models. <a href="../PAPERS.html#r043">Manhattan-world reconstruction</a> uses stronger orthogonal assumptions. <a href="../PAPERS.html#r023">Loops2Roofs</a> introduces a generative loop representation at the boundary between explicit structure and learned generation.</p>
-<p>The survey also lists <a href="../PAPERS.html#r005">KIPPI</a>; its cited publication concerns image partitioning. This guide does not attribute unverified 3D surface guarantees to that citation.</p>
+<p><a href="https://ieeexplore.ieee.org/document/8237520/">PolyFit</a> assembles candidate faces under geometric constraints. <a href="https://www.mdpi.com/2072-4292/14/9/2254">City3D</a> addresses city-scale reconstruction and missing facade observations; <a href="https://ieeexplore.ieee.org/document/10678009/">SimpliCity</a> emphasizes compact regularized models. <a href="https://link.springer.com/chapter/10.1007/978-3-319-46493-0_4">Manhattan-world reconstruction</a> uses stronger orthogonal assumptions. <a href="https://dl.acm.org/doi/10.1145/3807955">Loops2Roofs</a> introduces a generative loop representation at the boundary between explicit structure and learned generation.</p>
+<p>The survey also lists <a href="https://ieeexplore.ieee.org/document/8578430/">KIPPI</a>; its cited publication concerns image partitioning. This guide does not attribute unverified 3D surface guarantees to that citation.</p>
 <h4 id="422-direct-end-to-end-reconstruction">4.2.2. Direct End-to-End Reconstruction</h4>
 <div class="table-scroll" tabindex="0"><table>
 <thead><tr>
@@ -115,32 +115,32 @@
 <tbody>
 <tr>
 <td style="text-align:left">Vertices and edges</td>
-<td style="text-align:left"><a href="../PAPERS.html#r042">Point2Roof</a>, <a href="../PAPERS.html#r032">PBWR</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271622002362">Point2Roof</a>, <a href="https://ieeexplore.ieee.org/document/10656530/">PBWR</a></td>
 <td style="text-align:left">Learn geometric primitives and their connections</td>
 </tr>
 <tr>
 <td style="text-align:left">Autoregressive meshes</td>
-<td style="text-align:left"><a href="../PAPERS.html#r052">Point2Building</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S092427162400279X">Point2Building</a></td>
 <td style="text-align:left">Generate variable-size vertex and face sequences</td>
 </tr>
 <tr>
 <td style="text-align:left">Diffusion-assisted structure</td>
-<td style="text-align:left"><a href="../PAPERS.html#r053">EdgeDiff</a>, <a href="../PAPERS.html#r028">BuildAnyPoint</a></td>
+<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/11094351/">EdgeDiff</a>, <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Hua_BuildAnyPoint_3D_Building_Structured_Abstraction_from_Diverse_Point_Clouds_CVPR_2026_paper.html">BuildAnyPoint</a></td>
 <td style="text-align:left">Refine edges or recover intermediate geometric evidence</td>
 </tr>
 <tr>
 <td style="text-align:left">Implicit representations</td>
-<td style="text-align:left"><a href="../PAPERS.html#r014">Chen et al.</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271622002611">Chen et al.</a></td>
 <td style="text-align:left">Combine learned occupancy with surface extraction</td>
 </tr>
 <tr>
 <td style="text-align:left">Architectural programs</td>
-<td style="text-align:left"><a href="../PAPERS.html#r031">ArcPro</a></td>
+<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/11092796/">ArcPro</a></td>
 <td style="text-align:left">Predict a compact procedural description of structure</td>
 </tr>
 <tr>
 <td style="text-align:left">Supporting learning tasks</td>
-<td style="text-align:left"><a href="../PAPERS.html#r041">City-BIS</a>, <a href="../PAPERS.html#r090">self-supervised roof learning</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S1569843226000026">City-BIS</a>, <a href="https://ieeexplore.ieee.org/document/10423095/">self-supervised roof learning</a></td>
 <td style="text-align:left">Improve instances or reduce annotation dependence</td>
 </tr>
 </tbody>
@@ -148,7 +148,7 @@
 <h4 id="423-method-comparison-and-analysis">4.2.3. Method Comparison and Analysis</h4>
 <p>Explicit constraints are effective when the relevant surfaces are observed. Learned shape priors provide flexibility under sparse observations, but predicted wireframes are not necessarily closed surfaces, and generated mesh detail is not necessarily measured detail. Geometric fit, completeness, and compactness need separate assessment.</p>
 <h3 id="43-from-fused-image-and-point-cloud-data">4.3. From Fused Image and Point Cloud Data</h3>
-<p><a href="../PAPERS.html#r015">Cheng et al. (2011)</a> and <a href="../PAPERS.html#r017">Cheng et al. (2013)</a> combine image boundary evidence with LiDAR planes to refine 3D structure. <a href="../PAPERS.html#r004">Awrangjeb et al.</a> use imagery to support roof-plane extraction and reject vegetation. <a href="../PAPERS.html#r081">Wang et al.</a> investigate facade features with structural constraints.</p>
+<p><a href="https://doi.org/10.14358/pers.77.2.125">Cheng et al. (2011)</a> and <a href="https://linkinghub.elsevier.com/retrieve/pii/S0143816612002990">Cheng et al. (2013)</a> combine image boundary evidence with LiDAR planes to refine 3D structure. <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271613001342">Awrangjeb et al.</a> use imagery to support roof-plane extraction and reject vegetation. <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271617303593">Wang et al.</a> investigate facade features with structural constraints.</p>
 <h4 id="431-method-comparison-and-analysis">4.3.1. Method Comparison and Analysis</h4>
 <p>Fusion can improve boundary placement, surface interpretation, and facade detail. These benefits depend on calibration, registration, and consistency between observations. Misaligned or temporally mismatched modalities can instead introduce structural errors.</p>
 <h3 id="44-summary">4.4. Summary</h3>
@@ -178,4 +178,4 @@
 <p>The survey traces a progression from manual digitization and raster extraction to direct geometric prediction. It identifies complementary roles for optical imagery, LiDAR, fusion, explicit regularization, and learned priors across 2D, 2.5D, and 3D reconstruction.</p>
 <p>Architectural diversity, imperfect observations, and urban-scale computation remain unresolved challenges. The practical research goal is increasingly automated reconstruction that preserves metric fidelity, valid topology, interpretable structure, and usability for digital twins.</p>
 </article></main>
-<footer>Research companion · PE&amp;RS · Download links supplied by the maintainer</footer></body></html>
+<footer>Research companion · PE&amp;RS · Official paper sources</footer></body></html>

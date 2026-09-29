@@ -6,7 +6,7 @@
 <main><div class="file-label">docs/datasets-and-evaluation.md</div><article class="markdown-body"><h1 id="datasets-and-evaluation">Datasets and Evaluation</h1>
 <p><a href="../index.html">Home</a> · <a href="section-summaries.html#s5">Section summaries</a> · <a href="../PAPERS.html">Paper library</a></p>
 <h2 id="dataset-map">Dataset Map</h2>
-<p>The resources below are named in Section 5 or in the related roof-reconstruction discussion. A dataset may support a pipeline component without supplying every annotation needed for end-to-end geometric reconstruction. Paper links point to entries in this repository; maintainer-provided downloads are pending.</p>
+<p>The resources below are named in Section 5 or in the related roof-reconstruction discussion. A dataset may support a pipeline component without supplying every annotation needed for end-to-end geometric reconstruction. Paper links point directly to official publication pages or repositories.</p>
 <div class="table-scroll" tabindex="0"><table>
 <thead><tr>
 <th style="text-align:left">Resource</th>
@@ -20,91 +20,91 @@
 <td style="text-align:left"><strong>CrowdAI</strong></td>
 <td style="text-align:left">Footprint extraction</td>
 <td style="text-align:left">Overhead images and building polygons</td>
-<td style="text-align:left"><a href="../PAPERS.html#r034">RoIPoly</a>, <a href="../PAPERS.html#r026">PolyBuilding</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625001364">RoIPoly</a>, <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271623000813">PolyBuilding</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>WHU Building Dataset</strong></td>
 <td style="text-align:left">Building extraction and vectorization</td>
 <td style="text-align:left">Building masks / footprints, depending on subset and preparation</td>
-<td style="text-align:left"><a href="../PAPERS.html#r098">VectorLLM</a>, <a href="../PAPERS.html#r091">CNN review</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271626000250">VectorLLM</a>, <a href="https://www.dqxxkx.cn/EN/10.12082/dqxxkx.2024.240057">CNN review</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Inria Aerial Image Labeling</strong></td>
 <td style="text-align:left">Building segmentation and derived vectorization</td>
 <td style="text-align:left">Aerial images and building labels</td>
-<td style="text-align:left"><a href="../PAPERS.html#r036">PolyR-CNN</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271624003824">PolyR-CNN</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>SpaceNet</strong></td>
 <td style="text-align:left">Overhead mapping and source imagery for derived structure benchmarks</td>
 <td style="text-align:left">Satellite imagery and release-specific mapping annotations</td>
-<td style="text-align:left"><a href="../PAPERS.html#r096">Conv-MPN</a>, <a href="../PAPERS.html#r011">HEAT</a></td>
+<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/9156819/">Conv-MPN</a>, <a href="https://ieeexplore.ieee.org/document/9878511/">HEAT</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Deventer-512</strong></td>
 <td style="text-align:left">Multiclass polygonal mapping</td>
 <td style="text-align:left">Land-cover polygons and shared-boundary topology</td>
-<td style="text-align:left"><a href="../PAPERS.html#r035">ACPV-Net</a></td>
+<td style="text-align:left"><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Jiao_ACPV-Net_All-Class_Polygonal_Vectorization_for_Seamless_Vector_Map_Generation_from_CVPR_2026_paper.html">ACPV-Net</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>VWB</strong></td>
 <td style="text-align:left">Roof graph reconstruction</td>
 <td style="text-align:left">Junctions, edges, and planar structural relationships</td>
-<td style="text-align:left"><a href="../PAPERS.html#r064">Vectorizing World Buildings</a></td>
+<td style="text-align:left"><a href="https://link.springer.com/chapter/10.1007/978-3-030-58598-3_42">Vectorizing World Buildings</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Enschede</strong></td>
 <td style="text-align:left">Fine-grained roof topology</td>
 <td style="text-align:left">Aerial imagery and roof structure graphs</td>
-<td style="text-align:left"><a href="../PAPERS.html#r102">RSGNN</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S092427162200065X">RSGNN</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>BuildingWF</strong></td>
 <td style="text-align:left">Synthetic wireframe learning</td>
 <td style="text-align:left">Building models, rendered observations, and structural graphs</td>
-<td style="text-align:left"><a href="../PAPERS.html#r055">Luo et al.</a></td>
+<td style="text-align:left"><a href="https://arxiv.org/abs/2208.11948">Luo et al.</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Roof3D</strong></td>
 <td style="text-align:left">Roof-plane and building-section learning</td>
 <td style="text-align:left">RGB / DSM inputs with roof plane and section labels</td>
-<td style="text-align:left"><a href="../PAPERS.html#r069">Roof3D</a></td>
+<td style="text-align:left"><a href="https://isprs-annals.copernicus.org/articles/X-1-W1-2023/971/2023/">Roof3D</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Boston / BONAI</strong></td>
 <td style="text-align:left">Off-nadir building geometry</td>
 <td style="text-align:left">Roof / footprint correspondence and height-related annotations</td>
-<td style="text-align:left"><a href="../PAPERS.html#r027">DG-BRF</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563">DG-BRF</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>BuildingWorld</strong></td>
 <td style="text-align:left">Diverse structured 3D reconstruction</td>
 <td style="text-align:left">Building models and real / simulated LiDAR</td>
-<td style="text-align:left"><a href="../PAPERS.html#r033">BuildingWorld</a></td>
+<td style="text-align:left"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/37422">BuildingWorld</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Building3D</strong></td>
 <td style="text-align:left">Roof structure reconstruction from points</td>
 <td style="text-align:left">Point clouds, meshes, and wireframes</td>
-<td style="text-align:left"><a href="../PAPERS.html#r076">Building3D</a></td>
+<td style="text-align:left"><a href="https://ieeexplore.ieee.org/document/10376547/">Building3D</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Map2ImLas</strong></td>
 <td style="text-align:left">Multimodal scene understanding</td>
 <td style="text-align:left">Aligned aerial imagery, LiDAR, and semantic labels</td>
-<td style="text-align:left"><a href="../PAPERS.html#r003">Map2ImLas</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S2667393225000316">Map2ImLas</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>City-BIS</strong></td>
 <td style="text-align:left">Building instance segmentation before reconstruction</td>
 <td style="text-align:left">Instance-level labels for LiDAR point clouds</td>
-<td style="text-align:left"><a href="../PAPERS.html#r041">Li et al.</a></td>
+<td style="text-align:left"><a href="https://linkinghub.elsevier.com/retrieve/pii/S1569843226000026">Li et al.</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Structured3D</strong></td>
 <td style="text-align:left">Synthetic structured scene modeling</td>
 <td style="text-align:left">Junctions, lines, planes, and other structural primitives</td>
-<td style="text-align:left"><a href="../PAPERS.html#r103">Structured3D</a></td>
+<td style="text-align:left"><a href="https://link.springer.com/chapter/10.1007/978-3-030-58545-7_30">Structured3D</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -175,4 +175,4 @@
 </ol>
 <p>AP summarizes a precision-recall evaluation protocol; it is not simply the ratio TP / (TP + FP). Likewise, edge accuracy and region overlap cannot replace explicit checks of polygon or mesh validity.</p>
 </article></main>
-<footer>Research companion · PE&amp;RS · Download links supplied by the maintainer</footer></body></html>
+<footer>Research companion · PE&amp;RS · Official paper sources</footer></body></html>

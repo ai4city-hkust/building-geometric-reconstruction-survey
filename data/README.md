@@ -4,12 +4,12 @@
 
 `R110` is Xu et al. (2025), supplied by the maintainer with the BibTeX key `xu2025pose`. It is cited in Section 1 (Introduction), in the second sentence of the opening paragraph, alongside `li2024review` and `11417956`. Its publication metadata and citation location are retained in the catalog; `source_page` is `null` because no updated PDF page number was supplied.
 
-`download-links.json` is the only source of download addresses. Every value is initially empty. When the maintainer supplies an uploaded-paper link, assign it to the matching reference ID, for example:
+`paper-links.json` maps every reference ID to a verified official paper URL. Prefer a publisher or conference page; use the official preprint or university repository when appropriate. For example:
 
 ```json
 {
-  "R001": "",
-  "R002": ""
+  "R001": "https://www.tandfonline.com/doi/full/10.1080/17538947.2025.2458682",
+  "R002": "https://www.mdpi.com/2072-4292/11/19/2219"
 }
 ```
 
@@ -17,6 +17,9 @@ Keep all IDs in the actual manifest. Regenerate the library from the repository 
 
 ```powershell
 python tools/build_library.py
+python tools/render_preview.py
 ```
 
-The generator never infers a download URL from a paper title, DOI, or publisher record. Empty values render as `Pending`. The manifest is the single source of download links.
+The generator requires a nonempty HTTP(S) URL for every reference and renders it as an official source, not a guaranteed PDF download. `link-verification.json` records the matching metadata, verification date, and supporting official source or DOI record. If a URL changes, update both files and any corresponding links in the overview or reading guides before regenerating the preview.
+
+All 110 paper links were checked on 2026-09-29. Some sources restrict automated access or require a subscription; matching publisher metadata does not imply that the full text is freely available.

@@ -4,25 +4,25 @@
 
 ## Dataset Map
 
-The resources below are named in Section 5 or in the related roof-reconstruction discussion. A dataset may support a pipeline component without supplying every annotation needed for end-to-end geometric reconstruction. Paper links point to entries in this repository; maintainer-provided downloads are pending.
+The resources below are named in Section 5 or in the related roof-reconstruction discussion. A dataset may support a pipeline component without supplying every annotation needed for end-to-end geometric reconstruction. Paper links point directly to official publication pages or repositories.
 
 | Resource | Primary role in the survey | Relevant annotations or evidence | Related paper entries |
 | :--- | :--- | :--- | :--- |
-| **CrowdAI** | Footprint extraction | Overhead images and building polygons | [RoIPoly](../PAPERS.md#r034), [PolyBuilding](../PAPERS.md#r026) |
-| **WHU Building Dataset** | Building extraction and vectorization | Building masks / footprints, depending on subset and preparation | [VectorLLM](../PAPERS.md#r098), [CNN review](../PAPERS.md#r091) |
-| **Inria Aerial Image Labeling** | Building segmentation and derived vectorization | Aerial images and building labels | [PolyR-CNN](../PAPERS.md#r036) |
-| **SpaceNet** | Overhead mapping and source imagery for derived structure benchmarks | Satellite imagery and release-specific mapping annotations | [Conv-MPN](../PAPERS.md#r096), [HEAT](../PAPERS.md#r011) |
-| **Deventer-512** | Multiclass polygonal mapping | Land-cover polygons and shared-boundary topology | [ACPV-Net](../PAPERS.md#r035) |
-| **VWB** | Roof graph reconstruction | Junctions, edges, and planar structural relationships | [Vectorizing World Buildings](../PAPERS.md#r064) |
-| **Enschede** | Fine-grained roof topology | Aerial imagery and roof structure graphs | [RSGNN](../PAPERS.md#r102) |
-| **BuildingWF** | Synthetic wireframe learning | Building models, rendered observations, and structural graphs | [Luo et al.](../PAPERS.md#r055) |
-| **Roof3D** | Roof-plane and building-section learning | RGB / DSM inputs with roof plane and section labels | [Roof3D](../PAPERS.md#r069) |
-| **Boston / BONAI** | Off-nadir building geometry | Roof / footprint correspondence and height-related annotations | [DG-BRF](../PAPERS.md#r027) |
-| **BuildingWorld** | Diverse structured 3D reconstruction | Building models and real / simulated LiDAR | [BuildingWorld](../PAPERS.md#r033) |
-| **Building3D** | Roof structure reconstruction from points | Point clouds, meshes, and wireframes | [Building3D](../PAPERS.md#r076) |
-| **Map2ImLas** | Multimodal scene understanding | Aligned aerial imagery, LiDAR, and semantic labels | [Map2ImLas](../PAPERS.md#r003) |
-| **City-BIS** | Building instance segmentation before reconstruction | Instance-level labels for LiDAR point clouds | [Li et al.](../PAPERS.md#r041) |
-| **Structured3D** | Synthetic structured scene modeling | Junctions, lines, planes, and other structural primitives | [Structured3D](../PAPERS.md#r103) |
+| **CrowdAI** | Footprint extraction | Overhead images and building polygons | [RoIPoly](https://linkinghub.elsevier.com/retrieve/pii/S0924271625001364), [PolyBuilding](https://linkinghub.elsevier.com/retrieve/pii/S0924271623000813) |
+| **WHU Building Dataset** | Building extraction and vectorization | Building masks / footprints, depending on subset and preparation | [VectorLLM](https://linkinghub.elsevier.com/retrieve/pii/S0924271626000250), [CNN review](https://www.dqxxkx.cn/EN/10.12082/dqxxkx.2024.240057) |
+| **Inria Aerial Image Labeling** | Building segmentation and derived vectorization | Aerial images and building labels | [PolyR-CNN](https://linkinghub.elsevier.com/retrieve/pii/S0924271624003824) |
+| **SpaceNet** | Overhead mapping and source imagery for derived structure benchmarks | Satellite imagery and release-specific mapping annotations | [Conv-MPN](https://ieeexplore.ieee.org/document/9156819/), [HEAT](https://ieeexplore.ieee.org/document/9878511/) |
+| **Deventer-512** | Multiclass polygonal mapping | Land-cover polygons and shared-boundary topology | [ACPV-Net](https://openaccess.thecvf.com/content/CVPR2026/html/Jiao_ACPV-Net_All-Class_Polygonal_Vectorization_for_Seamless_Vector_Map_Generation_from_CVPR_2026_paper.html) |
+| **VWB** | Roof graph reconstruction | Junctions, edges, and planar structural relationships | [Vectorizing World Buildings](https://link.springer.com/chapter/10.1007/978-3-030-58598-3_42) |
+| **Enschede** | Fine-grained roof topology | Aerial imagery and roof structure graphs | [RSGNN](https://linkinghub.elsevier.com/retrieve/pii/S092427162200065X) |
+| **BuildingWF** | Synthetic wireframe learning | Building models, rendered observations, and structural graphs | [Luo et al.](https://arxiv.org/abs/2208.11948) |
+| **Roof3D** | Roof-plane and building-section learning | RGB / DSM inputs with roof plane and section labels | [Roof3D](https://isprs-annals.copernicus.org/articles/X-1-W1-2023/971/2023/) |
+| **Boston / BONAI** | Off-nadir building geometry | Roof / footprint correspondence and height-related annotations | [DG-BRF](https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563) |
+| **BuildingWorld** | Diverse structured 3D reconstruction | Building models and real / simulated LiDAR | [BuildingWorld](https://ojs.aaai.org/index.php/AAAI/article/view/37422) |
+| **Building3D** | Roof structure reconstruction from points | Point clouds, meshes, and wireframes | [Building3D](https://ieeexplore.ieee.org/document/10376547/) |
+| **Map2ImLas** | Multimodal scene understanding | Aligned aerial imagery, LiDAR, and semantic labels | [Map2ImLas](https://linkinghub.elsevier.com/retrieve/pii/S2667393225000316) |
+| **City-BIS** | Building instance segmentation before reconstruction | Instance-level labels for LiDAR point clouds | [Li et al.](https://linkinghub.elsevier.com/retrieve/pii/S1569843226000026) |
+| **Structured3D** | Synthetic structured scene modeling | Junctions, lines, planes, and other structural primitives | [Structured3D](https://link.springer.com/chapter/10.1007/978-3-030-58545-7_30) |
 
 Dataset sizes and annotation formats vary by release and preprocessing. In particular, annotations in roof-graph derivatives should not be assumed to exist in every original SpaceNet release; semantic labels in Map2ImLas or City-BIS should not be treated as watertight mesh ground truth.
 

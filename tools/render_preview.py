@@ -64,7 +64,7 @@ def render(source):
 <body><header class="site-header"><div class="site-title">Building Reconstruction Survey <span class="private-label">Private preview</span></div>
 <nav aria-label="Repository pages">{nav}</nav></header>
 <main><div class="file-label">{html.escape(source.relative_to(ROOT).as_posix())}</div><article class="markdown-body">{soup}</article></main>
-<footer>Research companion · PE&amp;RS · Download links supplied by the maintainer</footer></body></html>'''
+<footer>Research companion · PE&amp;RS · Official paper sources</footer></body></html>'''
     output.parent.mkdir(parents=True,exist_ok=True)
     output.write_text(content,encoding='utf-8')
     return output

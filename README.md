@@ -54,11 +54,11 @@ The objective is a clean, valid polygon for each building. Optical methods incre
 
 | Route | Core idea | Representative studies |
 | :--- | :--- | :--- |
-| Segmentation and polygonization | Add directional or boundary supervision before vectorization | [Frame Field Learning](PAPERS.md#r021), [HiSup](PAPERS.md#r085) |
-| Sequential prediction | Generate an ordered sequence of corners | [PolyMapper](PAPERS.md#r048), [Zhao et al., 2021](PAPERS.md#r101), [VectorLLM](PAPERS.md#r098) |
-| Graphs and matching | Detect corners and infer their connections | [PolyWorld](PAPERS.md#r108), [Re:PolyWorld](PAPERS.md#r109), [ABCNet](PAPERS.md#r016) |
-| RoI and query architectures | Predict and refine instance polygons in parallel | [PolyR-CNN](PAPERS.md#r036), [RoIPoly](PAPERS.md#r034), [PolyBuilding](PAPERS.md#r026) |
-| LiDAR tracing and regularization | Trace projected points and enforce geometric consistency | [RMBR](PAPERS.md#r039), [GMDL](PAPERS.md#r037), [ATAS](PAPERS.md#r051) |
+| Segmentation and polygonization | Add directional or boundary supervision before vectorization | [Frame Field Learning](https://ieeexplore.ieee.org/document/9577910/), [HiSup](https://linkinghub.elsevier.com/retrieve/pii/S0924271623000667) |
+| Sequential prediction | Generate an ordered sequence of corners | [PolyMapper](https://ieeexplore.ieee.org/document/9008272/), [Zhao et al., 2021](https://linkinghub.elsevier.com/retrieve/pii/S0924271621000551), [VectorLLM](https://linkinghub.elsevier.com/retrieve/pii/S0924271626000250) |
+| Graphs and matching | Detect corners and infer their connections | [PolyWorld](https://ieeexplore.ieee.org/document/9880425/), [Re:PolyWorld](https://ieeexplore.ieee.org/document/10377491/), [ABCNet](https://linkinghub.elsevier.com/retrieve/pii/S1569843225007186) |
+| RoI and query architectures | Predict and refine instance polygons in parallel | [PolyR-CNN](https://linkinghub.elsevier.com/retrieve/pii/S0924271624003824), [RoIPoly](https://linkinghub.elsevier.com/retrieve/pii/S0924271625001364), [PolyBuilding](https://linkinghub.elsevier.com/retrieve/pii/S0924271623000813) |
+| LiDAR tracing and regularization | Trace projected points and enforce geometric consistency | [RMBR](https://linkinghub.elsevier.com/retrieve/pii/S0924271613002256), [GMDL](https://www.isprs.org/proceedings/XXXVII/congress/3_pdf/11.pdf), [ATAS](https://linkinghub.elsevier.com/retrieve/pii/S0926580524000578) |
 
 **Takeaway:** Good segmentation scores do not, by themselves, establish polygon quality. Sharp corners, sensible vertex counts, and correct connectivity must also be assessed.
 
@@ -79,10 +79,10 @@ Roof reconstruction adds elevation and internal structure to the building outlin
 
 | Route | Core idea | Representative studies |
 | :--- | :--- | :--- |
-| Image-based primitive parsing | Detect junctions and edges, then reason about roof graphs | [HEAT](PAPERS.md#r011), [Conv-MPN](PAPERS.md#r096), [RSGNN](PAPERS.md#r102), [Roof-Former](PAPERS.md#r100) |
-| Plane and height inference | Infer plane parameters, roof sections, or height from imagery | [PlaneRCNN](PAPERS.md#r050), [Boundary-aware reconstruction](PAPERS.md#r060), [KIBS](PAPERS.md#r056) |
-| Model-driven LiDAR reconstruction | Fit templates or discover shared geometric regularities | [RMBR](PAPERS.md#r039), [Global regularities](PAPERS.md#r105) |
-| Data-driven LiDAR reconstruction | Assemble planes or learn roof vertices and edges | [Cycle graph analysis](PAPERS.md#r066), [Point2Roof](PAPERS.md#r042), [RR-Net](PAPERS.md#r086) |
+| Image-based primitive parsing | Detect junctions and edges, then reason about roof graphs | [HEAT](https://ieeexplore.ieee.org/document/9878511/), [Conv-MPN](https://ieeexplore.ieee.org/document/9156819/), [RSGNN](https://linkinghub.elsevier.com/retrieve/pii/S092427162200065X), [Roof-Former](https://ieeexplore.ieee.org/document/10282198/) |
+| Plane and height inference | Infer plane parameters, roof sections, or height from imagery | [PlaneRCNN](https://ieeexplore.ieee.org/document/8953257/), [Boundary-aware reconstruction](https://ieeexplore.ieee.org/document/9156304/), [KIBS](https://linkinghub.elsevier.com/retrieve/pii/S0924271624004210) |
+| Model-driven LiDAR reconstruction | Fit templates or discover shared geometric regularities | [RMBR](https://linkinghub.elsevier.com/retrieve/pii/S0924271613002256), [Global regularities](https://ieeexplore.ieee.org/document/6247692/) |
+| Data-driven LiDAR reconstruction | Assemble planes or learn roof vertices and edges | [Cycle graph analysis](https://linkinghub.elsevier.com/retrieve/pii/S0924271614001129), [Point2Roof](https://linkinghub.elsevier.com/retrieve/pii/S0924271622002362), [RR-Net](https://ieeexplore.ieee.org/document/11218167/) |
 
 **Takeaway:** A correct roof graph and an accurate roof surface are related but distinct achievements. Topology must be paired with reliable elevation.
 
@@ -103,12 +103,12 @@ Full 3D reconstruction must organize vertices, edges, and faces into a coherent 
 
 | Evidence / representation | Reconstruction strategy | Representative studies |
 | :--- | :--- | :--- |
-| Stereo imagery and DSMs | Recover depth, then fit or assemble structured surfaces | [SAT2LOD2](PAPERS.md#r022), [PLANES4LOD2](PAPERS.md#r070) |
-| Single-image inference | Use structural and learned priors to resolve missing depth | [3D Manhattan wireframes](PAPERS.md#r106), [DG-BRF](PAPERS.md#r027), [Sat2City](PAPERS.md#r029) |
-| Primitive assembly | Select and regularize candidate planes and faces | [PolyFit](PAPERS.md#r063), [City3D](PAPERS.md#r030), [SimpliCity](PAPERS.md#r006) |
-| Learned wireframes and meshes | Predict edges, autoregressive meshes, or implicit fields | [PBWR](PAPERS.md#r032), [Point2Building](PAPERS.md#r052), [Deep implicit fields](PAPERS.md#r014) |
-| Generative completion | Recover missing structure using learned shape priors | [EdgeDiff](PAPERS.md#r053), [BuildAnyPoint](PAPERS.md#r028), [ArcPro](PAPERS.md#r031) |
-| Image-LiDAR fusion | Combine sharp visual boundaries with metric surface measurements | [Cheng et al., 2011](PAPERS.md#r015), [Cheng et al., 2013](PAPERS.md#r017), [Awrangjeb et al.](PAPERS.md#r004) |
+| Stereo imagery and DSMs | Recover depth, then fit or assemble structured surfaces | [SAT2LOD2](https://isprs-archives.copernicus.org/articles/XLIII-B2-2022/379/2022/), [PLANES4LOD2](https://linkinghub.elsevier.com/retrieve/pii/S0924271624001758) |
+| Single-image inference | Use structural and learned priors to resolve missing depth | [3D Manhattan wireframes](https://ieeexplore.ieee.org/document/9010693/), [DG-BRF](https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563), [Sat2City](https://ieeexplore.ieee.org/document/11446050/) |
+| Primitive assembly | Select and regularize candidate planes and faces | [PolyFit](https://ieeexplore.ieee.org/document/8237520/), [City3D](https://www.mdpi.com/2072-4292/14/9/2254), [SimpliCity](https://ieeexplore.ieee.org/document/10678009/) |
+| Learned wireframes and meshes | Predict edges, autoregressive meshes, or implicit fields | [PBWR](https://ieeexplore.ieee.org/document/10656530/), [Point2Building](https://linkinghub.elsevier.com/retrieve/pii/S092427162400279X), [Deep implicit fields](https://linkinghub.elsevier.com/retrieve/pii/S0924271622002611) |
+| Generative completion | Recover missing structure using learned shape priors | [EdgeDiff](https://ieeexplore.ieee.org/document/11094351/), [BuildAnyPoint](https://openaccess.thecvf.com/content/CVPR2026/html/Hua_BuildAnyPoint_3D_Building_Structured_Abstraction_from_Diverse_Point_Clouds_CVPR_2026_paper.html), [ArcPro](https://ieeexplore.ieee.org/document/11092796/) |
+| Image-LiDAR fusion | Combine sharp visual boundaries with metric surface measurements | [Cheng et al., 2011](https://doi.org/10.14358/pers.77.2.125), [Cheng et al., 2013](https://linkinghub.elsevier.com/retrieve/pii/S0143816612002990), [Awrangjeb et al.](https://linkinghub.elsevier.com/retrieve/pii/S0924271613001342) |
 
 <details>
 <summary><strong>Example: from heterogeneous point clouds to a structured mesh</strong></summary>
@@ -164,10 +164,10 @@ The survey's central conclusion is that automation must be judged by the usabili
 
 ---
 
-## Paper Library and Downloads
+## Paper Library and Links
 
 The [paper library](PAPERS.md) contains **110 bibliography entries**, including the original manuscript bibliography and the maintainer-supplied addition, organized into reading collections with stable reference IDs.
 
-**Download links will be supplied by the repository maintainer after the papers are uploaded.** A `Pending` label means that no download address has been provided yet. Publisher pages and DOI records are not substituted for those download links.
+Each entry links to its **official publication page, conference record, preprint, or university repository**. Full-text availability and access conditions are determined by the source.
 
 ## Publication and Citation

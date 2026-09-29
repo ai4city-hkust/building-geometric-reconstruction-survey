@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Paper library](../PAPERS.md) · [Datasets & evaluation](datasets-and-evaluation.md)
 
-This guide follows the manuscript's seven sections and summarizes every numbered technical subsection. Page references refer to the supplied 70-page PDF. Study names link to the paper library; downloads will be added after the maintainer supplies the uploaded-paper links.
+This guide follows the manuscript's seven sections and summarizes every numbered technical subsection. Page references refer to the supplied 70-page PDF. Study names link directly to official paper sources; the complete bibliography is organized in the paper library.
 
 <a id="s1"></a>
 ## 1. Introduction
@@ -28,16 +28,16 @@ Optical reconstruction has evolved from segmenting building regions and vectoriz
 
 #### 2.1.1. Segmentation-based Methods
 
-Segmentation networks provide dense regional evidence, but their masks can round corners and introduce irregular edges. [Frame Field Learning](../PAPERS.md#r021) predicts contour directions to guide polygonization and preserve sharper structures. Related cadastral-boundary work applies these ideas to visible boundaries. The main limitation is error propagation from the mask into the final polygon.
+Segmentation networks provide dense regional evidence, but their masks can round corners and introduce irregular edges. [Frame Field Learning](https://ieeexplore.ieee.org/document/9577910/) predicts contour directions to guide polygonization and preserve sharper structures. Related cadastral-boundary work applies these ideas to visible boundaries. The main limitation is error propagation from the mask into the final polygon.
 
 #### 2.1.2. End-to-End Vector Polygon Generation
 
 | Family | Summary | Key limitation |
 | :--- | :--- | :--- |
-| Sequential | [PolyMapper](../PAPERS.md#r048), [ConvGRU-based delineation](../PAPERS.md#r101), and [VectorLLM](../PAPERS.md#r098) generate ordered corners | Local errors can accumulate along long sequences |
-| Graph and matching | [PolyWorld](../PAPERS.md#r108), [Re:PolyWorld](../PAPERS.md#r109), and [ABCNet](../PAPERS.md#r016) infer connections between detected vertices | Missing or ambiguous corners undermine connectivity |
-| RoI and query | [PolyR-CNN](../PAPERS.md#r036), [RoIPoly](../PAPERS.md#r034), [PolyBuilding](../PAPERS.md#r026), and [PolyBuild](../PAPERS.md#r099) couple instance features with polygon prediction | Feature resolution and vertex capacity can limit fine detail |
-| Hybrid and hierarchical | [HiSup](../PAPERS.md#r085), [BD-Tracing](../PAPERS.md#r072), and [GCP](../PAPERS.md#r097) combine geometric supervision, tracing, or explicit simplification | Regularization can suppress valid small structures |
+| Sequential | [PolyMapper](https://ieeexplore.ieee.org/document/9008272/), [ConvGRU-based delineation](https://linkinghub.elsevier.com/retrieve/pii/S0924271621000551), and [VectorLLM](https://linkinghub.elsevier.com/retrieve/pii/S0924271626000250) generate ordered corners | Local errors can accumulate along long sequences |
+| Graph and matching | [PolyWorld](https://ieeexplore.ieee.org/document/9880425/), [Re:PolyWorld](https://ieeexplore.ieee.org/document/10377491/), and [ABCNet](https://linkinghub.elsevier.com/retrieve/pii/S1569843225007186) infer connections between detected vertices | Missing or ambiguous corners undermine connectivity |
+| RoI and query | [PolyR-CNN](https://linkinghub.elsevier.com/retrieve/pii/S0924271624003824), [RoIPoly](https://linkinghub.elsevier.com/retrieve/pii/S0924271625001364), [PolyBuilding](https://linkinghub.elsevier.com/retrieve/pii/S0924271623000813), and [PolyBuild](https://ieeexplore.ieee.org/document/10988661/) couple instance features with polygon prediction | Feature resolution and vertex capacity can limit fine detail |
+| Hybrid and hierarchical | [HiSup](https://linkinghub.elsevier.com/retrieve/pii/S0924271623000667), [BD-Tracing](https://ieeexplore.ieee.org/document/10285447/), and [GCP](https://ieeexplore.ieee.org/document/11172367/) combine geometric supervision, tracing, or explicit simplification | Regularization can suppress valid small structures |
 
 #### 2.1.3. Method Comparison and Analysis
 
@@ -49,11 +49,11 @@ For footprint extraction, 3D building points are often projected onto a horizont
 
 #### 2.2.1. Boundary Tracing and Regularization
 
-Early methods impose local architectural constraints, as in [RMBR](../PAPERS.md#r039), or balance fit and simplicity, as in [GMDL](../PAPERS.md#r037). Later methods coordinate the boundary globally: [Du et al.](../PAPERS.md#r019) combine contour decomposition with global regularization; [ATAS](../PAPERS.md#r051) adapts tracing and optimizes neighboring segments; [Wu et al.](../PAPERS.md#r083) use density-based corner selection to tolerate data gaps.
+Early methods impose local architectural constraints, as in [RMBR](https://linkinghub.elsevier.com/retrieve/pii/S0924271613002256), or balance fit and simplicity, as in [GMDL](https://www.isprs.org/proceedings/XXXVII/congress/3_pdf/11.pdf). Later methods coordinate the boundary globally: [Du et al.](https://ieeexplore.ieee.org/document/8681075/) combine contour decomposition with global regularization; [ATAS](https://linkinghub.elsevier.com/retrieve/pii/S0926580524000578) adapts tracing and optimizes neighboring segments; [Wu et al.](https://linkinghub.elsevier.com/retrieve/pii/S026322412503369X) use density-based corner selection to tolerate data gaps.
 
 #### 2.2.2. Feature Fusion and Classification
 
-[Du et al.](../PAPERS.md#r020) combine point-level geometric features and grid-level information to improve building classification before regularization. Better separation of buildings from vegetation produces cleaner inputs, but classification alone does not produce a finished polygon.
+[Du et al.](https://linkinghub.elsevier.com/retrieve/pii/S0924271616306438) combine point-level geometric features and grid-level information to improve building classification before regularization. Better separation of buildings from vegetation produces cleaner inputs, but classification alone does not produce a finished polygon.
 
 #### 2.2.3. Method Comparison and Analysis
 
@@ -76,13 +76,13 @@ Two complementary routes dominate: parsing a roof's structural graph, and direct
 
 #### 3.1.1. Geometric Primitive Parsing
 
-[Nauata and Furukawa](../PAPERS.md#r064) combine primitive detection with relationship constraints. [PPGNet-based roof vectorization](../PAPERS.md#r025), [HEAT](../PAPERS.md#r011), [Conv-MPN](../PAPERS.md#r096), [RSGNN](../PAPERS.md#r102), and [Roof-Former](../PAPERS.md#r100) learn junctions, edges, and their relationships using graph or attention mechanisms. [HAWP](../PAPERS.md#r087) contributes a general line representation; [directional primitive reconstruction](../PAPERS.md#r093) combines complementary structural elements. [Kenzhebay](../PAPERS.md#r038) studies a segmentation-and-vectorization route using imagery and surface-height information.
+[Nauata and Furukawa](https://link.springer.com/chapter/10.1007/978-3-030-58598-3_42) combine primitive detection with relationship constraints. [PPGNet-based roof vectorization](https://isprs-archives.copernicus.org/articles/XLVI-4-W4-2021/85/2021/), [HEAT](https://ieeexplore.ieee.org/document/9878511/), [Conv-MPN](https://ieeexplore.ieee.org/document/9156819/), [RSGNN](https://linkinghub.elsevier.com/retrieve/pii/S092427162200065X), and [Roof-Former](https://ieeexplore.ieee.org/document/10282198/) learn junctions, edges, and their relationships using graph or attention mechanisms. [HAWP](https://ieeexplore.ieee.org/document/10243120/) contributes a general line representation; [directional primitive reconstruction](https://linkinghub.elsevier.com/retrieve/pii/S0924271626001735) combines complementary structural elements. [Kenzhebay](https://essay.utwente.nl/essays/91396) studies a segmentation-and-vectorization route using imagery and surface-height information.
 
 The shared challenge is recovering complete connectivity when local primitives are weak, occluded, or missing.
 
 #### 3.1.2. Direct 3D Plane and Height Inference
 
-[PlaneRCNN](../PAPERS.md#r050) provides a general example of estimating planar geometry from an image, while [boundary-aware overhead reconstruction](../PAPERS.md#r060) combines outlines with predicted height. [Roof3D](../PAPERS.md#r069) supports roof-plane and building-section learning. [KIBS](../PAPERS.md#r056) infers 3D roof information through keypoints and height estimates. These routes move beyond graph connectivity but inherit ambiguity from monocular observations or dependence on auxiliary DSM quality.
+[PlaneRCNN](https://ieeexplore.ieee.org/document/8953257/) provides a general example of estimating planar geometry from an image, while [boundary-aware overhead reconstruction](https://ieeexplore.ieee.org/document/9156304/) combines outlines with predicted height. [Roof3D](https://isprs-annals.copernicus.org/articles/X-1-W1-2023/971/2023/) supports roof-plane and building-section learning. [KIBS](https://linkinghub.elsevier.com/retrieve/pii/S0924271624004210) infers 3D roof information through keypoints and height estimates. These routes move beyond graph connectivity but inherit ambiguity from monocular observations or dependence on auxiliary DSM quality.
 
 #### 3.1.3. Method Comparison and Analysis
 
@@ -94,11 +94,11 @@ LiDAR makes roof elevations observable. The remaining challenge is converting un
 
 #### 3.2.1. Model-Driven Approaches
 
-Top-down methods fit parametric roof models or enforce architectural regularities. [RMBR](../PAPERS.md#r039) illustrates rectangular decomposition; [Zhou and Neumann](../PAPERS.md#r105) discover relationships among locally fitted planes. Strong priors work well when they match the roof, but a restricted shape library cannot represent all architecture.
+Top-down methods fit parametric roof models or enforce architectural regularities. [RMBR](https://linkinghub.elsevier.com/retrieve/pii/S0924271613002256) illustrates rectangular decomposition; [Zhou and Neumann](https://ieeexplore.ieee.org/document/6247692/) discover relationships among locally fitted planes. Strong priors work well when they match the roof, but a restricted shape library cannot represent all architecture.
 
 #### 3.2.2. Data-Driven Approaches
 
-Bottom-up reconstruction extracts structure from the observations. Examples include [hierarchical plane clustering](../PAPERS.md#r018), [multiscale grids](../PAPERS.md#r012), [spatial-database workflows](../PAPERS.md#r010), [roof topology cycles](../PAPERS.md#r066), and [half-space modeling](../PAPERS.md#r007). [Point2Roof](../PAPERS.md#r042) learns vertices and edges, while [RR-Net](../PAPERS.md#r086) emphasizes edge segmentation and wireframe recovery.
+Bottom-up reconstruction extracts structure from the observations. Examples include [hierarchical plane clustering](https://www.mdpi.com/1424-8220/8/11/7323), [multiscale grids](https://ieeexplore.ieee.org/document/6779638/), [spatial-database workflows](https://www.tandfonline.com/doi/full/10.1080/13658816.2017.1301456), [roof topology cycles](https://linkinghub.elsevier.com/retrieve/pii/S0924271614001129), and [half-space modeling](https://www.mdpi.com/2072-4292/13/21/4430). [Point2Roof](https://linkinghub.elsevier.com/retrieve/pii/S0924271622002362) learns vertices and edges, while [RR-Net](https://ieeexplore.ieee.org/document/11218167/) emphasizes edge segmentation and wireframe recovery.
 
 Here, "data-driven" includes bottom-up geometric algorithms as well as neural methods. It is not a synonym for deep learning.
 
@@ -123,11 +123,11 @@ Image-based methods either first recover dense geometry from multiple views or i
 
 #### 4.1.1. Multi-View Stereo-based Reconstruction
 
-Multi-view correspondence produces depths, points, or meshes that require further abstraction. [Verdie et al.](../PAPERS.md#r074) regularize scene geometry; [Partovi et al.](../PAPERS.md#r065) fit roof hypotheses from satellite-derived evidence; [Li and Wu](../PAPERS.md#r047) encode relations between building parts. [SAT2LOD2](../PAPERS.md#r022) and [PLANES4LOD2](../PAPERS.md#r070) combine orthophotos and DSMs with plane or roof modeling. Occlusion, weak texture, and DSM errors remain important limitations.
+Multi-view correspondence produces depths, points, or meshes that require further abstraction. [Verdie et al.](https://dl.acm.org/doi/10.1145/2732527) regularize scene geometry; [Partovi et al.](https://www.mdpi.com/2072-4292/11/14/1660) fit roof hypotheses from satellite-derived evidence; [Li and Wu](https://www.mdpi.com/2072-4292/13/1/129) encode relations between building parts. [SAT2LOD2](https://isprs-archives.copernicus.org/articles/XLIII-B2-2022/379/2022/) and [PLANES4LOD2](https://linkinghub.elsevier.com/retrieve/pii/S0924271624001758) combine orthophotos and DSMs with plane or roof modeling. Occlusion, weak texture, and DSM errors remain important limitations.
 
 #### 4.1.2. Single-Image Structural Inference and Generative Directions
 
-[Alidoost et al.](../PAPERS.md#r002) infer height and roof structure from a single aerial image, while [Zhou et al.](../PAPERS.md#r106) use structural assumptions to recover 3D Manhattan wireframes. [DG-BRF](../PAPERS.md#r027) introduces diffusion-guided geometric reasoning, and [Sat2City](../PAPERS.md#r029) studies city-scale generation. The survey distinguishes plausible urban generation from observation-faithful reconstruction of an individual building.
+[Alidoost et al.](https://www.mdpi.com/2072-4292/11/19/2219) infer height and roof structure from a single aerial image, while [Zhou et al.](https://ieeexplore.ieee.org/document/9010693/) use structural assumptions to recover 3D Manhattan wireframes. [DG-BRF](https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563) introduces diffusion-guided geometric reasoning, and [Sat2City](https://ieeexplore.ieee.org/document/11446050/) studies city-scale generation. The survey distinguishes plausible urban generation from observation-faithful reconstruction of an individual building.
 
 #### 4.1.3. Method Comparison and Analysis
 
@@ -139,20 +139,20 @@ The problem becomes reconstructing structure from measured but incomplete and un
 
 #### 4.2.1. Primitive Assembly and Optimization
 
-[PolyFit](../PAPERS.md#r063) assembles candidate faces under geometric constraints. [City3D](../PAPERS.md#r030) addresses city-scale reconstruction and missing facade observations; [SimpliCity](../PAPERS.md#r006) emphasizes compact regularized models. [Manhattan-world reconstruction](../PAPERS.md#r043) uses stronger orthogonal assumptions. [Loops2Roofs](../PAPERS.md#r023) introduces a generative loop representation at the boundary between explicit structure and learned generation.
+[PolyFit](https://ieeexplore.ieee.org/document/8237520/) assembles candidate faces under geometric constraints. [City3D](https://www.mdpi.com/2072-4292/14/9/2254) addresses city-scale reconstruction and missing facade observations; [SimpliCity](https://ieeexplore.ieee.org/document/10678009/) emphasizes compact regularized models. [Manhattan-world reconstruction](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_4) uses stronger orthogonal assumptions. [Loops2Roofs](https://dl.acm.org/doi/10.1145/3807955) introduces a generative loop representation at the boundary between explicit structure and learned generation.
 
-The survey also lists [KIPPI](../PAPERS.md#r005); its cited publication concerns image partitioning. This guide does not attribute unverified 3D surface guarantees to that citation.
+The survey also lists [KIPPI](https://ieeexplore.ieee.org/document/8578430/); its cited publication concerns image partitioning. This guide does not attribute unverified 3D surface guarantees to that citation.
 
 #### 4.2.2. Direct End-to-End Reconstruction
 
 | Representation | Examples | Key idea |
 | :--- | :--- | :--- |
-| Vertices and edges | [Point2Roof](../PAPERS.md#r042), [PBWR](../PAPERS.md#r032) | Learn geometric primitives and their connections |
-| Autoregressive meshes | [Point2Building](../PAPERS.md#r052) | Generate variable-size vertex and face sequences |
-| Diffusion-assisted structure | [EdgeDiff](../PAPERS.md#r053), [BuildAnyPoint](../PAPERS.md#r028) | Refine edges or recover intermediate geometric evidence |
-| Implicit representations | [Chen et al.](../PAPERS.md#r014) | Combine learned occupancy with surface extraction |
-| Architectural programs | [ArcPro](../PAPERS.md#r031) | Predict a compact procedural description of structure |
-| Supporting learning tasks | [City-BIS](../PAPERS.md#r041), [self-supervised roof learning](../PAPERS.md#r090) | Improve instances or reduce annotation dependence |
+| Vertices and edges | [Point2Roof](https://linkinghub.elsevier.com/retrieve/pii/S0924271622002362), [PBWR](https://ieeexplore.ieee.org/document/10656530/) | Learn geometric primitives and their connections |
+| Autoregressive meshes | [Point2Building](https://linkinghub.elsevier.com/retrieve/pii/S092427162400279X) | Generate variable-size vertex and face sequences |
+| Diffusion-assisted structure | [EdgeDiff](https://ieeexplore.ieee.org/document/11094351/), [BuildAnyPoint](https://openaccess.thecvf.com/content/CVPR2026/html/Hua_BuildAnyPoint_3D_Building_Structured_Abstraction_from_Diverse_Point_Clouds_CVPR_2026_paper.html) | Refine edges or recover intermediate geometric evidence |
+| Implicit representations | [Chen et al.](https://linkinghub.elsevier.com/retrieve/pii/S0924271622002611) | Combine learned occupancy with surface extraction |
+| Architectural programs | [ArcPro](https://ieeexplore.ieee.org/document/11092796/) | Predict a compact procedural description of structure |
+| Supporting learning tasks | [City-BIS](https://linkinghub.elsevier.com/retrieve/pii/S1569843226000026), [self-supervised roof learning](https://ieeexplore.ieee.org/document/10423095/) | Improve instances or reduce annotation dependence |
 
 #### 4.2.3. Method Comparison and Analysis
 
@@ -160,7 +160,7 @@ Explicit constraints are effective when the relevant surfaces are observed. Lear
 
 ### 4.3. From Fused Image and Point Cloud Data
 
-[Cheng et al. (2011)](../PAPERS.md#r015) and [Cheng et al. (2013)](../PAPERS.md#r017) combine image boundary evidence with LiDAR planes to refine 3D structure. [Awrangjeb et al.](../PAPERS.md#r004) use imagery to support roof-plane extraction and reject vegetation. [Wang et al.](../PAPERS.md#r081) investigate facade features with structural constraints.
+[Cheng et al. (2011)](https://doi.org/10.14358/pers.77.2.125) and [Cheng et al. (2013)](https://linkinghub.elsevier.com/retrieve/pii/S0143816612002990) combine image boundary evidence with LiDAR planes to refine 3D structure. [Awrangjeb et al.](https://linkinghub.elsevier.com/retrieve/pii/S0924271613001342) use imagery to support roof-plane extraction and reject vegetation. [Wang et al.](https://linkinghub.elsevier.com/retrieve/pii/S0924271617303593) investigate facade features with structural constraints.
 
 #### 4.3.1. Method Comparison and Analysis
 

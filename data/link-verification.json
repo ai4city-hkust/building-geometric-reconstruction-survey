@@ -1,0 +1,2875 @@
+{
+  "R001": {
+    "url": "https://www.tandfonline.com/doi/full/10.1080/17538947.2025.2458682",
+    "doi": "10.1080/17538947.2025.2458682",
+    "metadata_url": "https://api.crossref.org/works/10.1080%2F17538947.2025.2458682",
+    "verified_title": "Points2Model: a neural-guided 3D building wireframe reconstruction from airborne LiDAR point clouds",
+    "verified_authors": [
+      "Perpetual Hope Akwensi",
+      "Akshay Bharadwaj",
+      "Ruisheng Wang"
+    ],
+    "published": [
+      [
+        2025,
+        2,
+        11
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/17538947.2025.2458682",
+      "status": 403,
+      "resolved_url": "https://www.tandfonline.com/doi/full/10.1080/17538947.2025.2458682",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R002": {
+    "url": "https://www.mdpi.com/2072-4292/11/19/2219",
+    "doi": "10.3390/rs11192219",
+    "metadata_url": "https://api.crossref.org/works/10.3390%2Frs11192219",
+    "verified_title": "2D Image-To-3D Model: Knowledge-Based 3D Building Reconstruction (3DBR) Using Single Aerial Images and Convolutional Neural Networks (CNNs)",
+    "verified_authors": [
+      "Fatemeh Alidoost",
+      "Hossein Arefi",
+      "Federico Tombari"
+    ],
+    "published": [
+      [
+        2019,
+        9,
+        23
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.mdpi.com/2072-4292/11/19/2219",
+      "status": 403,
+      "resolved_url": "https://www.mdpi.com/2072-4292/11/19/2219",
+      "content_type": "text/html"
+    }
+  },
+  "R003": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S2667393225000316",
+    "doi": "10.1016/j.ophoto.2025.100112",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.ophoto.2025.100112",
+    "verified_title": "Map2ImLas: Large-scale 2D-3D airborne dataset with map-based annotations",
+    "verified_authors": [
+      "Geethanjali Anjanappa",
+      "Sander Oude Elberink",
+      "Abhisek Maiti",
+      "Yaping Lin",
+      "George Vosselman"
+    ],
+    "published": [
+      [
+        2026,
+        1
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed. Source year retained; publisher metadata distinguishes online and issue publication dates.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S2667393225000316",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S2667393225000316",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R004": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271613001342",
+    "doi": "10.1016/j.isprsjprs.2013.05.006",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2013.05.006",
+    "verified_title": "Automatic extraction of building roofs using LIDAR data and multispectral imagery",
+    "verified_authors": [
+      "Mohammad Awrangjeb",
+      "Chunsun Zhang",
+      "Clive S. Fraser"
+    ],
+    "published": [
+      [
+        2013,
+        9
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271613001342",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271613001342",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R005": {
+    "url": "https://ieeexplore.ieee.org/document/8578430/",
+    "doi": "10.1109/cvpr.2018.00332",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fcvpr.2018.00332",
+    "verified_title": "KIPPI: KInetic Polygonal Partitioning of Images",
+    "verified_authors": [
+      "Jean-Philippe Bauchet",
+      "Florent Lafarge"
+    ],
+    "published": [
+      [
+        2018,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/8578430/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/8578430/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R006": {
+    "url": "https://ieeexplore.ieee.org/document/10678009/",
+    "doi": "10.1109/cvprw63382.2024.00757",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fcvprw63382.2024.00757",
+    "verified_title": "SimpliCity: Reconstructing Buildings with Simple Regularized 3D Models",
+    "verified_authors": [
+      "Jean-Philippe Bauchet",
+      "Raphael Sulzer",
+      "Florent Lafarge",
+      "Yuliya Tarabalka"
+    ],
+    "published": [
+      [
+        2024,
+        6,
+        17
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10678009/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10678009/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R007": {
+    "url": "https://www.mdpi.com/2072-4292/13/21/4430",
+    "doi": "10.3390/rs13214430",
+    "metadata_url": "https://api.crossref.org/works/10.3390%2Frs13214430",
+    "verified_title": "Parameter-Free Half-Spaces Based 3D Building Reconstruction Using Ground and Segmented Building Points from Airborne LiDAR Data with 2D Outlines",
+    "verified_authors": [
+      "Marko Bizjak",
+      "Borut Žalik",
+      "Niko Lukač"
+    ],
+    "published": [
+      [
+        2021,
+        11,
+        3
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.mdpi.com/2072-4292/13/21/4430",
+      "status": 403,
+      "resolved_url": "https://www.mdpi.com/2072-4292/13/21/4430",
+      "content_type": "text/html"
+    }
+  },
+  "R008": {
+    "url": "https://isprs-archives.copernicus.org/articles/XLVIII-1-W6-2025/47/2025/",
+    "doi": "10.5194/isprs-archives-xlviii-1-w6-2025-47-2025",
+    "metadata_url": "https://api.crossref.org/works/10.5194%2Fisprs-archives-xlviii-1-w6-2025-47-2025",
+    "verified_title": "Benchmarking Vectorized Building Footprint Extraction from Very High Resolution Aerial Imagery",
+    "verified_authors": [
+      "Mehmet Büyükdemircioğlu",
+      "Salim Malek",
+      "Elisa Mariarosaria Farella",
+      "Sultan Kocaman",
+      "Martin Kada",
+      "Fabio Remondino"
+    ],
+    "published": [
+      [
+        2025,
+        12,
+        31
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://isprs-archives.copernicus.org/articles/XLVIII-1-W6-2025/47/2025/",
+      "status": 200,
+      "resolved_url": "https://isprs-archives.copernicus.org/articles/XLVIII-1-W6-2025/47/2025/",
+      "content_type": "text/html"
+    }
+  },
+  "R009": {
+    "url": "https://www.mdpi.com/2072-4292/16/8/1386",
+    "doi": "10.3390/rs16081386",
+    "metadata_url": "https://api.crossref.org/works/10.3390%2Frs16081386",
+    "verified_title": "Automatic Building Roof Plane Extraction in Urban Environments for 3D City Modelling Using Remote Sensing Data",
+    "verified_authors": [
+      "Carlos Campoverde",
+      "Mila Koeva",
+      "Claudio Persello",
+      "Konstantin Maslov",
+      "Weiqin Jiao",
+      "Dessislava Petrova-Antonova"
+    ],
+    "published": [
+      [
+        2024,
+        4,
+        14
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.mdpi.com/2072-4292/16/8/1386",
+      "status": 403,
+      "resolved_url": "https://www.mdpi.com/2072-4292/16/8/1386",
+      "content_type": "text/html"
+    }
+  },
+  "R010": {
+    "url": "https://www.tandfonline.com/doi/full/10.1080/13658816.2017.1301456",
+    "doi": "10.1080/13658816.2017.1301456",
+    "metadata_url": "https://api.crossref.org/works/10.1080%2F13658816.2017.1301456",
+    "verified_title": "3D building roof reconstruction from airborne LiDAR point clouds: a framework based on a spatial database",
+    "verified_authors": [
+      "Rujun Cao",
+      "Yongjun Zhang",
+      "Xinyi Liu",
+      "Zongze Zhao"
+    ],
+    "published": [
+      [
+        2017,
+        3,
+        9
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/13658816.2017.1301456",
+      "status": 403,
+      "resolved_url": "https://www.tandfonline.com/doi/full/10.1080/13658816.2017.1301456",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R011": {
+    "url": "https://ieeexplore.ieee.org/document/9878511/",
+    "doi": "10.1109/cvpr52688.2022.00384",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fcvpr52688.2022.00384",
+    "verified_title": "HEAT: Holistic Edge Attention Transformer for Structured Reconstruction",
+    "verified_authors": [
+      "Jiacheng Chen",
+      "Yiming Qian",
+      "Yasutaka Furukawa"
+    ],
+    "published": [
+      [
+        2022,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/9878511/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/9878511/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R012": {
+    "url": "https://ieeexplore.ieee.org/document/6779638/",
+    "doi": "10.1109/jstars.2014.2306003",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fjstars.2014.2306003",
+    "verified_title": "Multiscale Grid Method for Detection and Reconstruction of Building Roofs from Airborne LiDAR Data",
+    "verified_authors": [
+      "Yanming Chen",
+      "Liang Cheng",
+      "Manchun Li",
+      "Jiechen Wang",
+      "Lihua Tong",
+      "Kang Yang"
+    ],
+    "published": [
+      [
+        2014,
+        10
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/6779638/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/6779638/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R013": {
+    "url": "https://doi.org/10.14358/pers.84.10.629",
+    "doi": "10.14358/pers.84.10.629",
+    "metadata_url": "https://api.crossref.org/works/10.14358%2Fpers.84.10.629",
+    "verified_title": "Review on High Spatial Resolution Remote Sensing Image Segmentation Evaluation",
+    "verified_authors": [
+      "Yangyang Chen",
+      "Dongping Ming",
+      "Lu Zhao",
+      "Beiru Lv",
+      "Keqi Zhou",
+      "Yuanzhao Qing"
+    ],
+    "published": [
+      [
+        2018,
+        10,
+        1
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed. Uses the registered DOI resolver rather than the legacy Ingenta endpoint.",
+    "publisher_url": "http://www.ingentaconnect.com/content/10.14358/PERS.84.10.629",
+    "http_check": {
+      "url": "https://doi.org/10.14358/pers.84.10.629",
+      "status": 403,
+      "resolved_url": "http://www.ingentaconnect.com/content/10.14358/PERS.84.10.629",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R014": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271622002611",
+    "doi": "10.1016/j.isprsjprs.2022.09.017",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2022.09.017",
+    "verified_title": "Reconstructing compact building models from point clouds using deep implicit fields",
+    "verified_authors": [
+      "Zhaiyu Chen",
+      "Hugo Ledoux",
+      "Seyran Khademi",
+      "Liangliang Nan"
+    ],
+    "published": [
+      [
+        2022,
+        12
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271622002611",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271622002611",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R015": {
+    "url": "https://doi.org/10.14358/pers.77.2.125",
+    "doi": "10.14358/pers.77.2.125",
+    "metadata_url": "https://api.crossref.org/works/10.14358%2Fpers.77.2.125",
+    "verified_title": "3D Building Model Reconstruction from Multi-view Aerial Imagery and Lidar Data",
+    "verified_authors": [
+      "Liang Cheng",
+      "Jianya Gong",
+      "Manchun Li",
+      "Yongxue Liu"
+    ],
+    "published": [
+      [
+        2011,
+        2,
+        1
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed. Uses the registered DOI resolver rather than the legacy Ingenta endpoint.",
+    "publisher_url": "http://openurl.ingenta.com/content/xref?genre=article&issn=0099-1112&volume=77&issue=2&spage=125",
+    "http_check": {
+      "url": "https://doi.org/10.14358/pers.77.2.125",
+      "error": "SSLError"
+    }
+  },
+  "R016": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S1569843225007186",
+    "doi": "10.1016/j.jag.2025.105071",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.jag.2025.105071",
+    "verified_title": "Simplifying the bipartite matching topology recovery for vectorized building footprint extraction",
+    "verified_authors": [
+      "Libo Cheng",
+      "Han Hu",
+      "Liupeng Su",
+      "Zeyuan Dai",
+      "Lihua Zhang",
+      "Guanyan Yang",
+      "Bo Xu",
+      "Qing Zhu"
+    ],
+    "published": [
+      [
+        2026,
+        2
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S1569843225007186",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S1569843225007186",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R017": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0143816612002990",
+    "doi": "10.1016/j.optlaseng.2012.10.010",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.optlaseng.2012.10.010",
+    "verified_title": "Integration of LiDAR data and optical multi-view images for 3D reconstruction of building roofs",
+    "verified_authors": [
+      "Liang Cheng",
+      "Lihua Tong",
+      "Yanming Chen",
+      "Wen Zhang",
+      "Jie Shan",
+      "Yongxue Liu",
+      "Manchun Li"
+    ],
+    "published": [
+      [
+        2013,
+        4
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0143816612002990",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0143816612002990",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R018": {
+    "url": "https://www.mdpi.com/1424-8220/8/11/7323",
+    "doi": "10.3390/s8117323",
+    "metadata_url": "https://api.crossref.org/works/10.3390%2Fs8117323",
+    "verified_title": "A Comprehensive Automated 3D Approach for Building Extraction, Reconstruction, and Regularization from Airborne Laser Scanning Point Clouds",
+    "verified_authors": [
+      "Peter Dorninger",
+      "Norbert Pfeifer"
+    ],
+    "published": [
+      [
+        2008,
+        11,
+        17
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.mdpi.com/1424-8220/8/11/7323",
+      "status": 403,
+      "resolved_url": "https://www.mdpi.com/1424-8220/8/11/7323",
+      "content_type": "text/html"
+    }
+  },
+  "R019": {
+    "url": "https://ieeexplore.ieee.org/document/8681075/",
+    "doi": "10.1109/tgrs.2019.2901539",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ftgrs.2019.2901539",
+    "verified_title": "A Novel Framework for 2.5-D Building Contouring From Large-Scale Residential Scenes",
+    "verified_authors": [
+      "Jianli Du",
+      "Dong Chen",
+      "Ruisheng Wang",
+      "Jiju Peethambaran",
+      "P. Takis Mathiopoulos",
+      "Lei Xie",
+      "Ting Yun"
+    ],
+    "published": [
+      [
+        2019,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/8681075/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/8681075/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R020": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271616306438",
+    "doi": "10.1016/j.isprsjprs.2017.06.005",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2017.06.005",
+    "verified_title": "Automatic building extraction from LiDAR data fusion of point and grid-based features",
+    "verified_authors": [
+      "Shouji Du",
+      "Yunsheng Zhang",
+      "Zhengrong Zou",
+      "Shenghua Xu",
+      "Xue He",
+      "Siyang Chen"
+    ],
+    "published": [
+      [
+        2017,
+        8
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271616306438",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271616306438",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R021": {
+    "url": "https://ieeexplore.ieee.org/document/9577910/",
+    "doi": "10.1109/cvpr46437.2021.00583",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fcvpr46437.2021.00583",
+    "verified_title": "Polygonal Building Extraction by Frame Field Learning",
+    "verified_authors": [
+      "Nicolas Girard",
+      "Dmitriy Smirnov",
+      "Justin Solomon",
+      "Yuliya Tarabalka"
+    ],
+    "published": [
+      [
+        2021,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/9577910/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/9577910/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R022": {
+    "url": "https://isprs-archives.copernicus.org/articles/XLIII-B2-2022/379/2022/",
+    "doi": "10.5194/isprs-archives-xliii-b2-2022-379-2022",
+    "metadata_url": "https://api.crossref.org/works/10.5194%2Fisprs-archives-xliii-b2-2022-379-2022",
+    "verified_title": "SAT2LOD2: A SOFTWARE FOR AUTOMATED LOD-2 BUILDING RECONSTRUCTION FROM SATELLITE-DERIVED ORTHOPHOTO AND DIGITAL SURFACE MODEL",
+    "verified_authors": [
+      "S. Gui",
+      "R. Qin",
+      "Y. Tang"
+    ],
+    "published": [
+      [
+        2022,
+        5,
+        30
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://isprs-archives.copernicus.org/articles/XLIII-B2-2022/379/2022/",
+      "status": 200,
+      "resolved_url": "https://isprs-archives.copernicus.org/articles/XLIII-B2-2022/379/2022/",
+      "content_type": "text/html"
+    }
+  },
+  "R023": {
+    "url": "https://dl.acm.org/doi/10.1145/3807955",
+    "doi": "10.1145/3807955",
+    "metadata_url": "https://api.crossref.org/works/10.1145%2F3807955",
+    "verified_title": "Loops2Roofs: Diffusion-based 3D Roof Generation using a Loop Representation",
+    "verified_authors": [
+      "Jianwei Guo",
+      "Pu Li",
+      "Qi Zeng",
+      "Wenhao Zhang",
+      "Pengxu Li",
+      "Liangliang Nan",
+      "Bedrich Benes",
+      "Dongming Yan"
+    ],
+    "published": [
+      [
+        2026,
+        6,
+        29
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://dl.acm.org/doi/10.1145/3807955",
+      "status": 403,
+      "resolved_url": "https://dl.acm.org/doi/10.1145/3807955",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R024": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271610000894",
+    "doi": "10.1016/j.isprsjprs.2010.09.006",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2010.09.006",
+    "verified_title": "An update on automatic 3D building reconstruction",
+    "verified_authors": [
+      "Norbert Haala",
+      "Martin Kada"
+    ],
+    "published": [
+      [
+        2010,
+        11
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271610000894",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271610000894",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R025": {
+    "url": "https://isprs-archives.copernicus.org/articles/XLVI-4-W4-2021/85/2021/",
+    "doi": "10.5194/isprs-archives-xlvi-4-w4-2021-85-2021",
+    "metadata_url": "https://api.crossref.org/works/10.5194%2Fisprs-archives-xlvi-4-w4-2021-85-2021",
+    "verified_title": "BUILDING ROOF VECTORIZATION WITH PPGNET",
+    "verified_authors": [
+      "S. Hensel",
+      "S. Goebbels",
+      "M. Kada"
+    ],
+    "published": [
+      [
+        2021,
+        10,
+        7
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://isprs-archives.copernicus.org/articles/XLVI-4-W4-2021/85/2021/",
+      "status": 200,
+      "resolved_url": "https://isprs-archives.copernicus.org/articles/XLVI-4-W4-2021/85/2021/",
+      "content_type": "text/html"
+    }
+  },
+  "R026": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271623000813",
+    "doi": "10.1016/j.isprsjprs.2023.03.021",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2023.03.021",
+    "verified_title": "PolyBuilding: Polygon transformer for building extraction",
+    "verified_authors": [
+      "Yuan Hu",
+      "Zhibin Wang",
+      "Zhou Huang",
+      "Yu Liu"
+    ],
+    "published": [
+      [
+        2023,
+        5
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271623000813",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271623000813",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R027": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563",
+    "doi": "10.1016/j.isprsjprs.2025.11.018",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2025.11.018",
+    "verified_title": "3D building reconstruction from monocular remote sensing imagery via diffusion models and geometric priors",
+    "verified_authors": [
+      "Zhenghao Hu",
+      "Weijia Li",
+      "Jinhua Yu",
+      "Minfa Liu",
+      "Junyan Ye",
+      "Peimin Chen",
+      "Huabing Huang"
+    ],
+    "published": [
+      [
+        2026,
+        2
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271625004563",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R028": {
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Hua_BuildAnyPoint_3D_Building_Structured_Abstraction_from_Diverse_Point_Clouds_CVPR_2026_paper.html",
+    "verified_title": "BuildAnyPoint: 3D Building Structured Abstraction from Diverse Point Clouds",
+    "verified_authors": [
+      "Tongyan Hua",
+      "Haoran Gong",
+      "Yuan Liu",
+      "Di Wang",
+      "Ying-Cong Chen",
+      "Wufan Zhao"
+    ],
+    "year": 2026,
+    "verification": "CVF official proceedings page; title and all authors match. The manuscript cites the arXiv version; this link opens the published CVPR version.",
+    "checked_on": "2026-09-29",
+    "http_check": {
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Hua_BuildAnyPoint_3D_Building_Structured_Abstraction_from_Diverse_Point_Clouds_CVPR_2026_paper.html",
+      "status": 200,
+      "resolved_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Hua_BuildAnyPoint_3D_Building_Structured_Abstraction_from_Diverse_Point_Clouds_CVPR_2026_paper.html",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R029": {
+    "url": "https://ieeexplore.ieee.org/document/11446050/",
+    "doi": "10.1109/iccv51701.2025.02597",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ficcv51701.2025.02597",
+    "verified_title": "Sat2City: 3D City Generation from a Single Satellite Image with Cascaded Latent Diffusion",
+    "verified_authors": [
+      "Tongyan Hua",
+      "Lutao Jiang",
+      "Ying-Cong Chen",
+      "Wufan Zhao"
+    ],
+    "published": [
+      [
+        2025,
+        10,
+        19
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/11446050/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/11446050/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R030": {
+    "url": "https://www.mdpi.com/2072-4292/14/9/2254",
+    "doi": "10.3390/rs14092254",
+    "metadata_url": "https://api.crossref.org/works/10.3390%2Frs14092254",
+    "verified_title": "City3D: Large-Scale Building Reconstruction from Airborne LiDAR Point Clouds",
+    "verified_authors": [
+      "Jin Huang",
+      "Jantien Stoter",
+      "Ravi Peters",
+      "Liangliang Nan"
+    ],
+    "published": [
+      [
+        2022,
+        5,
+        7
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.mdpi.com/2072-4292/14/9/2254",
+      "status": 403,
+      "resolved_url": "https://www.mdpi.com/2072-4292/14/9/2254",
+      "content_type": "text/html"
+    }
+  },
+  "R031": {
+    "url": "https://ieeexplore.ieee.org/document/11092796/",
+    "doi": "10.1109/cvpr52734.2025.00615",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fcvpr52734.2025.00615",
+    "verified_title": "ArcPro: Architectural Programs for Structured 3D Abstraction of Sparse Points",
+    "verified_authors": [
+      "Qirui Huang",
+      "Runze Zhang",
+      "Kangjun Liu",
+      "Minglun Gong",
+      "Hao Zhang",
+      "Hui Huang"
+    ],
+    "published": [
+      [
+        2025,
+        6,
+        10
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/11092796/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/11092796/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R032": {
+    "url": "https://ieeexplore.ieee.org/document/10656530/",
+    "doi": "10.1109/cvpr52733.2024.02624",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fcvpr52733.2024.02624",
+    "verified_title": "PBWR: Parametric-Building-Wireframe Reconstruction from Aerial LiDAR Point Clouds",
+    "verified_authors": [
+      "Shangfeng Huang",
+      "Ruisheng Wang",
+      "Bo Guo",
+      "Hongxin Yang"
+    ],
+    "published": [
+      [
+        2024,
+        6,
+        16
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10656530/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10656530/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R033": {
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37422",
+    "doi": "10.1609/aaai.v40i7.37422",
+    "metadata_url": "https://api.crossref.org/works/10.1609%2Faaai.v40i7.37422",
+    "verified_title": "BuildingWorld: A Structured 3D Building Dataset for Urban Foundation Models",
+    "verified_authors": [
+      "Shangfeng Huang",
+      "Ruisheng Wang",
+      "Xin Wang"
+    ],
+    "published": [
+      [
+        2026,
+        3,
+        14
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37422",
+      "status": 200,
+      "resolved_url": "https://ojs.aaai.org/index.php/AAAI/article/view/37422",
+      "content_type": "text/html; charset=utf-8"
+    }
+  },
+  "R034": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271625001364",
+    "doi": "10.1016/j.isprsjprs.2025.03.030",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2025.03.030",
+    "verified_title": "RoIPoly: Vectorized building outline extraction using vertex and logit embeddings",
+    "verified_authors": [
+      "Weiqin Jiao",
+      "Hao Cheng",
+      "George Vosselman",
+      "Claudio Persello"
+    ],
+    "published": [
+      [
+        2025,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271625001364",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271625001364",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R035": {
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jiao_ACPV-Net_All-Class_Polygonal_Vectorization_for_Seamless_Vector_Map_Generation_from_CVPR_2026_paper.html",
+    "verified_title": "ACPV-Net: All-Class Polygonal Vectorization for Seamless Vector Map Generation from Aerial Imagery",
+    "verified_authors": [
+      "Weiqin Jiao",
+      "Hao Cheng",
+      "George Vosselman",
+      "Claudio Persello"
+    ],
+    "year": 2026,
+    "verification": "CVF official proceedings page; title, authors, year, and pages 13244-13253 match.",
+    "checked_on": "2026-09-29",
+    "http_check": {
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jiao_ACPV-Net_All-Class_Polygonal_Vectorization_for_Seamless_Vector_Map_Generation_from_CVPR_2026_paper.html",
+      "status": 200,
+      "resolved_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jiao_ACPV-Net_All-Class_Polygonal_Vectorization_for_Seamless_Vector_Map_Generation_from_CVPR_2026_paper.html",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R036": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271624003824",
+    "doi": "10.1016/j.isprsjprs.2024.10.006",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2024.10.006",
+    "verified_title": "PolyR-CNN: R-CNN for end-to-end polygonal building outline extraction",
+    "verified_authors": [
+      "Weiqin Jiao",
+      "Claudio Persello",
+      "George Vosselman"
+    ],
+    "published": [
+      [
+        2024,
+        12
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271624003824",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271624003824",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R037": {
+    "url": "https://www.isprs.org/proceedings/XXXVII/congress/3_pdf/11.pdf",
+    "metadata_url": "https://www.isprs.org/proceedings/XXXVII/congress/tc3a.aspx",
+    "verified_title": "An Implicit Geometric Regularization of 3D Building Shape Using Airborne LIDAR Data",
+    "verified_authors": [
+      "Y. Jwa",
+      "G. Sohn",
+      "V. Tao",
+      "W. Cho"
+    ],
+    "year": 2008,
+    "verification": "ISPRS official proceedings index and linked paper; title, authors, year, and pages 69-76 match.",
+    "checked_on": "2026-09-29",
+    "http_check": {
+      "url": "https://www.isprs.org/proceedings/XXXVII/congress/3_pdf/11.pdf",
+      "error": "ConnectionError"
+    }
+  },
+  "R038": {
+    "url": "https://essay.utwente.nl/essays/91396",
+    "verified_title": "Planar roof structure extraction from Very High-Resolution aerial images and Digital Surface Models using deep learning",
+    "verified_authors": [
+      "Meruyert Kenzhebay"
+    ],
+    "year": 2022,
+    "verification": "University of Twente official thesis repository; title, author, and year match.",
+    "checked_on": "2026-09-29",
+    "http_check": {
+      "url": "https://essay.utwente.nl/essays/91396",
+      "status": 200,
+      "resolved_url": "https://essay.utwente.nl/#/91396",
+      "content_type": "text/html"
+    }
+  },
+  "R039": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271613002256",
+    "doi": "10.1016/j.isprsjprs.2013.10.003",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2013.10.003",
+    "verified_title": "Automatic representation and reconstruction of DBM from LiDAR data using Recursive Minimum Bounding Rectangle",
+    "verified_authors": [
+      "Eunju Kwak",
+      "Ayman Habib"
+    ],
+    "published": [
+      [
+        2014,
+        7
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271613002256",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271613002256",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R040": {
+    "url": "https://www.tandfonline.com/doi/full/10.1080/15481603.2022.2101727",
+    "doi": "10.1080/15481603.2022.2101727",
+    "metadata_url": "https://api.crossref.org/works/10.1080%2F15481603.2022.2101727",
+    "verified_title": "A review of building detection from very high resolution optical remote sensing images",
+    "verified_authors": [
+      "Jiayi Li",
+      "Xin Huang",
+      "Lilin Tu",
+      "Tao Zhang",
+      "Leiguang Wang"
+    ],
+    "published": [
+      [
+        2022,
+        8,
+        5
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/15481603.2022.2101727",
+      "status": 403,
+      "resolved_url": "https://www.tandfonline.com/doi/full/10.1080/15481603.2022.2101727",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R041": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S1569843226000026",
+    "doi": "10.1016/j.jag.2026.105086",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.jag.2026.105086",
+    "verified_title": "City-scale building instance segmentation from LiDAR point clouds via structure-aware method",
+    "verified_authors": [
+      "Jinpeng Li",
+      "Yuan Li",
+      "Yiping Chen",
+      "Hongchao Fan",
+      "Ruisheng Wang"
+    ],
+    "published": [
+      [
+        2026,
+        2
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S1569843226000026",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S1569843226000026",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R042": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271622002362",
+    "doi": "10.1016/j.isprsjprs.2022.08.027",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2022.08.027",
+    "verified_title": "Point2Roof: End-to-end 3D building roof modeling from airborne LiDAR point clouds",
+    "verified_authors": [
+      "Li Li",
+      "Nan Song",
+      "Fei Sun",
+      "Xinyi Liu",
+      "Ruisheng Wang",
+      "Jian Yao",
+      "Shaosheng Cao"
+    ],
+    "published": [
+      [
+        2022,
+        11
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271622002362",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271622002362",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R043": {
+    "url": "https://link.springer.com/chapter/10.1007/978-3-319-46493-0_4",
+    "doi": "10.1007/978-3-319-46493-0_4",
+    "metadata_url": "https://api.crossref.org/works/10.1007%2F978-3-319-46493-0_4",
+    "verified_title": "Manhattan-World Urban Reconstruction from Point Clouds",
+    "verified_authors": [
+      "Minglei Li",
+      "Peter Wonka",
+      "Liangliang Nan"
+    ],
+    "published": [
+      [
+        2016
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://link.springer.com/10.1007/978-3-319-46493-0_4",
+      "status": 200,
+      "resolved_url": "https://link.springer.com/chapter/10.1007/978-3-319-46493-0_4",
+      "content_type": "text/html; charset=utf-8"
+    }
+  },
+  "R044": {
+    "url": "https://ieeexplore.ieee.org/document/10458126/",
+    "doi": "10.1109/tgrs.2024.3369723",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ftgrs.2024.3369723",
+    "verified_title": "A Review of Building Extraction From Remote Sensing Imagery: Geometrical Structures and Semantic Attributes",
+    "verified_authors": [
+      "Qingyu Li",
+      "Lichao Mou",
+      "Yao Sun",
+      "Yuansheng Hua",
+      "Yilei Shi",
+      "Xiao Xiang Zhu"
+    ],
+    "published": [
+      [
+        2024
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10458126/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10458126/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R045": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271613001640",
+    "doi": "10.1016/j.isprsjprs.2013.07.006",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2013.07.006",
+    "verified_title": "Geometric structure simplification of 3D building models",
+    "verified_authors": [
+      "Qingquan Li",
+      "Xuan Sun",
+      "Bisheng Yang",
+      "Shaobo Jiang"
+    ],
+    "published": [
+      [
+        2013,
+        10
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271613001640",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271613001640",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R046": {
+    "url": "https://ieeexplore.ieee.org/document/10506064/",
+    "doi": "10.1109/mgrs.2024.3383473",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fmgrs.2024.3383473",
+    "verified_title": "Vision-Language Models in Remote Sensing: Current progress and future trends",
+    "verified_authors": [
+      "Xiang Li",
+      "Congcong Wen",
+      "Yuan Hu",
+      "Zhenghang Yuan",
+      "Xiao Xiang Zhu"
+    ],
+    "published": [
+      [
+        2024,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10506064/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10506064/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R047": {
+    "url": "https://www.mdpi.com/2072-4292/13/1/129",
+    "doi": "10.3390/rs13010129",
+    "metadata_url": "https://api.crossref.org/works/10.3390%2Frs13010129",
+    "verified_title": "Relation-Constrained 3D Reconstruction of Buildings in Metropolitan Areas from Photogrammetric Point Clouds",
+    "verified_authors": [
+      "Yuan Li",
+      "Bo Wu"
+    ],
+    "published": [
+      [
+        2021,
+        1,
+        1
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.mdpi.com/2072-4292/13/1/129",
+      "status": 403,
+      "resolved_url": "https://www.mdpi.com/2072-4292/13/1/129",
+      "content_type": "text/html"
+    }
+  },
+  "R048": {
+    "url": "https://ieeexplore.ieee.org/document/9008272/",
+    "doi": "10.1109/iccv.2019.00180",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ficcv.2019.00180",
+    "verified_title": "Topological Map Extraction From Overhead Images",
+    "verified_authors": [
+      "Zuoyue Li",
+      "Jan Dirk Wegner",
+      "Aurelien Lucchi"
+    ],
+    "published": [
+      [
+        2019,
+        10
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/9008272/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/9008272/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R049": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S092427162500396X",
+    "doi": "10.1016/j.isprsjprs.2025.10.008",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2025.10.008",
+    "verified_title": "ULSR-GS: Urban large-scale surface reconstruction Gaussian Splatting with multi-view geometric consistency",
+    "verified_authors": [
+      "Zhuoxiao Li",
+      "Shanliang Yao",
+      "Taoyu Wu",
+      "Yong Yue",
+      "Wufan Zhao",
+      "Rongjun Qin",
+      "Ángel F. García-Fernández",
+      "Andrew Levers",
+      "Jason Ralph",
+      "Xiaohui Zhu"
+    ],
+    "published": [
+      [
+        2025,
+        12
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S092427162500396X",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S092427162500396X",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R050": {
+    "url": "https://ieeexplore.ieee.org/document/8953257/",
+    "doi": "10.1109/cvpr.2019.00458",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fcvpr.2019.00458",
+    "verified_title": "PlaneRCNN: 3D Plane Detection and Reconstruction From a Single Image",
+    "verified_authors": [
+      "Chen Liu",
+      "Kihwan Kim",
+      "Jinwei Gu",
+      "Yasutaka Furukawa",
+      "Jan Kautz"
+    ],
+    "published": [
+      [
+        2019,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/8953257/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/8953257/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R051": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0926580524000578",
+    "doi": "10.1016/j.autcon.2024.105321",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.autcon.2024.105321",
+    "verified_title": "Building outline extraction using adaptive tracing alpha shapes and contextual topological optimization from airborne LiDAR",
+    "verified_authors": [
+      "Ke Liu",
+      "Hongchao Ma",
+      "Liang Zhang",
+      "Lu Gao",
+      "Shitao Xiang",
+      "Dachang Chen",
+      "Qing Miao"
+    ],
+    "published": [
+      [
+        2024,
+        4
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0926580524000578",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0926580524000578",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R052": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S092427162400279X",
+    "doi": "10.1016/j.isprsjprs.2024.07.012",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2024.07.012",
+    "verified_title": "Point2Building: Reconstructing buildings from airborne LiDAR point clouds",
+    "verified_authors": [
+      "Yujia Liu",
+      "Anton Obukhov",
+      "Jan Dirk Wegner",
+      "Konrad Schindler"
+    ],
+    "published": [
+      [
+        2024,
+        9
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S092427162400279X",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S092427162400279X",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R053": {
+    "url": "https://ieeexplore.ieee.org/document/11094351/",
+    "doi": "10.1109/cvpr52734.2025.01585",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fcvpr52734.2025.01585",
+    "verified_title": "EdgeDiff: Edge-aware Diffusion Network for Building Reconstruction from Point Clouds",
+    "verified_authors": [
+      "Yujun Liu",
+      "Ruisheng Wang",
+      "Shangfeng Huang",
+      "Guorong Cai"
+    ],
+    "published": [
+      [
+        2025,
+        6,
+        10
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/11094351/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/11094351/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R054": {
+    "url": "https://dl.acm.org/doi/10.1145/280811.281026",
+    "doi": "10.1145/280811.281026",
+    "metadata_url": "https://api.crossref.org/works/10.1145%2F280811.281026",
+    "verified_title": "Marching cubes: a high resolution 3D surface construction algorithm",
+    "verified_authors": [
+      "William E. Lorensen",
+      "Harvey E. Cline"
+    ],
+    "published": [
+      [
+        1998,
+        7
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://dl.acm.org/doi/10.1145/280811.281026",
+      "status": 403,
+      "resolved_url": "https://dl.acm.org/doi/10.1145/280811.281026",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R055": {
+    "url": "https://arxiv.org/abs/2208.11948",
+    "verified_title": "Learning to Construct 3D Building Wireframes from 3D Line Clouds",
+    "verified_authors": [
+      "Yicheng Luo",
+      "Jing Ren",
+      "Xuefei Zhe",
+      "Di Kang",
+      "Yajing Xu",
+      "Peter Wonka",
+      "Linchao Bao"
+    ],
+    "year": 2022,
+    "verification": "Official arXiv record cited by the manuscript; title, authors, identifier, and year match.",
+    "checked_on": "2026-09-29",
+    "http_check": {
+      "url": "https://arxiv.org/abs/2208.11948",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2208.11948",
+      "content_type": "text/html; charset=utf-8"
+    }
+  },
+  "R056": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271624004210",
+    "doi": "10.1016/j.isprsjprs.2024.11.014",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2024.11.014",
+    "verified_title": "KIBS: 3D detection of planar roof sections from a single satellite image",
+    "verified_authors": [
+      "Johann Lussange",
+      "Mulin Yu",
+      "Yuliya Tarabalka",
+      "Florent Lafarge"
+    ],
+    "published": [
+      [
+        2025,
+        2
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271624004210",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271624004210",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R057": {
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/tgis.70032",
+    "doi": "10.1111/tgis.70032",
+    "metadata_url": "https://api.crossref.org/works/10.1111%2Ftgis.70032",
+    "verified_title": "<i>gdverse</i>\n                    : An R Package for Spatial Stratified Heterogeneity Family",
+    "verified_authors": [
+      "Wenbo Lv",
+      "Yangyang Lei",
+      "Fangmei Liu",
+      "Jianwu Yan",
+      "Yongze Song",
+      "Wufan Zhao"
+    ],
+    "published": [
+      [
+        2025,
+        3,
+        26
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/tgis.70032",
+      "status": 403,
+      "resolved_url": "https://onlinelibrary.wiley.com/doi/10.1111/tgis.70032",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R058": {
+    "url": "https://www.tandfonline.com/doi/full/10.1080/13658816.2026.2687121",
+    "doi": "10.1080/13658816.2026.2687121",
+    "metadata_url": "https://api.crossref.org/works/10.1080%2F13658816.2026.2687121",
+    "verified_title": "Measuring causal strengths from spatial cross-sectional data with geographical cross mapping cardinality",
+    "verified_authors": [
+      "Wenbo Lyu",
+      "Shaoqing Dai",
+      "Yongze Song",
+      "Wufan Zhao",
+      "Wen Yi",
+      "Yumiao Xiao",
+      "Nan Jia"
+    ],
+    "published": [
+      [
+        2026,
+        6,
+        16
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/13658816.2026.2687121",
+      "status": 403,
+      "resolved_url": "https://www.tandfonline.com/doi/full/10.1080/13658816.2026.2687121",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R059": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0198971526000372",
+    "doi": "10.1016/j.compenvurbsys.2026.102435",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.compenvurbsys.2026.102435",
+    "verified_title": "Causal discovery in urban data with temporal empirical dynamic modeling: The R package tEDM",
+    "verified_authors": [
+      "Wenbo Lyu",
+      "Yangyang Lei",
+      "Wen Yi",
+      "Yongze Song",
+      "Xiao Li",
+      "Shaoqing Dai",
+      "Yiming Qin",
+      "Wufan Zhao"
+    ],
+    "published": [
+      [
+        2026,
+        7
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0198971526000372",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0198971526000372",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R060": {
+    "url": "https://ieeexplore.ieee.org/document/9156304/",
+    "doi": "10.1109/cvpr42600.2020.00052",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fcvpr42600.2020.00052",
+    "verified_title": "Boundary-Aware 3D Building Reconstruction From a Single Overhead Image",
+    "verified_authors": [
+      "Jisan Mahmud",
+      "TRUE Price",
+      "Akash Bapat",
+      "Jan-Michael Frahm"
+    ],
+    "published": [
+      [
+        2020,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/9156304/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/9156304/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R061": {
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/cgf.12077",
+    "doi": "10.1111/cgf.12077",
+    "metadata_url": "https://api.crossref.org/works/10.1111%2Fcgf.12077",
+    "verified_title": "A Survey of Urban Reconstruction",
+    "verified_authors": [
+      "P. Musialski",
+      "P. Wonka",
+      "D. G. Aliaga",
+      "M. Wimmer",
+      "L. van Gool",
+      "W. Purgathofer"
+    ],
+    "published": [
+      [
+        2013,
+        5,
+        10
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/cgf.12077",
+      "status": 403,
+      "resolved_url": "https://onlinelibrary.wiley.com/doi/10.1111/cgf.12077",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R062": {
+    "url": "https://isprs-annals.copernicus.org/articles/X-5-W2-2025/429/2025/",
+    "doi": "10.5194/isprs-annals-x-5-w2-2025-429-2025",
+    "metadata_url": "https://api.crossref.org/works/10.5194%2Fisprs-annals-x-5-w2-2025-429-2025",
+    "verified_title": "Automatic Building Boundary Extraction from Point Cloud Data",
+    "verified_authors": [
+      "Jagadeesan Nalini",
+      "Subbarayan Saravanan",
+      "Bommineni Narender",
+      "Swaminathan Muralikrishnan"
+    ],
+    "published": [
+      [
+        2025,
+        12,
+        19
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://isprs-annals.copernicus.org/articles/X-5-W2-2025/429/2025/",
+      "status": 200,
+      "resolved_url": "https://isprs-annals.copernicus.org/articles/X-5-W2-2025/429/2025/",
+      "content_type": "text/html"
+    }
+  },
+  "R063": {
+    "url": "https://ieeexplore.ieee.org/document/8237520/",
+    "doi": "10.1109/iccv.2017.258",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ficcv.2017.258",
+    "verified_title": "PolyFit: Polygonal Surface Reconstruction from Point Clouds",
+    "verified_authors": [
+      "Liangliang Nan",
+      "Peter Wonka"
+    ],
+    "published": [
+      [
+        2017,
+        10
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/8237520/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/8237520/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R064": {
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-58598-3_42",
+    "doi": "10.1007/978-3-030-58598-3_42",
+    "metadata_url": "https://api.crossref.org/works/10.1007%2F978-3-030-58598-3_42",
+    "verified_title": "Vectorizing World Buildings: Planar Graph Reconstruction by Primitive Detection and Relationship Inference",
+    "verified_authors": [
+      "Nelson Nauata",
+      "Yasutaka Furukawa"
+    ],
+    "published": [
+      [
+        2020
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://link.springer.com/10.1007/978-3-030-58598-3_42",
+      "status": 200,
+      "resolved_url": "https://link.springer.com/chapter/10.1007/978-3-030-58598-3_42",
+      "content_type": "text/html; charset=utf-8"
+    }
+  },
+  "R065": {
+    "url": "https://www.mdpi.com/2072-4292/11/14/1660",
+    "doi": "10.3390/rs11141660",
+    "metadata_url": "https://api.crossref.org/works/10.3390%2Frs11141660",
+    "verified_title": "Automatic 3-D Building Model Reconstruction from Very High Resolution Stereo Satellite Imagery",
+    "verified_authors": [
+      "Tahmineh Partovi",
+      "Friedrich Fraundorfer",
+      "Reza Bahmanyar",
+      "Hai Huang",
+      "Peter Reinartz"
+    ],
+    "published": [
+      [
+        2019,
+        7,
+        11
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.mdpi.com/2072-4292/11/14/1660",
+      "status": 403,
+      "resolved_url": "https://www.mdpi.com/2072-4292/11/14/1660",
+      "content_type": "text/html"
+    }
+  },
+  "R066": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271614001129",
+    "doi": "10.1016/j.isprsjprs.2014.04.017",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2014.04.017",
+    "verified_title": "Cycle graph analysis for 3D roof structure modelling: Concepts and performance",
+    "verified_authors": [
+      "Gamage Sanka Nirodha Perera",
+      "Hans-Gerd Maas"
+    ],
+    "published": [
+      [
+        2014,
+        7
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271614001129",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271614001129",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R067": {
+    "url": "https://doi.org/10.14358/pers.70.12.1383",
+    "doi": "10.14358/pers.70.12.1383",
+    "metadata_url": "https://api.crossref.org/works/10.14358%2Fpers.70.12.1383",
+    "verified_title": "A Review of Techniques for Extracting Linear Features from Imagery",
+    "verified_authors": [
+      "Lindi J. Quackenbush"
+    ],
+    "published": [
+      [
+        2004,
+        12,
+        1
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed. Uses the registered DOI resolver rather than the legacy Ingenta endpoint.",
+    "publisher_url": "http://openurl.ingenta.com/content/xref?genre=article&issn=0099-1112&volume=70&issue=12&spage=1383",
+    "http_check": {
+      "url": "https://doi.org/10.14358/pers.70.12.1383",
+      "error": "SSLError"
+    }
+  },
+  "R068": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0146664X72800170",
+    "doi": "10.1016/s0146-664x(72)80017-0",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fs0146-664x%2872%2980017-0",
+    "verified_title": "An iterative procedure for the polygonal approximation of plane curves",
+    "verified_authors": [
+      "Urs Ramer"
+    ],
+    "published": [
+      [
+        1972,
+        11
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0146664X72800170",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0146664X72800170",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R069": {
+    "url": "https://isprs-annals.copernicus.org/articles/X-1-W1-2023/971/2023/",
+    "doi": "10.5194/isprs-annals-x-1-w1-2023-971-2023",
+    "metadata_url": "https://api.crossref.org/works/10.5194%2Fisprs-annals-x-1-w1-2023-971-2023",
+    "verified_title": "ROOF3D: A REAL AND SYNTHETIC DATA COLLECTION FOR INDIVIDUAL BUILDING ROOF PLANE AND BUILDING SECTIONS DETECTION",
+    "verified_authors": [
+      "P. Schuegraf",
+      "M. Fuentes Reyes",
+      "Y. Xu",
+      "K. Bittner"
+    ],
+    "published": [
+      [
+        2023,
+        12,
+        5
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://isprs-annals.copernicus.org/articles/X-1-W1-2023/971/2023/",
+      "status": 200,
+      "resolved_url": "https://isprs-annals.copernicus.org/articles/X-1-W1-2023/971/2023/",
+      "content_type": "text/html"
+    }
+  },
+  "R070": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271624001758",
+    "doi": "10.1016/j.isprsjprs.2024.04.015",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2024.04.015",
+    "verified_title": "PLANES4LOD2: Reconstruction of LoD-2 building models using a depth attention-based fully convolutional neural network",
+    "verified_authors": [
+      "Philipp Schuegraf",
+      "Jie Shan",
+      "Ksenia Bittner"
+    ],
+    "published": [
+      [
+        2024,
+        5
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271624001758",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271624001758",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R071": {
+    "url": "https://engineering.purdue.edu/~jshan/publications/2019/%E5%8D%95%E6%9D%B0-%E5%A4%A7%E8%A7%84%E6%A8%A1%E4%B8%89%E7%BB%B4%E5%9F%8E%E5%B8%82%E5%BB%BA%E6%A8%A1%E8%BF%9B%E5%B1%95%20final-20191216.pdf",
+    "metadata_url": "https://engineering.purdue.edu/~jshan/publications/2019/%E5%8D%95%E6%9D%B0-%E5%A4%A7%E8%A7%84%E6%A8%A1%E4%B8%89%E7%BB%B4%E5%9F%8E%E5%B8%82%E5%BB%BA%E6%A8%A1%E8%BF%9B%E5%B1%95%20final-20191216.pdf",
+    "doi": "10.11947/j.AGCS.2019.20190471",
+    "verified_title": "Recent progress in large-scale 3D city modeling",
+    "verified_authors": [
+      "Jie Shan",
+      "Zhixin Li",
+      "Wenyuan Zhang"
+    ],
+    "year": 2019,
+    "verification": "Title, authors, and year checked against the author's journal PDF on Purdue University's website. The printed DOI returns 404, so the link uses this official university-hosted copy instead.",
+    "checked_on": "2026-09-29",
+    "http_check": {
+      "url": "https://engineering.purdue.edu/~jshan/publications/2019/%E5%8D%95%E6%9D%B0-%E5%A4%A7%E8%A7%84%E6%A8%A1%E4%B8%89%E7%BB%B4%E5%9F%8E%E5%B8%82%E5%BB%BA%E6%A8%A1%E8%BF%9B%E5%B1%95%20final-20191216.pdf",
+      "status": 200,
+      "resolved_url": "https://engineering.purdue.edu/~jshan/publications/2019/%E5%8D%95%E6%9D%B0-%E5%A4%A7%E8%A7%84%E6%A8%A1%E4%B8%89%E7%BB%B4%E5%9F%8E%E5%B8%82%E5%BB%BA%E6%A8%A1%E8%BF%9B%E5%B1%95%20final-20191216.pdf",
+      "content_type": "application/pdf"
+    }
+  },
+  "R072": {
+    "url": "https://ieeexplore.ieee.org/document/10285447/",
+    "doi": "10.1109/tgrs.2023.3324211",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ftgrs.2023.3324211",
+    "verified_title": "Robust Extraction of Vectorized Buildings via Bidirectional Tracing of Keypoints From Remotely Sensed Imagery",
+    "verified_authors": [
+      "Zhen Shu",
+      "Xiangyun Hu",
+      "Hengming Dai",
+      "Lunhao Duan",
+      "Zhili Zhang",
+      "Lin Zhang",
+      "Litong Zhang"
+    ],
+    "published": [
+      [
+        2023
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10285447/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10285447/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R073": {
+    "url": "https://ieeexplore.ieee.org/document/10282644/",
+    "doi": "10.1109/igarss52108.2023.10282644",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Figarss52108.2023.10282644",
+    "verified_title": "Extracting Polygons of Visible Cadastral Boundaries Using Deep Learning",
+    "verified_authors": [
+      "Bedru Tareke",
+      "Mila Koeva",
+      "Claudio Persello"
+    ],
+    "published": [
+      [
+        2023,
+        7,
+        16
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10282644/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10282644/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R074": {
+    "url": "https://dl.acm.org/doi/10.1145/2732527",
+    "doi": "10.1145/2732527",
+    "metadata_url": "https://api.crossref.org/works/10.1145%2F2732527",
+    "verified_title": "LOD Generation for Urban Scenes",
+    "verified_authors": [
+      "Yannick Verdie",
+      "Florent Lafarge",
+      "Pierre Alliez"
+    ],
+    "published": [
+      [
+        2015,
+        5,
+        8
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://dl.acm.org/doi/10.1145/2732527",
+      "status": 403,
+      "resolved_url": "https://dl.acm.org/doi/10.1145/2732527",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R075": {
+    "url": "https://www.tandfonline.com/doi/abs/10.1080/19479832.2013.811124",
+    "doi": "10.1080/19479832.2013.811124",
+    "metadata_url": "https://api.crossref.org/works/10.1080%2F19479832.2013.811124",
+    "verified_title": "3D building modeling using images and LiDAR: a review",
+    "verified_authors": [
+      "Ruisheng Wang"
+    ],
+    "published": [
+      [
+        2013,
+        12
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/19479832.2013.811124",
+      "status": 403,
+      "resolved_url": "https://www.tandfonline.com/doi/abs/10.1080/19479832.2013.811124",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R076": {
+    "url": "https://ieeexplore.ieee.org/document/10376547/",
+    "doi": "10.1109/iccv51070.2023.01837",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ficcv51070.2023.01837",
+    "verified_title": "Building3D: An Urban-Scale Dataset and Benchmarks for Learning Roof Structures from Point Clouds",
+    "verified_authors": [
+      "Ruisheng Wang",
+      "Shangfeng Huang",
+      "Hongxin Yang"
+    ],
+    "published": [
+      [
+        2023,
+        10,
+        1
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10376547/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10376547/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R077": {
+    "url": "https://ieeexplore.ieee.org/document/8253517/",
+    "doi": "10.1109/jstars.2017.2781132",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fjstars.2017.2781132",
+    "verified_title": "LiDAR Point Clouds to 3-D Urban Models$:$ A Review",
+    "verified_authors": [
+      "Ruisheng Wang",
+      "Jiju Peethambaran",
+      "Dong Chen"
+    ],
+    "published": [
+      [
+        2018,
+        2
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/8253517/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/8253517/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R078": {
+    "url": "https://ch.whu.edu.cn/en/article/doi/10.13203/j.whugis20200096",
+    "doi": "10.13203/j.whugis20200096",
+    "verified_title": "Space Remote Sensing Dynamic Monitoring for Urban Complex",
+    "verified_authors": [
+      "Taoyang Wang",
+      "Xi Li",
+      "Liqiao Tian",
+      "Zhenwei Chen",
+      "Zhijiang Li",
+      "Guo Zhang",
+      "Deren Li",
+      "Xin Shen",
+      "Xin Li",
+      "Boyang Jiang",
+      "Qu Zhou",
+      "Shiquan Deng",
+      "Jianru Wang",
+      "Haonan Zhu"
+    ],
+    "year": 2020,
+    "verification": "Official journal page; title, authors, year, volume 45(5), and pages 640-650 match.",
+    "checked_on": "2026-09-29",
+    "http_check": {
+      "url": "https://ch.whu.edu.cn/en/article/doi/10.13203/j.whugis20200096",
+      "status": 200,
+      "resolved_url": "https://ch.whu.edu.cn/en/article/doi/10.13203/j.whugis20200096",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R079": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271626002662",
+    "doi": "10.1016/j.isprsjprs.2026.05.025",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2026.05.025",
+    "verified_title": "Towards comprehensive multi-task land cover change detection leveraging vision-language model and LLM-driven agents",
+    "verified_authors": [
+      "Tengxi Wang",
+      "Yiru Wang",
+      "Shuai Zhang",
+      "Yuxuan Liang",
+      "Wufan Zhao"
+    ],
+    "published": [
+      [
+        2026,
+        8
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271626002662",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271626002662",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R080": {
+    "url": "https://ieeexplore.ieee.org/document/11417956/",
+    "doi": "10.1109/tgrs.2026.3669158",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ftgrs.2026.3669158",
+    "verified_title": "DSTI-Net: A Dynamic Spatial–Temporal Interaction Network With Semantic Guidance for 2-D and 3-D Change Detection",
+    "verified_authors": [
+      "Tengxi Wang",
+      "Shuai Zhang",
+      "Mengmeng Li",
+      "Wufan Zhao"
+    ],
+    "published": [
+      [
+        2026
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/11417956/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/11417956/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R081": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271617303593",
+    "doi": "10.1016/j.isprsjprs.2017.11.015",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2017.11.015",
+    "verified_title": "Accurate facade feature extraction method for buildings from three-dimensional point cloud data considering structural information",
+    "verified_authors": [
+      "Yongzhi Wang",
+      "Yuqing Ma",
+      "A-xing Zhu",
+      "Hui Zhao",
+      "Lixia Liao"
+    ],
+    "published": [
+      [
+        2018,
+        5
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271617303593",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271617303593",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R082": {
+    "url": "https://dl.acm.org/doi/10.1145/37402.37422",
+    "doi": "10.1145/37402.37422",
+    "metadata_url": "https://api.crossref.org/works/10.1145%2F37402.37422",
+    "verified_title": "Marching cubes: A high resolution 3D surface construction algorithm",
+    "verified_authors": [
+      "William E. Lorensen",
+      "Harvey E. Cline"
+    ],
+    "published": [
+      [
+        1987,
+        8
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed. Source author \"WE, L.\" is malformed; the original ACM record identifies William E. Lorensen and Harvey E. Cline.",
+    "http_check": {
+      "url": "https://dl.acm.org/doi/10.1145/37402.37422",
+      "status": 403,
+      "resolved_url": "https://dl.acm.org/doi/10.1145/37402.37422",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R083": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S026322412503369X",
+    "doi": "10.1016/j.measurement.2025.120010",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.measurement.2025.120010",
+    "verified_title": "Robust regularization of UAV building contours using a corner-based density peak approach",
+    "verified_authors": [
+      "Chong Wu",
+      "Tieding Lu",
+      "Shaoquan Feng",
+      "Ruisheng Wang",
+      "Wuyong Tao",
+      "Xijiang Chen",
+      "Bufan Zhao",
+      "Xianghong Hua"
+    ],
+    "published": [
+      [
+        2026,
+        2
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S026322412503369X",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S026322412503369X",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R084": {
+    "url": "https://ieeexplore.ieee.org/document/8977383/",
+    "doi": "10.1109/jstars.2020.2969119",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fjstars.2020.2969119",
+    "verified_title": "Geometric Primitives in LiDAR Point Clouds: A Review",
+    "verified_authors": [
+      "Shaobo Xia",
+      "Dong Chen",
+      "Ruisheng Wang",
+      "Jonathan Li",
+      "Xinchang Zhang"
+    ],
+    "published": [
+      [
+        2020
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/8977383/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/8977383/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R085": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271623000667",
+    "doi": "10.1016/j.isprsjprs.2023.03.006",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2023.03.006",
+    "verified_title": "HiSup: Accurate polygonal mapping of buildings in satellite imagery with hierarchical supervision",
+    "verified_authors": [
+      "Bowen Xu",
+      "Jiakun Xu",
+      "Nan Xue",
+      "Gui-Song Xia"
+    ],
+    "published": [
+      [
+        2023,
+        4
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271623000667",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271623000667",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R086": {
+    "url": "https://ieeexplore.ieee.org/document/11218167/",
+    "doi": "10.1109/tgrs.2025.3625669",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ftgrs.2025.3625669",
+    "verified_title": "RR-Net: 3-D Roof Reconstruction From Airborne LiDAR Point Clouds via Edge Segmentation and Wireframe Generation",
+    "verified_authors": [
+      "Yike Xu",
+      "Li Cao",
+      "Shengling Geng",
+      "Xiaoping Liu"
+    ],
+    "published": [
+      [
+        2025
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/11218167/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/11218167/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R087": {
+    "url": "https://ieeexplore.ieee.org/document/10243120/",
+    "doi": "10.1109/tpami.2023.3312749",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ftpami.2023.3312749",
+    "verified_title": "Holistically-Attracted Wireframe Parsing: From Supervised to Self-Supervised Learning",
+    "verified_authors": [
+      "Nan Xue",
+      "Tianfu Wu",
+      "Song Bai",
+      "Fu-Dong Wang",
+      "Gui-Song Xia",
+      "Liangpei Zhang",
+      "Philip H. S. Torr"
+    ],
+    "published": [
+      [
+        2023,
+        12
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10243120/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10243120/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R088": {
+    "url": "https://ieeexplore.ieee.org/document/10872907/",
+    "doi": "10.1109/jstars.2025.3538662",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fjstars.2025.3538662",
+    "verified_title": "Advances and Future Prospects in Building Extraction From High-Resolution Remote Sensing Images",
+    "verified_authors": [
+      "Dongjie Yang",
+      "Xianjun Gao",
+      "Yuanwei Yang",
+      "Kangliang Guo",
+      "Kuikui Han",
+      "Lei Xu"
+    ],
+    "published": [
+      [
+        2025
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10872907/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10872907/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R089": {
+    "url": "https://ieeexplore.ieee.org/document/10583951/",
+    "doi": "10.1109/lgrs.2024.3422842",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Flgrs.2024.3422842",
+    "verified_title": "Efficient Roof Vertex Clustering for Wireframe Simplification Based on the Extended Multiclass Twin Support Vector Machine",
+    "verified_authors": [
+      "Hongxin Yang",
+      "Shangfeng Huang",
+      "Ruisheng Wang"
+    ],
+    "published": [
+      [
+        2024
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10583951/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10583951/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R090": {
+    "url": "https://ieeexplore.ieee.org/document/10423095/",
+    "doi": "10.1109/lgrs.2024.3362733",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Flgrs.2024.3362733",
+    "verified_title": "Self-Supervised Pre-Training for 3-D Roof Reconstruction on LiDAR Data",
+    "verified_authors": [
+      "Hongxin Yang",
+      "Shangfeng Huang",
+      "Ruisheng Wang",
+      "Xin Wang"
+    ],
+    "published": [
+      [
+        2024
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10423095/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10423095/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R091": {
+    "url": "https://www.dqxxkx.cn/EN/10.12082/dqxxkx.2024.240057",
+    "doi": "10.12082/dqxxkx.2024.240057",
+    "verified_title": "A Review of Convolutional Neural Networks Related Methods for Building Extraction from Remote Sensing Images",
+    "verified_authors": [
+      "Mingwang Yang",
+      "Like Zhao",
+      "Linfeng Ye",
+      "Huawei Jiang",
+      "Zhen Yang"
+    ],
+    "year": 2024,
+    "verification": "Official Journal of Geo-information Science page; title, authors, year, volume 26(6), and pages 1500-1516 match.",
+    "checked_on": "2026-09-29",
+    "http_check": {
+      "url": "https://www.dqxxkx.cn/EN/10.12082/dqxxkx.2024.240057",
+      "status": 200,
+      "resolved_url": "https://www.dqxxkx.cn/EN/10.12082/dqxxkx.2024.240057",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R092": {
+    "url": "https://link.springer.com/article/10.1007/s41651-023-00157-x",
+    "doi": "10.1007/s41651-023-00157-x",
+    "metadata_url": "https://api.crossref.org/works/10.1007%2Fs41651-023-00157-x",
+    "verified_title": "New Techniques and Methods for Modelling, Visualization, and Analysis of a 3D City",
+    "verified_authors": [
+      "Shen Ying",
+      "Peter Van Oosterom",
+      "Hongchao Fan"
+    ],
+    "published": [
+      [
+        2023,
+        9,
+        2
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://link.springer.com/10.1007/s41651-023-00157-x",
+      "status": 200,
+      "resolved_url": "https://link.springer.com/article/10.1007/s41651-023-00157-x",
+      "content_type": "text/html; charset=utf-8"
+    }
+  },
+  "R093": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271626001735",
+    "doi": "10.1016/j.isprsjprs.2026.04.001",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2026.04.001",
+    "verified_title": "Directional geometric primitive segmentation and topological reconstruction for fine-grained roof structure extraction",
+    "verified_authors": [
+      "Wenling Yu",
+      "Shunping Ji",
+      "Kun Zhang",
+      "Muying Luo",
+      "Yujie Zan",
+      "Shiqing Wei",
+      "Jianya Gong"
+    ],
+    "published": [
+      [
+        2026,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271626001735",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271626001735",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R094": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S1077314224003345",
+    "doi": "10.1016/j.cviu.2024.104253",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.cviu.2024.104253",
+    "verified_title": "Building extraction from remote sensing images with deep learning: A survey on vision techniques",
+    "verified_authors": [
+      "Yuan Yuan",
+      "Xiaofeng Shi",
+      "Junyu Gao"
+    ],
+    "published": [
+      [
+        2025,
+        2
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S1077314224003345",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S1077314224003345",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R095": {
+    "url": "https://link.springer.com/article/10.1007/s41651-026-00266-3",
+    "doi": "10.1007/s41651-026-00266-3",
+    "metadata_url": "https://api.crossref.org/works/10.1007%2Fs41651-026-00266-3",
+    "verified_title": "A Graph-based Framework for Realistic Multi-style 3D Road Modeling",
+    "verified_authors": [
+      "Chen Zhang",
+      "Yizhou Xie",
+      "Jinming Peng",
+      "Ding Ma",
+      "Renzhong Guo"
+    ],
+    "published": [
+      [
+        2026,
+        5,
+        12
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://link.springer.com/10.1007/s41651-026-00266-3",
+      "status": 200,
+      "resolved_url": "https://link.springer.com/article/10.1007/s41651-026-00266-3",
+      "content_type": "text/html; charset=utf-8"
+    }
+  },
+  "R096": {
+    "url": "https://ieeexplore.ieee.org/document/9156819/",
+    "doi": "10.1109/cvpr42600.2020.00287",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fcvpr42600.2020.00287",
+    "verified_title": "Conv-MPN: Convolutional Message Passing Neural Network for Structured Outdoor Architecture Reconstruction",
+    "verified_authors": [
+      "Fuyang Zhang",
+      "Nelson Nauata",
+      "Yasutaka Furukawa"
+    ],
+    "published": [
+      [
+        2020,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/9156819/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/9156819/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R097": {
+    "url": "https://ieeexplore.ieee.org/document/11172367/",
+    "doi": "10.1109/tgrs.2025.3611869",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ftgrs.2025.3611869",
+    "verified_title": "Global Collinearity-Aware Polygonizer for Polygonal Building Mapping in Remote Sensing",
+    "verified_authors": [
+      "Fahong Zhang",
+      "Yilei Shi",
+      "Xiao Xiang Zhu"
+    ],
+    "published": [
+      [
+        2025
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/11172367/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/11172367/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R098": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271626000250",
+    "doi": "10.1016/j.isprsjprs.2026.01.025",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2026.01.025",
+    "verified_title": "VectorLLM: Human-like extraction of structured building contours via multimodal LLMs",
+    "verified_authors": [
+      "Tao Zhang",
+      "Shiqing Wei",
+      "Shihao Chen",
+      "Wenling Yu",
+      "Muying Luo",
+      "Shunping Ji"
+    ],
+    "published": [
+      [
+        2026,
+        3
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271626000250",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271626000250",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R099": {
+    "url": "https://ieeexplore.ieee.org/document/10988661/",
+    "doi": "10.1109/jstars.2025.3567181",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fjstars.2025.3567181",
+    "verified_title": "PolyBuild: An End-to-End Method for Polygonal Building Contour Extraction From High-Resolution Remote Sensing Images",
+    "verified_authors": [
+      "Yaoteng Zhang",
+      "Julin Zhang",
+      "Guangshuai Wang",
+      "Jiwei Deng",
+      "Hui Sheng",
+      "Yasir Muhammad",
+      "Shiqing Wei"
+    ],
+    "published": [
+      [
+        2025
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10988661/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10988661/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R100": {
+    "url": "https://ieeexplore.ieee.org/document/10282198/",
+    "doi": "10.1109/igarss52108.2023.10282198",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Figarss52108.2023.10282198",
+    "verified_title": "Vectorizing Planar Roof Structure From Very High Resolution Remote Sensing Images Using Transformers",
+    "verified_authors": [
+      "Wufan Zhao",
+      "Claudio Persello",
+      "Xianwei Lv",
+      "Alfred Stein"
+    ],
+    "published": [
+      [
+        2023,
+        7,
+        16
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed. Source year retained; publisher metadata distinguishes online and issue publication dates.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10282198/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10282198/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R101": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271621000551",
+    "doi": "10.1016/j.isprsjprs.2021.02.014",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2021.02.014",
+    "verified_title": "Building outline delineation: From aerial images to polygons with an improved end-to-end learning framework",
+    "verified_authors": [
+      "Wufan Zhao",
+      "Claudio Persello",
+      "Alfred Stein"
+    ],
+    "published": [
+      [
+        2021,
+        5
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271621000551",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271621000551",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R102": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S092427162200065X",
+    "doi": "10.1016/j.isprsjprs.2022.02.022",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2022.02.022",
+    "verified_title": "Extracting planar roof structures from very high resolution images using graph neural networks",
+    "verified_authors": [
+      "Wufan Zhao",
+      "Claudio Persello",
+      "Alfred Stein"
+    ],
+    "published": [
+      [
+        2022,
+        5
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S092427162200065X",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S092427162200065X",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  },
+  "R103": {
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-58545-7_30",
+    "doi": "10.1007/978-3-030-58545-7_30",
+    "metadata_url": "https://api.crossref.org/works/10.1007%2F978-3-030-58545-7_30",
+    "verified_title": "Structured3D: A Large Photo-Realistic Dataset for Structured 3D Modeling",
+    "verified_authors": [
+      "Jia Zheng",
+      "Junfei Zhang",
+      "Jing Li",
+      "Rui Tang",
+      "Shenghua Gao",
+      "Zihan Zhou"
+    ],
+    "published": [
+      [
+        2020
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://link.springer.com/10.1007/978-3-030-58545-7_30",
+      "status": 200,
+      "resolved_url": "https://link.springer.com/chapter/10.1007/978-3-030-58545-7_30",
+      "content_type": "text/html; charset=utf-8"
+    }
+  },
+  "R104": {
+    "url": "https://arxiv.org/abs/2605.15187",
+    "verified_title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
+    "verified_authors": [
+      "Matt Zhou",
+      "Ruining Li",
+      "Xiaoyang Lyu",
+      "Zhaomou Song",
+      "Zhening Huang",
+      "Chuanxia Zheng",
+      "Christian Rupprecht",
+      "Andrea Vedaldi",
+      "Shangzhe Wu"
+    ],
+    "year": 2026,
+    "verification": "Official arXiv record; title, authors, identifier, and year match.",
+    "checked_on": "2026-09-29",
+    "http_check": {
+      "url": "https://arxiv.org/abs/2605.15187",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2605.15187",
+      "content_type": "text/html; charset=utf-8"
+    }
+  },
+  "R105": {
+    "url": "https://ieeexplore.ieee.org/document/6247692/",
+    "doi": "10.1109/cvpr.2012.6247692",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2FCVPR.2012.6247692",
+    "verified_title": "2.5D building modeling by discovering global regularities",
+    "verified_authors": [
+      "Qian-Yi Zhou",
+      "U. Neumann"
+    ],
+    "published": [
+      [
+        2012,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/6247692/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/6247692/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R106": {
+    "url": "https://ieeexplore.ieee.org/document/9010693/",
+    "doi": "10.1109/iccv.2019.00779",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ficcv.2019.00779",
+    "verified_title": "Learning to Reconstruct 3D Manhattan Wireframes From a Single Image",
+    "verified_authors": [
+      "Yichao Zhou",
+      "Haozhi Qi",
+      "Yuexiang Zhai",
+      "Qi Sun",
+      "Zhili Chen",
+      "Li-Yi Wei",
+      "Yi Ma"
+    ],
+    "published": [
+      [
+        2019,
+        10
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/9010693/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/9010693/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R107": {
+    "url": "https://doi.org/10.14358/pers.25-00073r4",
+    "doi": "10.14358/pers.25-00073r4",
+    "metadata_url": "https://api.crossref.org/works/10.14358%2Fpers.25-00073r4",
+    "verified_title": "A Comparative Review of Representative Techniques in Image-Based 3D Dense Reconstruction",
+    "verified_authors": [
+      "Minghui Zhu",
+      "Jianguo Yan",
+      "Jiageng Zhong",
+      "Abdelaziz Elfadaly",
+      "Liangzhi Dai"
+    ],
+    "published": [
+      [
+        2026,
+        4,
+        1
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed. Uses the registered DOI resolver rather than the legacy Ingenta endpoint.",
+    "publisher_url": "https://www.ingentaconnect.com/content/10.14358/PERS.25-00073R4",
+    "http_check": {
+      "url": "https://doi.org/10.14358/pers.25-00073r4",
+      "error": "SSLError"
+    }
+  },
+  "R108": {
+    "url": "https://ieeexplore.ieee.org/document/9880425/",
+    "doi": "10.1109/cvpr52688.2022.00189",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Fcvpr52688.2022.00189",
+    "verified_title": "PolyWorld: Polygonal Building Extraction with Graph Neural Networks in Satellite Images",
+    "verified_authors": [
+      "Stefano Zorzi",
+      "Shabab Bazrafkan",
+      "Stefan Habenschuss",
+      "Friedrich Fraundorfer"
+    ],
+    "published": [
+      [
+        2022,
+        6
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/9880425/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/9880425/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R109": {
+    "url": "https://ieeexplore.ieee.org/document/10377491/",
+    "doi": "10.1109/iccv51070.2023.01537",
+    "metadata_url": "https://api.crossref.org/works/10.1109%2Ficcv51070.2023.01537",
+    "verified_title": "Re:PolyWorld - A Graph Neural Network for Polygonal Scene Parsing",
+    "verified_authors": [
+      "Stefano Zorzi",
+      "Friedrich Fraundorfer"
+    ],
+    "published": [
+      [
+        2023,
+        10,
+        1
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://ieeexplore.ieee.org/document/10377491/",
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10377491/",
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "R110": {
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271625001509",
+    "doi": "10.1016/j.isprsjprs.2025.04.013",
+    "metadata_url": "https://api.crossref.org/works/10.1016%2Fj.isprsjprs.2025.04.013",
+    "verified_title": "Pose-graph optimization for efficient tie-point matching and 3D scene reconstruction from oblique UAV images",
+    "verified_authors": [
+      "Zhihua Xu",
+      "Yongze Niu",
+      "Jincheng Jiang",
+      "Rongjun Qin",
+      "Ximin Cui"
+    ],
+    "published": [
+      [
+        2025,
+        7
+      ]
+    ],
+    "checked_on": "2026-09-29",
+    "verification": "Publisher-deposited Crossref metadata; title, author, and year reviewed.",
+    "http_check": {
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271625001509",
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0924271625001509",
+      "content_type": "text/html;charset=UTF-8"
+    }
+  }
+}
