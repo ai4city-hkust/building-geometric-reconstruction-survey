@@ -2,9 +2,9 @@
 
 [Home](README.md) · [Section summaries](docs/section-summaries.md) · [Datasets & evaluation](docs/datasets-and-evaluation.md)
 
-**109 bibliography entries · 7 reading collections · 0 downloads available**
+**110 bibliography entries · 7 reading collections · 0 downloads available**
 
-The full bibliography of the supplied survey is preserved here. Collections are organized for reading; a study may be relevant to more than one chapter.
+The full bibliography of the supplied survey and maintainer-supplied additions are preserved here. Collections are organized for reading; a study may be relevant to more than one chapter.
 
 > **Downloads:** links will be added after the maintainer uploads the papers and supplies the addresses. `Pending` means that the download has not been provided. DOI and publisher pages are not used as download substitutes.
 
@@ -13,7 +13,7 @@ The full bibliography of the supplied survey is preserved here. Collections are 
 | [Background and Related Surveys](#background) | 22 |
 | [2D Building Footprints](#footprints) | 24 |
 | [2.5D Roof Structure and Wireframes](#roofs) | 24 |
-| [3D Building Models](#models) | 22 |
+| [3D Building Models](#models) | 23 |
 | [Image-LiDAR Fusion](#fusion) | 4 |
 | [Datasets and Supporting Benchmarks](#datasets) | 6 |
 | [Foundation Models and Dynamic Urban Analysis](#outlook) | 7 |
@@ -125,6 +125,7 @@ Photogrammetry, primitive assembly, mesh generation, and structured abstraction.
 | <a id="r029"></a>**R029**<br>2025 | **Sat2City: 3D City Generation from a Single Satellite Image with Cascaded Latent Diffusion**<br>Hua, T., L. Jiang, Y.-C. Chen, and W. Zhao<br><sub>2025 IEEE/CVF International Conference on Computer Vision (ICCV)</sub> | Pending |
 | <a id="r031"></a>**R031**<br>2025 | **ArcPro: Architectural Programs for Structured 3D Abstraction of Sparse Points**<br>Huang, Q., R. Zhang, K. Liu, M. Gong, H. Zhang, and H. Huang<br><sub>2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</sub> | Pending |
 | <a id="r053"></a>**R053**<br>2025 | **EdgeDiff: Edge-aware Diffusion Network for Building Reconstruction from Point Clouds**<br>Liu, Y., R. Wang, S. Huang, and G. Cai<br><sub>2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</sub> | Pending |
+| <a id="r110"></a>**R110**<br>2025 | **Pose-graph optimization for efficient tie-point matching and 3D scene reconstruction from oblique UAV images**<br>Zhihua Xu, Yongze Niu, Jincheng Jiang, Rongjun Qin, and Ximin Cui<br><sub>ISPRS Journal of Photogrammetry and Remote Sensing, 225, 461-491</sub> | Pending |
 | <a id="r006"></a>**R006**<br>2024 | **SimpliCity: Reconstructing Buildings with Simple Regularized 3D Models**<br>Bauchet, J.-P., R. Sulzer, F. Lafarge, and Y. Tarabalka<br><sub>2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</sub> | Pending |
 | <a id="r032"></a>**R032**<br>2024 | **PBWR: Parametric-Building-Wireframe Reconstruction from Aerial LiDAR Point Clouds**<br>Huang, S., R. Wang, B. Guo, and H. Yang<br><sub>2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</sub> | Pending |
 | <a id="r052"></a>**R052**<br>2024b | **Point2Building: Reconstructing buildings from airborne LiDAR point clouds**<br>Liu, Y., A. Obukhov, J. D. Wegner, and K. Schindler<br><sub>ISPRS Journal of Photogrammetry and Remote Sensing</sub> | Pending |
@@ -185,4 +186,4 @@ Vision-language models, neural representations, change detection, and future wor
 
 ---
 
-Reference IDs preserve the order of the original bibliography. Source citations and PDF page numbers are retained in [the reference catalog](data/references.json). Bibliographic details needing review are recorded in [editorial notes](docs/editorial-notes.md).
+Reference IDs are stable: original PDF entries keep their source order, and later additions are appended. Source citations, available PDF page numbers, and citation locations for additions are retained in [the reference catalog](data/references.json). Bibliographic details needing review are recorded in [editorial notes](docs/editorial-notes.md).

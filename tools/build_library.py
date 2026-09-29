@@ -29,7 +29,7 @@ def main():
     ready = sum(bool(url) for url in links.values())
     lines = ['# Paper Library', '', '[Home](README.md) · [Section summaries](docs/section-summaries.md) · [Datasets & evaluation](docs/datasets-and-evaluation.md)', '',
              f'**{len(refs)} bibliography entries · 7 reading collections · {ready} downloads available**', '',
-             'The full bibliography of the supplied survey is preserved here. Collections are organized for reading; a study may be relevant to more than one chapter.', '',
+             'The full bibliography of the supplied survey and maintainer-supplied additions are preserved here. Collections are organized for reading; a study may be relevant to more than one chapter.', '',
              '> **Downloads:** links will be added after the maintainer uploads the papers and supplies the addresses. `Pending` means that the download has not been provided. DOI and publisher pages are not used as download substitutes.', '',
              '| Collection | Entries |', '| :--- | ---: |']
     for key,title,_ in COLLECTIONS:
@@ -44,7 +44,7 @@ def main():
             if ref.get('editorial_note'):
                 detail+=f'<br><sub>Note: {escape(ref["editorial_note"])}</sub>'
             lines.append(f'| <a id="{identifier.lower()}"></a>**{identifier}**<br>{ref["year"]} | {detail} | {link} |')
-    lines += ['', '---', '', 'Reference IDs preserve the order of the original bibliography. Source citations and PDF page numbers are retained in [the reference catalog](data/references.json). Bibliographic details needing review are recorded in [editorial notes](docs/editorial-notes.md).', '']
+    lines += ['', '---', '', 'Reference IDs are stable: original PDF entries keep their source order, and later additions are appended. Source citations, available PDF page numbers, and citation locations for additions are retained in [the reference catalog](data/references.json). Bibliographic details needing review are recorded in [editorial notes](docs/editorial-notes.md).', '']
     (ROOT/'PAPERS.md').write_text('\n'.join(lines),encoding='utf-8')
     print(f'Built PAPERS.md: {len(refs)} references, {ready} maintainer-provided downloads.')
 

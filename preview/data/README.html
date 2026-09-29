@@ -4,7 +4,8 @@
 <body><header class="site-header"><div class="site-title">Building Reconstruction Survey <span class="private-label">Private preview</span></div>
 <nav aria-label="Repository pages"><a href="../index.html">Overview</a><a href="../docs/section-summaries.html">Section summaries</a><a href="../PAPERS.html">Paper library</a><a href="../docs/datasets-and-evaluation.html">Datasets & evaluation</a></nav></header>
 <main><div class="file-label">data/README.md</div><article class="markdown-body"><h1 id="reference-catalog">Reference Catalog</h1>
-<p><code>references.json</code> contains all 109 bibliography entries. IDs <code>R001</code> through <code>R109</code> preserve the order of the source PDF. Each entry includes a reading collection, the original citation, and the PDF page on which the reference starts.</p>
+<p><code>references.json</code> contains 110 bibliography entries. IDs <code>R001</code> through <code>R109</code> preserve the order of the source PDF; later additions are appended without renumbering existing entries. Each entry includes a reading collection and source citation. PDF page numbers are recorded when available.</p>
+<p><code>R110</code> is Xu et al. (2025), supplied by the maintainer with the BibTeX key <code>xu2025pose</code>. It is cited in Section 1 (Introduction), in the second sentence of the opening paragraph, alongside <code>li2024review</code> and <code>11417956</code>. Its publication metadata and citation location are retained in the catalog; <code>source_page</code> is <code>null</code> because no updated PDF page number was supplied.</p>
 <p><code>download-links.json</code> is the only source of download addresses. Every value is initially empty. When the maintainer supplies an uploaded-paper link, assign it to the matching reference ID, for example:</p>
 <pre><code class="lang-json">{
   "R001": "",

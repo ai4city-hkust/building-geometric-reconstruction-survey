@@ -1309,5 +1309,24 @@
     "collection": "footprints",
     "source_title": "Re: Polyworld-a graph neural network for polygonal scene parsing",
     "source_venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision, 16 762- 16 771"
+  },
+  {
+    "id": "R110",
+    "authors": "Zhihua Xu, Yongze Niu, Jincheng Jiang, Rongjun Qin, and Ximin Cui",
+    "year": "2025",
+    "source_page": null,
+    "source_citation": "Xu, Z., Y. Niu, J. Jiang, R. Qin, and X. Cui. 2025. Pose-graph optimization for efficient tie-point matching and 3D scene reconstruction from oblique UAV images. ISPRS Journal of Photogrammetry and Remote Sensing, 225, 461-491. Elsevier.",
+    "title": "Pose-graph optimization for efficient tie-point matching and 3D scene reconstruction from oblique UAV images",
+    "venue": "ISPRS Journal of Photogrammetry and Remote Sensing, 225, 461-491",
+    "collection": "models",
+    "source_title": "Pose-graph optimization for efficient tie-point matching and 3D scene reconstruction from oblique UAV images",
+    "source_venue": "ISPRS Journal of Photogrammetry and Remote Sensing, 225, 461-491",
+    "citation_key": "xu2025pose",
+    "volume": "225",
+    "pages": "461--491",
+    "publisher": "Elsevier",
+    "source_section": "1. Introduction",
+    "source_location": "Opening paragraph, second sentence; citation group: li2024review, 11417956, xu2025pose.",
+    "source_note": "Added from the maintainer-supplied BibTeX and Introduction excerpt; no updated PDF page number was supplied."
   }
 ]

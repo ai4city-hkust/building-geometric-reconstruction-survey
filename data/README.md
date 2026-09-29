@@ -1,6 +1,8 @@
 # Reference Catalog
 
-`references.json` contains all 109 bibliography entries. IDs `R001` through `R109` preserve the order of the source PDF. Each entry includes a reading collection, the original citation, and the PDF page on which the reference starts.
+`references.json` contains 110 bibliography entries. IDs `R001` through `R109` preserve the order of the source PDF; later additions are appended without renumbering existing entries. Each entry includes a reading collection and source citation. PDF page numbers are recorded when available.
+
+`R110` is Xu et al. (2025), supplied by the maintainer with the BibTeX key `xu2025pose`. It is cited in Section 1 (Introduction), in the second sentence of the opening paragraph, alongside `li2024review` and `11417956`. Its publication metadata and citation location are retained in the catalog; `source_page` is `null` because no updated PDF page number was supplied.
 
 `download-links.json` is the only source of download addresses. Every value is initially empty. When the maintainer supplies an uploaded-paper link, assign it to the matching reference ID, for example:
 

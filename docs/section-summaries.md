@@ -13,6 +13,8 @@ The survey places geometric structure at the center of building reconstruction. 
 
 The section relates reconstruction methods to sensor characteristics. Optical images provide rich appearance but require depth inference; stereo imagery recovers geometry through correspondence; LiDAR supplies direct coordinates but has gaps and uneven sampling. Fusion exploits these complementary strengths while introducing alignment requirements.
 
+The opening paragraph cites [Xu et al. (2025)](../PAPERS.md#r110), on pose-graph optimization for efficient tie-point matching and 3D scene reconstruction from oblique UAV images. In the updated Introduction excerpt supplied by the maintainer, this reference appears in the second sentence under the citation key `xu2025pose`.
+
 **Main conclusion:** model-driven fitting, data-driven learning, and hybrid reconstruction should be compared in the context of the available observations and the required geometric representation.
 
 <a id="s2"></a>

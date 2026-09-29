@@ -16,6 +16,8 @@ The maintainer has already downloaded the reviewed papers and will upload them s
 
 All 109 entries in the supplied PDF's bibliography are retained, in stable source order through IDs R001-R109. The reading collections are editorial groupings, not claims that a reference occurs exclusively in one section. The original citation text remains available in `data/references.json`.
 
+The catalog now contains 110 entries. R110, Xu et al. (2025), was added from the maintainer's BibTeX and revised Introduction excerpt under the key `xu2025pose`. It is cited in the opening paragraph's second sentence and grouped under 3D Building Models for reading. Its volume (225), page range (461-491), and publisher (Elsevier) follow the supplied record; no updated source PDF page or download address was supplied.
+
 Titles use matched bibliographic metadata where a title/author/year match was available; other titles are transcribed and lightly normalized. Year suffixes such as 2024a follow the source and are not separate publication years.
 
 ## Source Details to Recheck
